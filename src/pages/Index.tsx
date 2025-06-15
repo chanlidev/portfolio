@@ -263,17 +263,17 @@ const Index = () => {
                 style={{
                   fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
                   fontWeight: "700",
-                  color: "#FF69B4",
+                  color: "#FFFFFF",
                   textShadow: `
-                    0 0 10px rgba(255, 105, 180, 0.8),
-                    0 0 20px rgba(255, 105, 180, 0.6),
-                    0 0 30px rgba(255, 105, 180, 0.4),
-                    0 0 40px rgba(255, 20, 147, 0.3),
+                    0 0 10px rgba(255, 255, 255, 0.8),
+                    0 0 20px rgba(255, 255, 255, 0.6),
+                    0 0 30px rgba(255, 255, 255, 0.4),
+                    0 0 40px rgba(255, 255, 255, 0.3),
                     2px 2px 4px rgba(0, 0, 0, 0.8),
                     4px 4px 8px rgba(0, 0, 0, 0.6)
                   `,
                   filter:
-                    "drop-shadow(0 0 25px rgba(255, 105, 180, 0.6)) drop-shadow(0 0 35px rgba(255, 20, 147, 0.4))",
+                    "drop-shadow(0 0 25px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 35px rgba(255, 255, 255, 0.4))",
                 }}
               >
                 CHAN LI
