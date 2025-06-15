@@ -7,32 +7,32 @@ const FeaturedWork = () => {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2,
+        staggerChildren: 0.6,
       },
     },
   };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1.0 } },
   };
 
   return (
     <motion.section
-      className="w-full bg-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20"
+      className="w-full bg-gradient-to-b from-[#430985] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-[1500px] mx-auto">
         {/* Section Header */}
-        <div className="flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#08BCA1] max-w-md"></div>
+        <div className="mt-12 lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Featured Work
           </h2>
-          <div className="flex-1 h-px bg-[#08BCA1] max-w-md"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
         </div>
 
         {/* Projects Grid */}
@@ -194,6 +194,9 @@ const FeaturedWork = () => {
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       UX/UI Design
+                    </span>
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Responsive Web
                     </span>
                   </div>
 
