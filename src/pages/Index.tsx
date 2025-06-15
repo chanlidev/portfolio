@@ -1,5 +1,99 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
+
+interface Star {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  opacity: number;
+  animationDelay: number;
+  twinkleSpeed: number;
+}
+
+const StarField = () => {
+  const [stars, setStars] = useState<Star[]>([]);
+
+  useEffect(() => {
+    // Generate random stars
+    const generateStars = () => {
+      const newStars: Star[] = [];
+      const starCount = 150; // Number of stars
+
+      for (let i = 0; i < starCount; i++) {
+        newStars.push({
+          id: i,
+          x: Math.random() * 100, // Position as percentage
+          y: Math.random() * 100,
+          size: Math.random() * 3 + 1, // Size between 1-4px
+          opacity: Math.random() * 0.8 + 0.2, // Opacity between 0.2-1
+          animationDelay: Math.random() * 3, // Animation delay up to 3s
+          twinkleSpeed: Math.random() * 2 + 2, // Animation duration between 2-4s
+        });
+      }
+      setStars(newStars);
+    };
+
+    generateStars();
+  }, []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      {stars.map((star) => (
+        <div
+          key={star.id}
+          className="absolute rounded-full bg-white animate-pulse"
+          style={{
+            left: `${star.x}%`,
+            top: `${star.y}%`,
+            width: `${star.size}px`,
+            height: `${star.size}px`,
+            opacity: star.opacity,
+            animationDelay: `${star.animationDelay}s`,
+            animationDuration: `${star.twinkleSpeed}s`,
+            boxShadow:
+              star.size > 2.5
+                ? `0 0 ${star.size * 2}px rgba(255,255,255,0.5)`
+                : "none",
+          }}
+        />
+      ))}
+
+      {/* Add some larger glowing stars */}
+      <div
+        className="absolute w-1 h-1 bg-white rounded-full animate-pulse opacity-80"
+        style={{
+          top: "20%",
+          left: "15%",
+          boxShadow:
+            "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
+          animationDuration: "3s",
+        }}
+      />
+      <div
+        className="absolute w-1.5 h-1.5 bg-white rounded-full animate-pulse opacity-60"
+        style={{
+          top: "65%",
+          left: "85%",
+          boxShadow:
+            "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
+          animationDuration: "4s",
+        }}
+      />
+      <div
+        className="absolute w-1 h-1 bg-white rounded-full animate-pulse opacity-70"
+        style={{
+          top: "40%",
+          left: "75%",
+          boxShadow:
+            "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
+          animationDuration: "2.5s",
+        }}
+      />
+    </div>
+  );
+};
 
 const Index = () => {
   return (
@@ -11,6 +105,43 @@ const Index = () => {
           background: "linear-gradient(180deg, #07033B 41.95%, #430985 100%)",
         }}
       />
+
+      {/* Galaxy starfield effect */}
+      <StarField />
+
+      {/* Nebula-like glow effects */}
+      <div className="absolute inset-0">
+        <div
+          className="absolute w-96 h-96 rounded-full opacity-10"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(147,112,219,0.4) 0%, transparent 70%)",
+            top: "10%",
+            left: "70%",
+            filter: "blur(60px)",
+          }}
+        />
+        <div
+          className="absolute w-80 h-80 rounded-full opacity-15"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(100,149,237,0.3) 0%, transparent 70%)",
+            top: "60%",
+            left: "10%",
+            filter: "blur(50px)",
+          }}
+        />
+        <div
+          className="absolute w-64 h-64 rounded-full opacity-8"
+          style={{
+            background:
+              "radial-gradient(circle, rgba(173,216,230,0.2) 0%, transparent 70%)",
+            top: "30%",
+            left: "40%",
+            filter: "blur(40px)",
+          }}
+        />
+      </div>
 
       {/* Content container */}
       <div className="relative z-10 min-h-screen flex flex-col">
@@ -35,6 +166,7 @@ const Index = () => {
                   "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
                   "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
                   "hover:from-[#1C0C7A]/90 hover:to-[#200349]/90",
+                  "backdrop-blur-sm",
                 )}
               >
                 My Work
@@ -44,7 +176,8 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-3 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B] hover:bg-[#07033B]/90",
+                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
+                  "backdrop-blur-sm",
                 )}
               >
                 About Me
@@ -54,7 +187,8 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-10 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B] hover:bg-[#07033B]/90",
+                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
+                  "backdrop-blur-sm",
                 )}
               >
                 CV
@@ -64,7 +198,8 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-5 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B] hover:bg-[#07033B]/90",
+                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
+                  "backdrop-blur-sm",
                 )}
               >
                 Connect
@@ -77,14 +212,14 @@ const Index = () => {
         <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Main Heading */}
-            <h1 className="font-lexend-zetta font-normal text-white mb-8 lg:mb-12">
+            <h1 className="font-lexend-zetta font-normal text-white mb-8 lg:mb-12 drop-shadow-2xl">
               <span className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight">
                 CHAN LI
               </span>
             </h1>
 
             {/* Description */}
-            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16">
+            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
               Hi! I'm a UX/UI Designer based in Calgary, AB. I have five years
               of experience in e-commerce and currently working in payments at
               Pekopay
@@ -98,6 +233,8 @@ const Index = () => {
                 "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
                 "transition-all duration-200",
                 "min-w-[240px]",
+                "backdrop-blur-sm drop-shadow-lg",
+                "hover:shadow-lg hover:shadow-[#08BCA1]/20",
               )}
             >
               <span className="text-[#08BCA1]">///</span>
