@@ -33,7 +33,7 @@ const StarField = () => {
           animationDelay: Math.random() * 3, // Animation delay up to 3s
           twinkleSpeed: Math.random() * 2 + 2, // Animation duration between 2-4s
           driftDirection: Math.random() * 360, // Random direction in degrees
-          driftSpeed: Math.random() * 30 + 40, // Drift duration between 40-70s
+          driftSpeed: Math.random() * 15 + 15, // Drift duration between 15-30s
         });
       }
       setStars(newStars);
@@ -110,7 +110,7 @@ const StarField = () => {
           left: "15%",
           boxShadow:
             "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
-          animation: "pulse 3s infinite, drift 45s infinite linear",
+          animation: "pulse 3s infinite, drift 20s infinite linear",
         }}
       />
       <div
@@ -120,7 +120,7 @@ const StarField = () => {
           left: "85%",
           boxShadow:
             "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
-          animation: "pulse 4s infinite, driftAlt 55s infinite linear",
+          animation: "pulse 4s infinite, driftAlt 25s infinite linear",
         }}
       />
       <div
@@ -130,7 +130,7 @@ const StarField = () => {
           left: "75%",
           boxShadow:
             "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
-          animation: "pulse 2.5s infinite, driftSlow 50s infinite linear",
+          animation: "pulse 2.5s infinite, driftSlow 22s infinite linear",
         }}
       />
     </div>
