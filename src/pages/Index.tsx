@@ -10,6 +10,8 @@ interface Star {
   opacity: number;
   animationDelay: number;
   twinkleSpeed: number;
+  driftDirection: number;
+  driftSpeed: number;
 }
 
 const StarField = () => {
@@ -30,6 +32,8 @@ const StarField = () => {
           opacity: Math.random() * 0.8 + 0.2, // Opacity between 0.2-1
           animationDelay: Math.random() * 3, // Animation delay up to 3s
           twinkleSpeed: Math.random() * 2 + 2, // Animation duration between 2-4s
+          driftDirection: Math.random() * 360, // Random direction in degrees
+          driftSpeed: Math.random() * 30 + 40, // Drift duration between 40-70s
         });
       }
       setStars(newStars);
@@ -40,55 +44,93 @@ const StarField = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      {stars.map((star) => (
-        <div
-          key={star.id}
-          className="absolute rounded-full bg-white animate-pulse"
-          style={{
-            left: `${star.x}%`,
-            top: `${star.y}%`,
-            width: `${star.size}px`,
-            height: `${star.size}px`,
-            opacity: star.opacity,
-            animationDelay: `${star.animationDelay}s`,
-            animationDuration: `${star.twinkleSpeed}s`,
-            boxShadow:
-              star.size > 2.5
-                ? `0 0 ${star.size * 2}px rgba(255,255,255,0.5)`
-                : "none",
-          }}
-        />
-      ))}
+      <style jsx>{`
+        @keyframes drift {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(50px, 30px);
+          }
+        }
+
+        @keyframes driftAlt {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(-40px, 50px);
+          }
+        }
+
+        @keyframes driftSlow {
+          0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(30px, -40px);
+          }
+        }
+      `}</style>
+      {stars.map((star) => {
+        const driftAnimationName =
+          star.driftDirection < 120
+            ? "drift"
+            : star.driftDirection < 240
+              ? "driftAlt"
+              : "driftSlow";
+
+        return (
+          <div
+            key={star.id}
+            className="absolute rounded-full bg-white animate-pulse"
+            style={{
+              left: `${star.x}%`,
+              top: `${star.y}%`,
+              width: `${star.size}px`,
+              height: `${star.size}px`,
+              opacity: star.opacity,
+              animationDelay: `${star.animationDelay}s`,
+              animationDuration: `${star.twinkleSpeed}s`,
+              boxShadow:
+                star.size > 2.5
+                  ? `0 0 ${star.size * 2}px rgba(255,255,255,0.5)`
+                  : "none",
+              animation: `pulse ${star.twinkleSpeed}s infinite ${star.animationDelay}s, ${driftAnimationName} ${star.driftSpeed}s infinite linear`,
+            }}
+          />
+        );
+      })}
 
       {/* Add some larger glowing stars */}
       <div
-        className="absolute w-1 h-1 bg-white rounded-full animate-pulse opacity-80"
+        className="absolute w-1 h-1 bg-white rounded-full opacity-80"
         style={{
           top: "20%",
           left: "15%",
           boxShadow:
             "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
-          animationDuration: "3s",
+          animation: "pulse 3s infinite, drift 45s infinite linear",
         }}
       />
       <div
-        className="absolute w-1.5 h-1.5 bg-white rounded-full animate-pulse opacity-60"
+        className="absolute w-1.5 h-1.5 bg-white rounded-full opacity-60"
         style={{
           top: "65%",
           left: "85%",
           boxShadow:
             "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
-          animationDuration: "4s",
+          animation: "pulse 4s infinite, driftAlt 55s infinite linear",
         }}
       />
       <div
-        className="absolute w-1 h-1 bg-white rounded-full animate-pulse opacity-70"
+        className="absolute w-1 h-1 bg-white rounded-full opacity-70"
         style={{
           top: "40%",
           left: "75%",
           boxShadow:
             "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
-          animationDuration: "2.5s",
+          animation: "pulse 2.5s infinite, driftSlow 50s infinite linear",
         }}
       />
     </div>
