@@ -21,7 +21,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 300; // Number of stars
+      const starCount = 500; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
@@ -193,9 +193,9 @@ const Index = () => {
             {/* Profile Avatar */}
             <div className="flex-shrink-0">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b49071bfc601b680e70f8d9e4c6ea4cedad9e9b?placeholderIfAbsent=true"
+                src="src/images/profile.jpeg"
                 alt="Profile"
-                className="w-12 h-12 rounded-full border-2 border-white/20"
+                className="w-12 h-12 rounded-full border border-[#1B64FF]"
               />
             </div>
 
@@ -204,11 +204,14 @@ const Index = () => {
               <Button
                 variant="outline"
                 className={cn(
-                  "h-9 px-4 border border-[#1B64FF] text-white text-sm font-normal",
+                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
                   "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "hover:border-2 hover:border-[#1B64FF]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 My Work
@@ -217,10 +220,14 @@ const Index = () => {
               <Button
                 variant="outline"
                 className={cn(
-                  "h-9 px-3 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
+                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 About Me
@@ -229,22 +236,30 @@ const Index = () => {
               <Button
                 variant="outline"
                 className={cn(
-                  "h-9 px-10 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
+                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
-                CV
+                Resume
               </Button>
 
               <Button
                 variant="outline"
                 className={cn(
-                  "h-9 px-5 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
+                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 Connect
@@ -259,7 +274,7 @@ const Index = () => {
             {/* Main Heading */}
             <h1 className="mb-8 lg:mb-12">
               <span
-                className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight italic"
+                className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
                 style={{
                   fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
                   fontWeight: "700",
@@ -280,10 +295,10 @@ const Index = () => {
               </span>
             </h1>
             {/* Description */}
-            <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
+            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
               Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
               e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
-              that design flair on payment flows at Pekopay — making every tap
+              that design flair on payment flows at Pekopay, making every tap
               and click a delight! 🚀😁
             </p>
 
@@ -296,6 +311,7 @@ const Index = () => {
                 "transition-all duration-200",
                 "min-w-[240px]",
                 "backdrop-blur-sm drop-shadow-lg",
+                "hover:border-2",
                 "hover:shadow-lg hover:shadow-[#08BCA1]/20",
               )}
             >
