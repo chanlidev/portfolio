@@ -257,25 +257,23 @@ const Index = () => {
         <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Main Heading */}
-            <h1 className="font-lexend-zetta font-black mb-8 lg:mb-12">
+            <h1 className="mb-8 lg:mb-12">
               <span
-                className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight"
+                className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight italic"
                 style={{
-                  background:
-                    "linear-gradient(135deg, #C0C0C0 0%, #F8F8FF 25%, #E5E5E5 50%, #D3D3D3 75%, #B8B8B8 100%)",
-                  WebkitBackgroundClip: "text",
-                  WebkitTextFillColor: "transparent",
-                  backgroundClip: "text",
+                  fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
+                  fontWeight: "700",
+                  color: "#FF69B4",
                   textShadow: `
-                    0 0 15px rgba(255, 255, 255, 0.8),
-                    0 0 30px rgba(192, 192, 192, 0.6),
-                    0 0 45px rgba(211, 211, 211, 0.4),
-                    2px 2px 4px rgba(0, 0, 0, 0.9),
-                    4px 4px 8px rgba(0, 0, 0, 0.7),
-                    6px 6px 12px rgba(0, 0, 0, 0.5)
+                    0 0 10px rgba(255, 105, 180, 0.8),
+                    0 0 20px rgba(255, 105, 180, 0.6),
+                    0 0 30px rgba(255, 105, 180, 0.4),
+                    0 0 40px rgba(255, 20, 147, 0.3),
+                    2px 2px 4px rgba(0, 0, 0, 0.8),
+                    4px 4px 8px rgba(0, 0, 0, 0.6)
                   `,
                   filter:
-                    "drop-shadow(0 0 20px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 35px rgba(192, 192, 192, 0.3))",
+                    "drop-shadow(0 0 25px rgba(255, 105, 180, 0.6)) drop-shadow(0 0 35px rgba(255, 20, 147, 0.4))",
                 }}
               >
                 CHAN LI
