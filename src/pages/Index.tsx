@@ -274,7 +274,7 @@ const Index = () => {
           <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
             <div className="text-center max-w-4xl mx-auto">
               {/* Main Heading */}
-              <h1 className="mb-8 lg:mb-12">
+              <h1 className="mb-8 lg:mb-12 opacity-0 animate-fadeInScale">
                 <span
                   className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
                   style={{
@@ -297,7 +297,7 @@ const Index = () => {
                 </span>
               </h1>
               {/* Description */}
-              <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
+              <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
                 Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
                 e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
                 that design flair on payment flows at Pekopay, making every tap
@@ -315,6 +315,7 @@ const Index = () => {
                   "backdrop-blur-sm drop-shadow-lg",
                   "hover:border-2",
                   "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  "opacity-0 animate-slideInFromBottom animate-delay-600",
                 )}
               >
                 <span className="text-[#08BCA1]">///</span>

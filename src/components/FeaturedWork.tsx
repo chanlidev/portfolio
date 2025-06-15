@@ -1,9 +1,30 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const FeaturedWork = () => {
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  };
+
   return (
-    <section className="w-full bg-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
+    <motion.section
+      className="w-full bg-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={containerVariants}
+    >
       <div className="max-w-[1450px] mx-auto">
         {/* Section Header */}
         <div className="flex items-center justify-center mb-12 lg:mb-16">
@@ -15,9 +36,15 @@ const FeaturedWork = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+        <motion.div
+          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
+          variants={containerVariants}
+        >
           {/* Project 1 - PekoPay Landing */}
-          <div className="group relative overflow-hidden border border-[#1B64FF] rounded-lg backdrop-blur-sm">
+          <motion.div
+            className="group relative overflow-hidden border border-[#1B64FF] rounded-lg backdrop-blur-sm"
+            variants={cardVariants}
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -27,26 +54,12 @@ const FeaturedWork = () => {
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
               {/* Project Image/Preview */}
-              <div
-                className="
-    flex-1 
-    mb-6 
-    rounded-lg 
-    py-4 px-0    /* no left/right padding */
-    min-h-[200px] lg:min-h-[280px] 
-    flex 
-    items-center 
-    justify-between /* flush to edges */
-  "
-              >
-                {/* Landing takes ¾ of width */}
+              <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
                   src="src/images/landing.svg"
                   alt="Landing Preview"
                   className="w-3/4 h-full object-cover rounded"
                 />
-
-                {/* Phone takes ¼ of width */}
                 <img
                   src="src/images/loginphone.svg"
                   alt="Login Preview"
@@ -82,7 +95,7 @@ const FeaturedWork = () => {
                   </a>
                 </div>
 
-                <h3 className="text-white  text-2xl lg:text-3xl leading-tight">
+                <h3 className="text-white text-2xl lg:text-3xl leading-tight">
                   Designed the entire frontend from landing page to dashboard
                 </h3>
 
@@ -118,10 +131,13 @@ const FeaturedWork = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Project 2 - PekoPay Dashboard */}
-          <div className="group relative overflow-hidden border border-[#FF715C] rounded-lg backdrop-blur-sm">
+          <motion.div
+            className="group relative overflow-hidden border border-[#FF715C] rounded-lg backdrop-blur-sm"
+            variants={cardVariants}
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -130,13 +146,12 @@ const FeaturedWork = () => {
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              {/* Project Image/Preview */}
               <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="src/images/payment.png"
+                    src="src/images/payment.gif"
                     alt="Payment"
-                    className="w-full h-full object-over"
+                    className="w-full h-full object-overflow"
                   />
                 </div>
               </div>
@@ -168,7 +183,7 @@ const FeaturedWork = () => {
                   </a>
                 </div>
 
-                <h3 className="text-white  text-2xl lg:text-3xl leading-tight">
+                <h3 className="text-white text-2xl lg:text-3xl leading-tight">
                   Simplified the adding payment methods workflow
                 </h3>
 
@@ -198,10 +213,13 @@ const FeaturedWork = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Project 3 - Coming Soon */}
-          <div className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm">
+          <motion.div
+            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
+            variants={cardVariants}
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -216,10 +234,13 @@ const FeaturedWork = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Project 4 - Coming Soon */}
-          <div className="group relative overflow-hidden border border-[#0D82B8] rounded-lg backdrop-blur-sm">
+          <motion.div
+            className="group relative overflow-hidden border border-[#0D82B8] rounded-lg backdrop-blur-sm"
+            variants={cardVariants}
+          >
             <div
               className="absolute inset-0"
               style={{
@@ -235,10 +256,10 @@ const FeaturedWork = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
