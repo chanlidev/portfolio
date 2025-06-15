@@ -372,24 +372,26 @@ const Index = () => {
                     Designed the entire frontend from landing page to dashboard
                   </h3>
 
-                  <div className="flex flex-wrap gap-3 text-[#A3ACB1] text-sm">
-                    <span>From 0 To 1</span>
-                    <span>Fintech</span>
-                    <span>Payment</span>
-                    <span>Responsive Web</span>
-                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex flex-wrap gap-3 text-[#A3ACB1] text-sm">
+                      <span>From 0 To 1</span>
+                      <span>Fintech</span>
+                      <span>Payment</span>
+                      <span>Responsive Web</span>
+                    </div>
 
-                  <Button
-                    className={cn(
-                      "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal",
-                      "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                      "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
-                      "transition-all duration-200",
-                      "backdrop-blur-sm",
-                    )}
-                  >
-                    View
-                  </Button>
+                    <Button
+                      className={cn(
+                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
+                        "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
+                        "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                        "transition-all duration-200",
+                        "backdrop-blur-sm",
+                      )}
+                    >
+                      View
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -438,22 +440,24 @@ const Index = () => {
                     Simplified the adding payment methods workflow
                   </h3>
 
-                  <div className="flex flex-wrap gap-3 text-[#A3ACB1] text-sm">
-                    <span>From 4 Steps To 2</span>
-                    <span>UX/UI Design</span>
-                  </div>
+                  <div className="flex items-center justify-between">
+                    <div className="flex flex-wrap gap-3 text-[#A3ACB1] text-sm">
+                      <span>From 4 Steps To 2</span>
+                      <span>UX/UI Design</span>
+                    </div>
 
-                  <Button
-                    className={cn(
-                      "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal",
-                      "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
-                      "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
-                      "transition-all duration-200",
-                      "backdrop-blur-sm",
-                    )}
-                  >
-                    View
-                  </Button>
+                    <Button
+                      className={cn(
+                        "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
+                        "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
+                        "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
+                        "transition-all duration-200",
+                        "backdrop-blur-sm",
+                      )}
+                    >
+                      View
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
