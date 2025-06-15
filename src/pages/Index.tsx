@@ -212,8 +212,26 @@ const Index = () => {
         <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
           <div className="text-center max-w-4xl mx-auto">
             {/* Main Heading */}
-            <h1 className="font-lexend-zetta font-normal text-white mb-8 lg:mb-12 drop-shadow-2xl">
-              <span className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight">
+            <h1 className="font-lexend-zetta font-black mb-8 lg:mb-12">
+              <span
+                className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #00D4FF 0%, #FF00D4 50%, #7928CA 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  textShadow: `
+                    0 0 10px rgba(0, 212, 255, 0.5),
+                    0 0 20px rgba(255, 0, 212, 0.3),
+                    0 0 30px rgba(121, 40, 202, 0.2),
+                    2px 2px 4px rgba(0, 0, 0, 0.8),
+                    4px 4px 8px rgba(0, 0, 0, 0.6),
+                    6px 6px 12px rgba(0, 0, 0, 0.4)
+                  `,
+                  filter: "drop-shadow(0 0 15px rgba(0, 212, 255, 0.4))",
+                }}
+              >
                 CHAN LI
               </span>
             </h1>
