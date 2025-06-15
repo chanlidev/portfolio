@@ -21,7 +21,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 300; // Number of stars
+      const starCount = 500; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
@@ -259,7 +259,7 @@ const Index = () => {
             {/* Main Heading */}
             <h1 className="mb-8 lg:mb-12">
               <span
-                className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight italic"
+                className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
                 style={{
                   fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
                   fontWeight: "700",
@@ -280,11 +280,10 @@ const Index = () => {
               </span>
             </h1>
             {/* Description */}
-            <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
-              Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
-              e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
-              that design flair on payment flows at Pekopay — making every tap
-              and click a delight! 🚀😁
+            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
+              Hi! I'm a UX/UI Designer based in Calgary, AB. I have five years
+              of experience in e-commerce and currently working in payments at
+              Pekopay
             </p>
 
             {/* Contact Button */}
