@@ -21,7 +21,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 150; // Number of stars
+      const starCount = 300; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
@@ -193,7 +193,7 @@ const Index = () => {
             {/* Profile Avatar */}
             <div className="flex-shrink-0">
               <img
-                src="src/images/profile.jpeg"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b49071bfc601b680e70f8d9e4c6ea4cedad9e9b?placeholderIfAbsent=true"
                 alt="Profile"
                 className="w-12 h-12 rounded-full border-2 border-white/20"
               />
@@ -207,12 +207,8 @@ const Index = () => {
                   "h-9 px-4 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
                   "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  // === hover overrides ===
                   "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 My Work
@@ -223,12 +219,8 @@ const Index = () => {
                 className={cn(
                   "h-9 px-3 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "backdrop-blur-sm transition-all duration-200",
-                  // preserve bg+text, only thicken border
                   "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-[#07033B]/80",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 About Me
@@ -239,11 +231,8 @@ const Index = () => {
                 className={cn(
                   "h-9 px-10 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "backdrop-blur-sm transition-all duration-200",
                   "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-[#07033B]/80",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 CV
@@ -254,11 +243,8 @@ const Index = () => {
                 className={cn(
                   "h-9 px-5 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "backdrop-blur-sm transition-all duration-200",
                   "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-[#07033B]/80",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 Connect
@@ -276,19 +262,20 @@ const Index = () => {
                 className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight"
                 style={{
                   background:
-                    "linear-gradient(90deg, #00D4FF 0%, #00D4FF 50%, #FF00D4 50%, #FF00D4 100%)",
+                    "linear-gradient(135deg, #C0C0C0 0%, #F8F8FF 25%, #E5E5E5 50%, #D3D3D3 75%, #B8B8B8 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                   textShadow: `
-                    0 0 10px rgba(0, 212, 255, 0.5),
-                    0 0 20px rgba(255, 0, 212, 0.3),
-                    2px 2px 4px rgba(0, 0, 0, 0.8),
-                    4px 4px 8px rgba(0, 0, 0, 0.6),
-                    6px 6px 12px rgba(0, 0, 0, 0.4)
+                    0 0 15px rgba(255, 255, 255, 0.8),
+                    0 0 30px rgba(192, 192, 192, 0.6),
+                    0 0 45px rgba(211, 211, 211, 0.4),
+                    2px 2px 4px rgba(0, 0, 0, 0.9),
+                    4px 4px 8px rgba(0, 0, 0, 0.7),
+                    6px 6px 12px rgba(0, 0, 0, 0.5)
                   `,
                   filter:
-                    "drop-shadow(0 0 15px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 0, 212, 0.4))",
+                    "drop-shadow(0 0 20px rgba(255, 255, 255, 0.5)) drop-shadow(0 0 35px rgba(192, 192, 192, 0.3))",
                 }}
               >
                 CHAN LI
@@ -310,7 +297,6 @@ const Index = () => {
                 "transition-all duration-200",
                 "min-w-[240px]",
                 "backdrop-blur-sm drop-shadow-lg",
-                "hover:border-2",
                 "hover:shadow-lg hover:shadow-[#08BCA1]/20",
               )}
             >
