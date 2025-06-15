@@ -151,7 +151,7 @@ const Index = () => {
             {/* Profile Avatar */}
             <div className="flex-shrink-0">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b49071bfc601b680e70f8d9e4c6ea4cedad9e9b?placeholderIfAbsent=true"
+                src="src/images/profile.jpeg"
                 alt="Profile"
                 className="w-12 h-12 rounded-full border-2 border-white/20"
               />
@@ -165,8 +165,12 @@ const Index = () => {
                   "h-9 px-4 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
                   "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "hover:border-2 hover:border-[#1B64FF]",
                   "backdrop-blur-sm transition-all duration-200",
+                  // === hover overrides ===
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 My Work
@@ -177,8 +181,12 @@ const Index = () => {
                 className={cn(
                   "h-9 px-3 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
                   "backdrop-blur-sm transition-all duration-200",
+                  // preserve bg+text, only thicken border
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-[#07033B]/80",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 About Me
@@ -189,8 +197,11 @@ const Index = () => {
                 className={cn(
                   "h-9 px-10 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-[#07033B]/80",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 CV
@@ -201,8 +212,11 @@ const Index = () => {
                 className={cn(
                   "h-9 px-5 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-[#07033B]/80",
-                  "hover:border-2 hover:border-[#1B64FF]",
                   "backdrop-blur-sm transition-all duration-200",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "hover:bg-[#07033B]/80",
+                  "hover:text-white",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                 )}
               >
                 Connect
@@ -254,6 +268,7 @@ const Index = () => {
                 "transition-all duration-200",
                 "min-w-[240px]",
                 "backdrop-blur-sm drop-shadow-lg",
+                "hover:border-2",
                 "hover:shadow-lg hover:shadow-[#08BCA1]/20",
               )}
             >
