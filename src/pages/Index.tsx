@@ -217,25 +217,24 @@ const Index = () => {
                 className="block text-4xl sm:text-6xl lg:text-8xl xl:text-[100px] leading-tight"
                 style={{
                   background:
-                    "linear-gradient(135deg, #00D4FF 0%, #FF00D4 50%, #7928CA 100%)",
+                    "linear-gradient(90deg, #00D4FF 0%, #00D4FF 50%, #FF00D4 50%, #FF00D4 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
                   textShadow: `
                     0 0 10px rgba(0, 212, 255, 0.5),
                     0 0 20px rgba(255, 0, 212, 0.3),
-                    0 0 30px rgba(121, 40, 202, 0.2),
                     2px 2px 4px rgba(0, 0, 0, 0.8),
                     4px 4px 8px rgba(0, 0, 0, 0.6),
                     6px 6px 12px rgba(0, 0, 0, 0.4)
                   `,
-                  filter: "drop-shadow(0 0 15px rgba(0, 212, 255, 0.4))",
+                  filter:
+                    "drop-shadow(0 0 15px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 15px rgba(255, 0, 212, 0.4))",
                 }}
               >
                 CHAN LI
               </span>
             </h1>
-
             {/* Description */}
             <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
               Hi! I'm a UX/UI Designer based in Calgary, AB. I have five years
