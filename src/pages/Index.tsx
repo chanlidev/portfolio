@@ -153,7 +153,7 @@ const Index = () => {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/1b49071bfc601b680e70f8d9e4c6ea4cedad9e9b?placeholderIfAbsent=true"
                 alt="Profile"
-                className="w-8 h-8 rounded-full border-2 border-white/20"
+                className="w-12 h-12 rounded-full border-2 border-white/20"
               />
             </div>
 
@@ -165,8 +165,8 @@ const Index = () => {
                   "h-9 px-4 border border-[#1B64FF] text-white text-sm font-normal",
                   "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
                   "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "hover:from-[#1C0C7A]/90 hover:to-[#200349]/90",
-                  "backdrop-blur-sm",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 My Work
@@ -176,8 +176,9 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-3 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
-                  "backdrop-blur-sm",
+                  "bg-[#07033B]/80",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 About Me
@@ -187,8 +188,9 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-10 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
-                  "backdrop-blur-sm",
+                  "bg-[#07033B]/80",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 CV
@@ -198,8 +200,9 @@ const Index = () => {
                 variant="outline"
                 className={cn(
                   "h-9 px-5 border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-[#07033B]/80 hover:bg-[#07033B]/90",
-                  "backdrop-blur-sm",
+                  "bg-[#07033B]/80",
+                  "hover:border-2 hover:border-[#1B64FF]",
+                  "backdrop-blur-sm transition-all duration-200",
                 )}
               >
                 Connect
