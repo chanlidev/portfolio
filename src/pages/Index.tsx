@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import FeaturedWork from "@/components/FeaturedWork";
 
 interface Star {
   id: number;
@@ -139,147 +140,148 @@ const StarField = () => {
 
 const Index = () => {
   return (
-    <div className="min-h-screen w-full relative overflow-hidden">
-      {/* Main gradient background */}
-      <div
-        className="absolute inset-0 w-full h-full"
-        style={{
-          background: "linear-gradient(180deg, #07033B 41.95%, #430985 100%)",
-        }}
-      />
-
-      {/* Galaxy starfield effect */}
-      <StarField />
-
-      {/* Nebula-like glow effects */}
-      <div className="absolute inset-0">
+    <>
+      <div className="min-h-screen w-full relative overflow-hidden">
+        {/* Main gradient background */}
         <div
-          className="absolute w-96 h-96 rounded-full opacity-10"
+          className="absolute inset-0 w-full h-full"
           style={{
-            background:
-              "radial-gradient(circle, rgba(147,112,219,0.4) 0%, transparent 70%)",
-            top: "10%",
-            left: "70%",
-            filter: "blur(60px)",
+            background: "linear-gradient(180deg, #07033B 41.95%, #430985 100%)",
           }}
         />
-        <div
-          className="absolute w-80 h-80 rounded-full opacity-15"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(100,149,237,0.3) 0%, transparent 70%)",
-            top: "60%",
-            left: "10%",
-            filter: "blur(50px)",
-          }}
-        />
-        <div
-          className="absolute w-64 h-64 rounded-full opacity-8"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(173,216,230,0.2) 0%, transparent 70%)",
-            top: "30%",
-            left: "40%",
-            filter: "blur(40px)",
-          }}
-        />
-      </div>
 
-      {/* Content container */}
-      <div className="relative z-10 min-h-screen flex flex-col">
-        {/* Header Navigation */}
-        <header className="w-full px-4 sm:px-8 lg:px-12 pt-8 lg:pt-10">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-4">
-            {/* Profile Avatar */}
-            <div className="flex-shrink-0">
-              <img
-                src="src/images/profile.jpeg"
-                alt="Profile"
-                className="w-12 h-12 rounded-full border border-[#1B64FF]"
-              />
+        {/* Galaxy starfield effect */}
+        <StarField />
+
+        {/* Nebula-like glow effects */}
+        <div className="absolute inset-0">
+          <div
+            className="absolute w-96 h-96 rounded-full opacity-10"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(147,112,219,0.4) 0%, transparent 70%)",
+              top: "10%",
+              left: "70%",
+              filter: "blur(60px)",
+            }}
+          />
+          <div
+            className="absolute w-80 h-80 rounded-full opacity-15"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(100,149,237,0.3) 0%, transparent 70%)",
+              top: "60%",
+              left: "10%",
+              filter: "blur(50px)",
+            }}
+          />
+          <div
+            className="absolute w-64 h-64 rounded-full opacity-8"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(173,216,230,0.2) 0%, transparent 70%)",
+              top: "30%",
+              left: "40%",
+              filter: "blur(40px)",
+            }}
+          />
+        </div>
+
+        {/* Content container */}
+        <div className="relative z-10 min-h-screen flex flex-col">
+          {/* Header Navigation */}
+          <header className="w-full px-4 sm:px-8 lg:px-12 pt-8 lg:pt-10">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-4">
+              {/* Profile Avatar */}
+              <div className="flex-shrink-0">
+                <img
+                  src="src/images/profile.jpeg"
+                  alt="Profile"
+                  className="w-12 h-12 rounded-full border border-[#1B64FF]"
+                />
+              </div>
+
+              {/* Navigation Menu */}
+              <nav className="flex flex-wrap gap-3 sm:gap-6">
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                    "backdrop-blur-sm transition-all duration-200",
+                    "hover:border-2 hover:border-[#1B64FF]",
+                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                    "hover:text-white",
+                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  )}
+                >
+                  My Work
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                    "backdrop-blur-sm transition-all duration-200",
+                    "hover:border-2 hover:border-[#1B64FF]",
+                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                    "hover:text-white",
+                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  )}
+                >
+                  About Me
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                    "backdrop-blur-sm transition-all duration-200",
+                    "hover:border-2 hover:border-[#1B64FF]",
+                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                    "hover:text-white",
+                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  )}
+                >
+                  Resume
+                </Button>
+
+                <Button
+                  variant="outline"
+                  className={cn(
+                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
+                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                    "backdrop-blur-sm transition-all duration-200",
+                    "hover:border-2 hover:border-[#1B64FF]",
+                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                    "hover:text-white",
+                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                  )}
+                >
+                  Connect
+                </Button>
+              </nav>
             </div>
+          </header>
 
-            {/* Navigation Menu */}
-            <nav className="flex flex-wrap gap-3 sm:gap-6">
-              <Button
-                variant="outline"
-                className={cn(
-                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
-              >
-                My Work
-              </Button>
-
-              <Button
-                variant="outline"
-                className={cn(
-                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
-              >
-                About Me
-              </Button>
-
-              <Button
-                variant="outline"
-                className={cn(
-                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
-              >
-                Resume
-              </Button>
-
-              <Button
-                variant="outline"
-                className={cn(
-                  "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
-              >
-                Connect
-              </Button>
-            </nav>
-          </div>
-        </header>
-
-        {/* Main Content */}
-        <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
-          <div className="text-center max-w-4xl mx-auto">
-            {/* Main Heading */}
-            <h1 className="mb-8 lg:mb-12">
-              <span
-                className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
-                style={{
-                  fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
-                  fontWeight: "700",
-                  color: "#FFFFFF",
-                  textShadow: `
+          {/* Main Content */}
+          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
+            <div className="text-center max-w-4xl mx-auto">
+              {/* Main Heading */}
+              <h1 className="mb-8 lg:mb-12">
+                <span
+                  className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
+                  style={{
+                    fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
+                    fontWeight: "700",
+                    color: "#FFFFFF",
+                    textShadow: `
                     0 0 10px rgba(255, 105, 180, 0.8),
                     0 0 20px rgba(255, 105, 180, 0.6),
                     0 0 30px rgba(255, 105, 180, 0.4),
@@ -287,42 +289,46 @@ const Index = () => {
                     2px 2px 4px rgba(0, 0, 0, 0.8),
                     4px 4px 8px rgba(0, 0, 0, 0.6)
                   `,
-                  filter:
-                    "drop-shadow(0 0 25px rgba(255, 105, 180, 0.6)) drop-shadow(0 0 35px rgba(255, 20, 147, 0.4))",
-                }}
-              >
-                CHAN LI
-              </span>
-            </h1>
-            {/* Description */}
-            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
-              Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
-              e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
-              that design flair on payment flows at Pekopay, making every tap
-              and click a delight! 🚀😁
-            </p>
+                    filter:
+                      "drop-shadow(0 0 25px rgba(255, 105, 180, 0.6)) drop-shadow(0 0 35px rgba(255, 20, 147, 0.4))",
+                  }}
+                >
+                  CHAN LI
+                </span>
+              </h1>
+              {/* Description */}
+              <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
+                Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
+                e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
+                that design flair on payment flows at Pekopay, making every tap
+                and click a delight! 🚀😁
+              </p>
 
-            {/* Contact Button */}
-            <Button
-              className={cn(
-                "h-14 px-8 border border-[#08BCA1] text-white text-base font-normal",
-                "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
-                "transition-all duration-200",
-                "min-w-[240px]",
-                "backdrop-blur-sm drop-shadow-lg",
-                "hover:border-2",
-                "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              <span className="text-[#08BCA1]">///</span>
-              <span className="mx-4">Contact Me Now</span>
-              <span className="text-[#08BCA1]">///</span>
-            </Button>
-          </div>
-        </main>
+              {/* Contact Button */}
+              <Button
+                className={cn(
+                  "h-14 px-8 border border-[#08BCA1] text-white text-base font-normal",
+                  "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
+                  "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                  "transition-all duration-200",
+                  "min-w-[240px]",
+                  "backdrop-blur-sm drop-shadow-lg",
+                  "hover:border-2",
+                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                )}
+              >
+                <span className="text-[#08BCA1]">///</span>
+                <span className="mx-4">Contact Me Now</span>
+                <span className="text-[#08BCA1]">///</span>
+              </Button>
+            </div>
+          </main>
+        </div>
       </div>
-    </div>
+      <div className="w-full bg-[#07033B]">
+        <FeaturedWork />
+      </div>
+    </>
   );
 };
 
