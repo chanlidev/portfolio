@@ -280,10 +280,11 @@ const Index = () => {
               </span>
             </h1>
             {/* Description */}
-            <p className="text-white text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
-              Hi! I'm a UX/UI Designer based in Calgary, AB. I have five years
-              of experience in e-commerce and currently working in payments at
-              Pekopay
+            <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg">
+              Hey there! 👋 I’m a Calgary-based UX/UI Designer with 5 years of
+              e-commerce magic under my belt 🛒✨. These days, I’m sprinkling
+              that design flair on payment flows at Pekopay — making every tap
+              and click a delight! 🚀😁
             </p>
 
             {/* Contact Button */}
