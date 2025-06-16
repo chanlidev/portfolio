@@ -58,12 +58,12 @@ const FeaturedWork = () => {
                 <img
                   src="/landing.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-cover rounded hover:rotate-12"
+                  className="w-4/5 h-auto object-contain rounded hover:rotate-12"
                 />
                 <img
                   src="/loginphone.svg"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-cover rounded hover:-rotate-12"
+                  className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
                 />
               </div>
 
@@ -320,12 +320,12 @@ const FeaturedWork = () => {
                 <img
                   src="/TTphone.svg"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-cover rounded -rotate-12 hover:rotate-45"
+                  className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
                 />
                 <img
                   src="/TT.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-cover rounded rotate-12 hover:-rotate-45"
+                  className="w-4/5 h-auto object-contain rounded rotate-12 hover:-rotate-12"
                 />
               </div>
 
