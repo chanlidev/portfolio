@@ -25,7 +25,7 @@ const FeaturedWork = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-[1500px] mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         {/* Section Header */}
         <div className="mt-12 lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -58,12 +58,12 @@ const FeaturedWork = () => {
                 <img
                   src="/landing.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-cover rounded"
+                  className="w-4/5 h-auto object-cover rounded hover:rotate-12"
                 />
                 <img
                   src="/loginphone.svg"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-cover rounded"
+                  className="w-1/5 h-auto object-cover rounded hover:-rotate-12"
                 />
               </div>
 
@@ -316,16 +316,16 @@ const FeaturedWork = () => {
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
               {/* Project Image/Preview */}
-              <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
+              <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
                   src="/TTphone.svg"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-cover rounded -rotate-12"
+                  className="w-1/5 h-auto object-cover rounded -rotate-12 hover:rotate-45"
                 />
                 <img
                   src="/TT.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-cover rounded rotate-12"
+                  className="w-4/5 h-auto object-cover rounded rotate-12 hover:-rotate-45"
                 />
               </div>
 

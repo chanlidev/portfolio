@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import FeaturedWork from "@/components/FeaturedWork";
 import ContactSection from "@/components/ContactSection";
+import Header from "@/components/Header";
 
 interface Star {
   id: number;
@@ -191,85 +192,7 @@ const Index = () => {
         {/* Content container */}
         <div className="relative z-10 min-h-screen flex flex-col">
           {/* Header Navigation */}
-          <header className="w-full px-4 sm:px-8 lg:px-12 pt-8 lg:pt-10">
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-4">
-              {/* Profile Avatar */}
-              <div className="flex-shrink-0">
-                <img
-                  src="/profile.jpeg"
-                  alt="Profile"
-                  className="w-12 h-12 rounded-full border border-[#1B64FF]"
-                />
-              </div>
-
-              {/* Navigation Menu */}
-              <nav className="flex flex-wrap gap-3 sm:gap-6">
-                <Button
-                  variant="outline"
-                  className={cn(
-                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                    "backdrop-blur-sm transition-all duration-200",
-                    "hover:border-2 hover:border-[#1B64FF]",
-                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                    "hover:text-white",
-                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                  )}
-                >
-                  My Work
-                </Button>
-
-                <Button
-                  variant="outline"
-                  className={cn(
-                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                    "backdrop-blur-sm transition-all duration-200",
-                    "hover:border-2 hover:border-[#1B64FF]",
-                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                    "hover:text-white",
-                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                  )}
-                >
-                  About Me
-                </Button>
-
-                <Button
-                  variant="outline"
-                  className={cn(
-                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                    "backdrop-blur-sm transition-all duration-200",
-                    "hover:border-2 hover:border-[#1B64FF]",
-                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                    "hover:text-white",
-                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                  )}
-                >
-                  Resume
-                </Button>
-
-                <Button
-                  variant="outline"
-                  className={cn(
-                    "h-9 w-32 flex items-center justify-center border border-[#1B64FF] text-white text-sm font-normal",
-                    "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                    "backdrop-blur-sm transition-all duration-200",
-                    "hover:border-2 hover:border-[#1B64FF]",
-                    "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                    "hover:text-white",
-                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                  )}
-                >
-                  Connect
-                </Button>
-              </nav>
-            </div>
-          </header>
+          <Header />
 
           {/* Main Content */}
           <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 py-12 lg:py-20">
