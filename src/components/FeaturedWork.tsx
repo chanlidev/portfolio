@@ -14,7 +14,7 @@ const FeaturedWork = () => {
 
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.0 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
   return (
@@ -27,7 +27,7 @@ const FeaturedWork = () => {
     >
       <div className="max-w-[1450px] mx-auto">
         {/* Section Header */}
-        <div className="mt-12 lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+        <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Featured Work
