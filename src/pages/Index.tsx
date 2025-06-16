@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import FeaturedWork from "@/components/FeaturedWork";
+import ContactSection from "@/components/ContactSection";
 
 interface Star {
   id: number;
@@ -328,6 +329,7 @@ const Index = () => {
       </div>
       <div className="w-full bg-[#07033B]">
         <FeaturedWork />
+        <ContactSection />
       </div>
     </>
   );
