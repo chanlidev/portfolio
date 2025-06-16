@@ -57,12 +57,8 @@ const FeaturedWork = () => {
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
                   src="/landing.svg"
+                  className="preview-img"
                   alt="Landing Preview"
-                  className="width={160} h-auto object-contain rounded"
-                  style={{
-                    imageRendering: "crisp-edges",
-                    shapeRendering: "crispEdges",
-                  }}
                 />
                 <img
                   src="/loginphone.svg"
