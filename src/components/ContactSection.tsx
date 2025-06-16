@@ -13,7 +13,7 @@ const ContactSection = () => {
 
   return (
     <motion.section
-      className="w-full bg-[#07033B] px-4 sm:px-8 lg:px-12 py-16 lg:py-20"
+      className="w-full bg-[#07033B] px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20 pb-40 lg:pb-60"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
