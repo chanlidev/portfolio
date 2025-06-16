@@ -196,7 +196,7 @@ const Index = () => {
               {/* Profile Avatar */}
               <div className="flex-shrink-0">
                 <img
-                  src="src/images/profile.jpeg"
+                  src="/profile.jpeg"
                   alt="Profile"
                   className="w-12 h-12 rounded-full border border-[#1B64FF]"
                 />

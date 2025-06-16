@@ -56,12 +56,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
-                  src="src/images/landing.svg"
+                  src="/landing.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-cover rounded"
                 />
                 <img
-                  src="src/images/loginphone.svg"
+                  src="/loginphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-cover rounded"
                 />
@@ -149,7 +149,7 @@ const FeaturedWork = () => {
               <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="src/images/payment.gif"
+                    src="/payment.gif"
                     alt="Payment"
                     className="w-full h-full object-overflow"
                   />
@@ -233,7 +233,7 @@ const FeaturedWork = () => {
               <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="src/images/payment.gif"
+                    src="/invoice.gif"
                     alt="Payment"
                     className="w-full h-full object-overflow"
                   />
@@ -274,7 +274,7 @@ const FeaturedWork = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 4 Steps To 2
+                      Payment Workflow
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       UX/UI Design
@@ -318,12 +318,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <img
-                  src="src/images/TTphone.svg"
+                  src="/TTphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-cover rounded -rotate-12"
                 />
                 <img
-                  src="src/images/TT.svg"
+                  src="/TT.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-cover rounded rotate-12"
                 />
