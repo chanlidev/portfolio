@@ -58,7 +58,7 @@ const FeaturedWork = () => {
                 <img
                   src="/landing.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-contain rounded"
+                  className="width={160} h-auto object-contain rounded"
                   style={{
                     imageRendering: "crisp-edges",
                     shapeRendering: "crispEdges",
