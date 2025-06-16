@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import landingSrc from "@/assets/images/landing.svg";
 
 const FeaturedWork = () => {
   const containerVariants = {
@@ -57,7 +56,7 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
-                  src={landingSrc}
+                  src="/landing.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded hover:rotate-12"
                 />
