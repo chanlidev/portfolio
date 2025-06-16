@@ -169,8 +169,3 @@
   opacity: 1;
   transform: translateY(0);
 }
-.preview-img {
-  width: 500px; /* whole CSS pixels */
-  height: auto;
-  object-fit: contain;
-}
