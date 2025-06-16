@@ -268,7 +268,8 @@ const FeaturedWork = () => {
                 </div>
 
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Crafted the invoice listing featuring inline actions
+                  Crafted the invoice list with integrated inline action
+                  controls
                 </h3>
 
                 <div className="flex items-center justify-between">
