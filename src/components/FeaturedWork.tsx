@@ -59,11 +59,19 @@ const FeaturedWork = () => {
                   src="/landing.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded hover:rotate-12"
+                  style={{
+                    imageRendering: "crisp-edges",
+                    shapeRendering: "crispEdges",
+                  }}
                 />
                 <img
                   src="/loginphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
+                  style={{
+                    imageRendering: "crisp-edges",
+                    shapeRendering: "crispEdges",
+                  }}
                 />
               </div>
 
