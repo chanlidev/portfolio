@@ -9,7 +9,7 @@ const LandingPage: React.FC = () => {
   return (
     <>
       {/* Top Section: matches Index layout exactly */}
-      <div className="min-h-screen w-full relative overflow-hidden">
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-[780px]">
         {/* Purple→Blue background */}
         <div
           className="absolute inset-0"
@@ -57,7 +57,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Bottom Section: gradient from #090F78 to #666666 */}
-      <div className="w-full relative overflow-hidden lg:mt-0">
+      <div className="w-full relative overflow-hidden ">
         {/* Gradient background */}
         <div
           className="absolute inset-0"
