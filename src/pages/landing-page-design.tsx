@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Users, Clock, Target, Briefcase } from "lucide-react";
+import { motion } from "framer-motion";
 
 const LandingPage: React.FC = () => {
   return (
@@ -29,20 +30,28 @@ const LandingPage: React.FC = () => {
             {/* Left white card: block on small, absolute on large */}
 
             {/* Computer Image inside left card */}
-            <img
+            <motion.img
               src="/Group 43.gif"
               alt="Computer showing dashboard"
               className="w-full lg:absolute  lg:w-[780px] lg:h-auto object-contain"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
             />
 
             {/* Right gray card: full width on small, absolute overlap on large */}
-            <div className="w-full lg:absolute lg:right-0 lg:top-[199px] bg-gray-300 rounded-lg flex items-center justify-center overflow-hidden mt-16 lg:mt-0 lg:w-[624px] lg:h-[421px]">
+            <motion.div
+              className="w-full lg:absolute lg:right-0 lg:top-[199px] bg-gray-300 rounded-lg flex items-center justify-center overflow-hidden mt-16 lg:mt-0 lg:w-[624px] lg:h-[421px]"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+            >
               <img
                 src="/pekophone.png"
                 alt="Mobile app screenshot"
                 className="w-full h-auto lg:w-[591px] lg:h-[391px] object-cover rounded"
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
