@@ -57,7 +57,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Bottom Section: gradient from #090F78 to #666666 */}
-      <div className="w-full relative overflow-hidden">
+      <div className="w-full relative overflow-hidden lg:mt-0">
         {/* Gradient background */}
         <div
           className="absolute inset-0"
