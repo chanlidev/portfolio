@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const FeaturedWork = () => {
   const containerVariants = {
@@ -114,20 +115,21 @@ const FeaturedWork = () => {
                       Responsive Web
                     </span>
                   </div>
-
-                  <Button
-                    className={cn(
-                      "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
-                      "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                      "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
-                      "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                      "hover:border-2",
-                      "transition-all duration-200",
-                      "backdrop-blur-sm",
-                    )}
-                  >
-                    View
-                  </Button>
+                  <Link to="/landing-page-design">
+                    <Button
+                      className={cn(
+                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
+                        "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
+                        "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "hover:border-2",
+                        "transition-all duration-200",
+                        "backdrop-blur-sm",
+                      )}
+                    >
+                      View
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
