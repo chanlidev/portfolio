@@ -41,14 +41,21 @@ const ProblemOne = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 lg:mb-32">
+        <div className="mb-20 ">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Column 1: single tall image */}
-            <div className="space-y-6">
+            <div className="space-y-0 lg:space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Initial draft without knowing all the nitty-gritty
+                Created initial drafts of the waitlist and landing pages without
+                full visibility into the nitty-gritty
               </p>
-              <div className="bg-gray-300 aspect-[3/5] rounded-lg"></div>
+              <div className="aspect-[3/5] rounded-lg flex items-center justify-center overflow-hidden ">
+                <img
+                  src="/landing1.svg"
+                  alt="Logo"
+                  className="max-w-full max-h-full object-contain "
+                />
+              </div>
             </div>
 
             {/* Column 2 */}
@@ -62,13 +69,25 @@ const ProblemOne = () => {
                   <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                     Before
                   </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg"></div>
+                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg  flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/before.png"
+                      alt="Logo"
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
                 </div>
                 <div>
                   <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                     After
                   </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg"></div>
+                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg flex items-center justify-start overflow-hidden">
+                    <img
+                      src="/pekodesk.png"
+                      alt="Logo"
+                      className="max-w-full max-h-full object-contain "
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -76,29 +95,76 @@ const ProblemOne = () => {
             {/* Column 3 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Simplified the cashback calculator to eliminate confusion
-                between monthly and annual rates
+                Replaced lengthy payment-methods text with pagination for clear
+                navigation
               </p>
               <div className="space-y-4">
                 <div>
                   <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                     Before
                   </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg"></div>
+                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg">
+                    <img
+                      src="/before 2.svg"
+                      alt="Logo"
+                      className="h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
                 <div>
                   <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                     After
                   </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg"></div>
+                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/after 2.gif"
+                      alt="Logo"
+                      className="h-full max-w-full object-contain"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
+        <div className="mb-20 ">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
+            Simplified the cashback calculator to eliminate confusion between
+            monthly and annual rates
+          </h3>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+            {/* Before Column */}
+            <div>
+              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                Before
+              </p>
+              <div className=" aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/before 3.gif"
+                  alt="Before: cashback calculator"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            </div>
+            {/* After Column */}
+            <div>
+              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                After
+              </p>
+              <div className=" aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/after 3.gif"
+                  alt="After: cashback calculator"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-20">
           {/* Final Version */}
 
           <div>
@@ -107,10 +173,22 @@ const ProblemOne = () => {
                 <span className="text-[#08BCA1]">Final version</span>
               </h3>
               <h3 className="text-sm md:text-base font-normal">
-                <span className="text-[#08BCA1]">View it live</span>
+                <a
+                  href="https://pekopay.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-[#08BCA1]">View live website</span>
+                </a>
               </h3>
             </div>
-            <div className="bg-white aspect-[16/11.5] rounded-lg"></div>
+            <div className="bg-white aspect-[16/11.5] rounded-lg overflow-hidden flex items-center justify-center">
+              <img
+                src="/Group 59.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
           </div>
 
           <div className="flex flex-col justify-center h-full">
@@ -129,7 +207,9 @@ const ProblemOne = () => {
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Takeaway:</span>
-                <br /> XXXXX
+                <br /> A simple, clear UI design eliminated confusion and
+                boosted user confidence, proving that clarity is essential for
+                engagement in fintech interfaces.
               </p>
             </div>
           </div>

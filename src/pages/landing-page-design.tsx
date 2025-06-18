@@ -96,17 +96,17 @@ const LandingPage: React.FC = () => {
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
                 Pekopay is a Vancouver-based fintech startup that recruited me
                 as their first and only UX/UI Designer. I led the creation of
-                their initial marketing website to drive lead generation,
-                followed by landing pages and a user-focused dashboard. With
-                Pekopay, businesses benefit from seamless payment processing and
-                earn cashback on every transaction.
+                their initial landing website to drive lead generation, followed
+                by a user-focused dashboard. With Pekopay, businesses benefit
+                from seamless payment processing and earn cashback on every
+                transaction.
               </p>
             </div>
 
             {/* Image Card */}
-            <div className="bg-white rounded-lg p-4 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="bg-gray-300 rounded-lg p-4 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/Group 49.gif"
+                src="/Group 55.gif"
                 alt="PekoPay application screenshots"
                 className="max-w-full max-h-full object-contain"
               />
@@ -159,7 +159,7 @@ const LandingPage: React.FC = () => {
                   Impact
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  90+ businesses joined the waitlist in the first month
+                  90+ new sign-ups in the first month
                 </p>
               </div>
             </div>
