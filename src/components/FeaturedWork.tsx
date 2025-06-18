@@ -57,12 +57,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
-                  src="/landing.svg"
+                  src="/peko.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded hover:rotate-12"
                 />
                 <img
-                  src="/loginphone.svg"
+                  src="/Iphone 15.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
                 />
@@ -321,12 +321,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
-                  src="/TTphone.svg"
+                  src="/TTIphone 14.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
                 />
                 <img
-                  src="/TT.svg"
+                  src="/TTdesk.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded rotate-12 hover:-rotate-12"
                 />
