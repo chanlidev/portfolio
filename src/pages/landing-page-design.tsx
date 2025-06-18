@@ -104,11 +104,11 @@ const LandingPage: React.FC = () => {
             </div>
 
             {/* Image Card */}
-            <div className="bg-gray-300 rounded-lg p-4 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="bg-gray-300 rounded-lg p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
                 src="/Group 55.gif"
                 alt="PekoPay application screenshots"
-                className="max-w-full max-h-full object-contain"
+                className="h-full max-w-full object-contain"
               />
             </div>
           </div>
