@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Users, Clock, Target, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
+import ProblemONe from "@/components/caseOne/problemOne";
 
 const LandingPage: React.FC = () => {
   return (
@@ -105,7 +106,7 @@ const LandingPage: React.FC = () => {
             {/* Image Card */}
             <div className="bg-white rounded-lg p-4 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/Group 42.gif"
+                src="/Group 49.gif"
                 alt="PekoPay application screenshots"
                 className="max-w-full max-h-full object-contain"
               />
@@ -164,6 +165,9 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-full">
+        <ProblemONe />
       </div>
     </>
   );
