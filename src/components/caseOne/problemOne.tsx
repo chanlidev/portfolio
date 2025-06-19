@@ -42,7 +42,7 @@ const ProblemOne = () => {
 
         {/* Design Evolution Process */}
         <div className="mb-20 ">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Column 1: single tall image */}
             <div className="space-y-0 lg:space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
@@ -133,7 +133,7 @@ const ProblemOne = () => {
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Before Column */}
             <div>
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -164,7 +164,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
           {/* Final Version */}
 
           <div>

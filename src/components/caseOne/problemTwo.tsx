@@ -35,7 +35,7 @@ const ProblemTwo = () => {
 
         {/* Design Evolution Process */}
         <div className="mb-20 ">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
@@ -90,9 +90,10 @@ const ProblemTwo = () => {
 
         <div className="mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Redesigned the timeframe selector for improved clarity and usability
+            Redesigned the timeframe selector for improved clarity and
+            usability, enhanced the responsive layout for mobile
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Before Column */}
             <div className="col-span-1">
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -112,22 +113,22 @@ const ProblemTwo = () => {
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 After
               </p>
-              <div className="grid grid-cols-1 lg:grid-cols-3">
+              <div className="grid grid-cols-3 gap-4 lg:gap-8">
                 {/* Desktop UI (2/3) */}
-                <div className="lg:col-span-2  aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+                <div className="col-span-2  aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src="/after5.gif"
                     alt="Desktop UI"
-                    className="max-w-full max-h-full object-contain rounded-lg"
+                    className="h-full w-full object-contain object-top"
                   />
                 </div>
 
                 {/* Mobile UI (1/3) */}
-                <div className=" aspect-[10.5/15] rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="col-span-1  aspect-[10.5/15] rounded-lg overflow-hidden flex items-center justify-center">
                   <img
                     src="/Group 68.gif"
                     alt="Mobile UI"
-                    className="max-w-full max-h-full object-contain "
+                    className="h-full w-full max-w-full max-h-full object-contain"
                   />
                 </div>
               </div>
@@ -136,7 +137,7 @@ const ProblemTwo = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
           {/* Final Version */}
 
           <div>
