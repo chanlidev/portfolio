@@ -57,9 +57,9 @@ const ProblemTwo = () => {
               </p>
               <div className="space-y-4">
                 <div>
-                  <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/Dashboard (7).svg"
+                      src="/Dashboard (8).svg"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
