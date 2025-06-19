@@ -20,7 +20,7 @@ const FeaturedWork = () => {
 
   return (
     <motion.section
-      className="w-full bg-gradient-to-b from-[#430985] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20"
+      className="w-full bg-gradient-to-b from-[#430985] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
