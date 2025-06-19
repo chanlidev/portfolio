@@ -98,11 +98,11 @@ const ProblemTwo = () => {
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 Before
               </p>
-              <div className=" aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/before5.svg"
+                  src="/Group 71.svg"
                   alt="Logo"
-                  className="h-full max-w-full object-contain "
+                  className="h-full max-w-full object-over "
                 />
               </div>
             </div>
