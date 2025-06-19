@@ -201,20 +201,21 @@ const FeaturedWork = () => {
                       Responsive Web
                     </span>
                   </div>
-
-                  <Button
-                    className={cn(
-                      "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
-                      "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
-                      "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
-                      "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                      "hover:border-2",
-                      "transition-all duration-200",
-                      "backdrop-blur-sm",
-                    )}
-                  >
-                    View
-                  </Button>
+                  <Link to="/automated-payment">
+                    <Button
+                      className={cn(
+                        "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
+                        "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
+                        "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
+                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "hover:border-2",
+                        "transition-all duration-200",
+                        "backdrop-blur-sm",
+                      )}
+                    >
+                      View
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>

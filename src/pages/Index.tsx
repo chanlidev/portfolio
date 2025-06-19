@@ -225,7 +225,7 @@ const Index = () => {
                 Hey there! 👋 I’m a Calgary-based UX/UI Designer with an
                 e-commerce data-analysis background. I leverage user insights to
                 craft payment flows at Pekopay that are not only seamless and
-                intuitive but also make every tap and click a delight! 🚀😁
+                intuitive but also make every tap and click a delight! 🚀
               </p>
 
               {/* Contact Button */}

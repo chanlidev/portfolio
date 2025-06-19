@@ -20,16 +20,19 @@ const ProblemTwo = () => {
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Users lack a simple way to track their earned cashback, making it
-            difficult to monitor transactions and payouts
+            difficult to monitor{" "}
+            <span className="text-[#08BCA1]">transactions</span> and{" "}
+            <span className="text-[#08BCA1]">payouts</span>
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
             While the landing pages captured interest, users had no easy way to
-            track their cashback after signing up. To address this, I designed a
-            dashboard focused on clarity and ease of use. Key data points
-            included Cashback Earned, Total Customers, Open Invoices, and
-            Overdue Invoices. These metrics enabled users to quickly assess
-            their earnings and outstanding payments.
+            track their cashback after signing up. To address this, I designed a{" "}
+            <span className="text-[#08BCA1]">dashboard</span> focused on clarity
+            and ease of use. Key data points included Cashback Earned, Total
+            Customers, Open Invoices, and Overdue Invoices. These metrics
+            enabled users to quickly assess their earnings and outstanding
+            payments.
           </p>
         </div>
 

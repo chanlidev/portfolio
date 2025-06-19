@@ -6,6 +6,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LandingPage from "./pages/landing-page-design";
+import AutoPayment from "./pages/automated-payment";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -20,6 +21,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/landing-page-design" element={<LandingPage />} />
+          <Route path="/automated-payment" element={<AutoPayment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
