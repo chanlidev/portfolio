@@ -123,7 +123,7 @@ const ProblemTwo = () => {
                 </div>
 
                 {/* Mobile UI (1/3) */}
-                <div className=" aspect-[10/15] rounded-lg overflow-hidden flex items-center justify-center">
+                <div className=" aspect-[10.5/15] rounded-lg overflow-hidden flex items-center justify-center">
                   <img
                     src="/Group 68.gif"
                     alt="Mobile UI"
