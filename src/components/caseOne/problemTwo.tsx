@@ -29,9 +29,7 @@ const ProblemTwo = () => {
             dashboard focused on clarity and ease of use. Key data points
             included Cashback Earned, Total Customers, Open Invoices, and
             Overdue Invoices. These metrics enabled users to quickly assess
-            their earnings and outstanding payments. The layout prioritized a
-            clean visual hierarchy to make key information easy to understand at
-            a glance.
+            their earnings and outstanding payments.
           </p>
         </div>
 
@@ -45,7 +43,7 @@ const ProblemTwo = () => {
               </p>
               <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/low.svg"
+                  src="/low1.svg"
                   alt="Logo"
                   className="h-full max-w-full object-contain "
                 />
@@ -59,11 +57,11 @@ const ProblemTwo = () => {
               </p>
               <div className="space-y-4">
                 <div>
-                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/high2.svg"
+                      src="/Dashboard (7).svg"
                       alt="Logo"
-                      className="h-full max-w-full object-contain "
+                      className="h-auto w-auto object-contain "
                     />
                   </div>
                 </div>
@@ -79,7 +77,7 @@ const ProblemTwo = () => {
                 <div>
                   <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/high3.svg"
+                      src="/high4.png"
                       alt="Logo"
                       className="h-full max-w-full object-contain "
                     />
@@ -92,7 +90,7 @@ const ProblemTwo = () => {
 
         <div className="mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
-            Redesigned the timeframe selector for improved clarity
+            Redesigned the timeframe selector for improved clarity and usability
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-24">
             {/* Before Column */}
@@ -130,7 +128,7 @@ const ProblemTwo = () => {
             {/* Phone Column - 1/3 */}
             <div className="col-span-1">
               <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
-                Redesigned responsive for mobile
+                Enhanced the responsive layout for mobile
               </h3>
               <div className=" aspect-[2/4] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
@@ -144,8 +142,8 @@ const ProblemTwo = () => {
             {/* Desktop Column - 2/3 */}
             <div className="col-span-2">
               <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
-                Integrated transaction list to share the same timeframe selector
-                for consistent use
+                Integrated the transaction list to share the same timeframe
+                selector for consistent use
               </h3>
               <div className="bg-gray-300 aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
                 <img
