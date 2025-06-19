@@ -5,6 +5,8 @@ import { cn } from "@/lib/utils";
 import { Users, Clock, Target, Briefcase } from "lucide-react";
 import { motion } from "framer-motion";
 import ProblemONe from "@/components/caseOne/problemOne";
+import ProblemTwo from "@/components/caseOne/problemTwo";
+import ContactSection from "@/components/ContactSection";
 
 const LandingPage: React.FC = () => {
   return (
@@ -168,6 +170,8 @@ const LandingPage: React.FC = () => {
       </div>
       <div className="w-full">
         <ProblemONe />
+        <ProblemTwo />
+        <ContactSection />
       </div>
     </>
   );

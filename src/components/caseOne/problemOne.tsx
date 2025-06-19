@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProblemOne = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#090F78] px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
+    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
