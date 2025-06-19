@@ -141,14 +141,14 @@ const ProblemTwo = () => {
 
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
                 Integrated the transaction list to share the same timeframe
                 selector for consistent use
               </h3>
             </div>
-            <div className="bg-white aspect-[16/11.5] rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/Group 59.gif"
+                src="/dashboard1.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -158,22 +158,17 @@ const ProblemTwo = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Result:</span>
-                <br /> Within the first month, the site generated 90+ sign-ups,
-                and users were eager to see their potential cashback earnings.
-              </p>
-
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Feedback:</span>
-                <br /> Users prefer a light-mode theme on payment sites, as it
-                conveys transparency and security.
+                <br /> The light background and strong visual hierarchy made the
+                interface feel more trustworthy and professional, helping users
+                navigate their data with confidence.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Takeaway:</span>
-                <br /> A simple, clear UI design eliminated confusion and
-                boosted user confidence, proving that clarity is essential for
-                engagement in fintech interfaces.
+                By focusing on simplicity and aligning the layout with real user
+                workflows, we improved clarity, reduced friction, and created a
+                more intuitive experience for managing financial data.
               </p>
             </div>
           </div>

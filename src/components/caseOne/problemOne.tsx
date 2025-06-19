@@ -129,7 +129,7 @@ const ProblemOne = () => {
         </div>
 
         <div className="mb-20 ">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
@@ -164,7 +164,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
           {/* Final Version */}
 
           <div>
