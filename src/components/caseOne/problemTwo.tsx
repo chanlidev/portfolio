@@ -108,14 +108,14 @@ const ProblemTwo = () => {
               </div>
             </div>
 
-            {/* After Column - Desktop */}
-            <div className="col-span-2">
+            {/* After Column */}
+            <div className="col-span-1 md:col-span-2">
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 After
               </p>
-              <div className="grid grid-cols-3 gap-4 lg:gap-8">
-                {/* Desktop UI (2/3) */}
-                <div className="col-span-2  aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+                {/* Desktop UI: spans 2 of 3 on md+ */}
+                <div className="col-span-1 md:col-span-2 aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src="/after5.gif"
                     alt="Desktop UI"
@@ -123,12 +123,16 @@ const ProblemTwo = () => {
                   />
                 </div>
 
-                {/* Mobile UI (1/3) */}
-                <div className="col-span-1  aspect-[10.5/15] rounded-lg overflow-hidden flex items-center justify-center">
+                {/* Mobile UI: always 1 of 3 (so full width on small, 1/3 on md+) */}
+                <div
+                  className="col-span-1 aspect-[10.5/15] rounded-lg overflow-hidden 
+                    flex items-center justify-center
+                    max-w-[260px] mx-auto md:max-w-none md:mx-0"
+                >
                   <img
                     src="/Group 68.gif"
                     alt="Mobile UI"
-                    className="h-full w-full max-w-full max-h-full object-contain"
+                    className="h-full w-full object-contain"
                   />
                 </div>
               </div>
@@ -167,6 +171,7 @@ const ProblemTwo = () => {
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Takeaway:</span>
+                <br />
                 By focusing on simplicity and aligning the layout with real user
                 workflows, we improved clarity, reduced friction, and created a
                 more intuitive experience for managing financial data.
