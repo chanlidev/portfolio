@@ -114,11 +114,11 @@ const ProblemTwo = () => {
               </p>
               <div className="grid grid-cols-1 lg:grid-cols-3">
                 {/* Desktop UI (2/3) */}
-                <div className="lg:col-span-2 bg-gray-300 aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+                <div className="lg:col-span-2  aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src="/after5.gif"
                     alt="Desktop UI"
-                    className="h-full max-w-full object-contain object-top"
+                    className="max-w-full max-h-full object-contain rounded-lg"
                   />
                 </div>
 
@@ -127,7 +127,7 @@ const ProblemTwo = () => {
                   <img
                     src="/Group 68.gif"
                     alt="Mobile UI"
-                    className="h-full max-w-full object-contain object-top"
+                    className="max-w-full max-h-full object-contain "
                   />
                 </div>
               </div>
