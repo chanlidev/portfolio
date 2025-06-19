@@ -89,10 +89,10 @@ const ProblemTwo = () => {
         </div>
 
         <div className="mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Redesigned the timeframe selector for improved clarity and usability
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-24">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Before Column */}
             <div className="col-span-1">
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -102,55 +102,34 @@ const ProblemTwo = () => {
                 <img
                   src="/Group 71.svg"
                   alt="Logo"
-                  className="h-full max-w-full object-over "
+                  className="h-full max-w-full object-contain"
                 />
               </div>
             </div>
 
-            {/* After Column */}
+            {/* After Column - Desktop */}
             <div className="col-span-2">
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 After
               </p>
-              <div className="bg-gray-300 aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
-                <img
-                  src="/after5.gif"
-                  alt="Logo"
-                  className="h-full max-w-full object-contain object-top"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3">
+                {/* Desktop UI (2/3) */}
+                <div className="lg:col-span-2 bg-gray-300 aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+                  <img
+                    src="/after5.gif"
+                    alt="Desktop UI"
+                    className="h-full max-w-full object-contain object-top"
+                  />
+                </div>
 
-        <div className="mb-40">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-24">
-            {/* Phone Column - 1/3 */}
-            <div className="col-span-1">
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
-                Enhanced the responsive layout for mobile
-              </h3>
-              <div className=" aspect-[2/4] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 68.gif"
-                  alt="Mobile UI"
-                  className="h-full max-w-full object-contain object-top"
-                />
-              </div>
-            </div>
-
-            {/* Desktop Column - 2/3 */}
-            <div className="col-span-2">
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
-                Integrated the transaction list to share the same timeframe
-                selector for consistent use
-              </h3>
-              <div className="bg-gray-300 aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
-                <img
-                  src="/desktop.svg"
-                  alt="Desktop UI"
-                  className="h-full max-w-full object-contain object-top"
-                />
+                {/* Mobile UI (1/3) */}
+                <div className=" aspect-[10/15] rounded-lg overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/Group 68.gif"
+                    alt="Mobile UI"
+                    className="h-full max-w-full object-contain object-top"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -162,17 +141,9 @@ const ProblemTwo = () => {
 
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#08BCA1]">Final version</span>
-              </h3>
-              <h3 className="text-sm md:text-base font-normal">
-                <a
-                  href="https://pekopay.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-[#08BCA1]">View live website</span>
-                </a>
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
+                Integrated the transaction list to share the same timeframe
+                selector for consistent use
               </h3>
             </div>
             <div className="bg-white aspect-[16/11.5] rounded-lg overflow-hidden flex items-center justify-center">
