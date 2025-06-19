@@ -94,7 +94,7 @@ const ProblemTwo = () => {
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
             Redesigned the timeframe selector for improved clarity
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-24">
             {/* Before Column */}
             <div className="col-span-1">
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -126,15 +126,15 @@ const ProblemTwo = () => {
         </div>
 
         <div className="mb-40">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-24">
             {/* Phone Column - 1/3 */}
             <div className="col-span-1">
               <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center lg:text-left">
                 Redesigned responsive for mobile
               </h3>
-              <div className="bg-gray-300 aspect-[2/4] rounded-lg overflow-hidden flex items-center justify-center">
+              <div className=" aspect-[2/4] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/afterphone.gif"
+                  src="/Group 68.gif"
                   alt="Mobile UI"
                   className="h-full max-w-full object-contain object-top"
                 />
