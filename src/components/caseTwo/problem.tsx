@@ -42,18 +42,18 @@ const ProblemThree = () => {
 
         {/* Design Evolution Process */}
         <div className="mb-20 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: single tall image */}
             <div className="space-y-0 lg:space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Created initial drafts of the waitlist and landing pages without
-                full visibility into the nitty-gritty
+                Initially, I thought about implementing add payment method
+                feature when creating a new invoice
               </p>
-              <div className="aspect-[3/5] rounded-lg flex items-center justify-center overflow-hidden ">
+              <div className="bg-white aspect-[16/11.5] rounded-lg flex items-center justify-center overflow-hidden ">
                 <img
-                  src="/landing1.svg"
+                  src="/Group 72.svg"
                   alt="Logo"
-                  className="max-w-full max-h-full object-contain "
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </div>
