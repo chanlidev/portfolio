@@ -51,7 +51,7 @@ const ProblemThree = () => {
               </p>
               <div className="bg-white aspect-[16/11.5] rounded-lg flex items-center justify-center overflow-hidden ">
                 <img
-                  src="/Group 72.svg"
+                  src="/Group 72.png"
                   alt="Logo"
                   className="max-w-full max-h-full object-contain"
                 />
