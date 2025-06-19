@@ -8,6 +8,7 @@ import ProblemONe from "@/components/caseOne/problemOne";
 import ProblemTwo from "@/components/caseOne/problemTwo";
 import ProblemThree from "@/components/caseTwo/problem";
 import ContactSection from "@/components/ContactSection";
+import Solution from "@/components/caseTwo/solution";
 
 const AutoPayment: React.FC = () => {
   return (
@@ -80,19 +81,18 @@ const AutoPayment: React.FC = () => {
 
               {/* Description */}
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
-                By adding a recurring-payment feature, merchants get paid
+                By adding a recurring-payment feature, merchants can get paid
                 automatically and on time. As Pekopay’s sole UX/UI Designer, I
-                redesigned the payer's detail page and implemented “Add Payment
-                Method” feature, refined original four-step flow into a
-                streamlined two-step process. This redesign cut user clicks in
-                half and accelerated the entire setup.
+                redesigned the payer’s detail page to implement the “Add Payment
+                Method” flow, collapsing the original five-step process into
+                just two.
               </p>
             </div>
 
             {/* Image Card */}
             <div className="bg-gray-300 rounded-lg p-0 lg:p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/Group 55.gif"
+                src="/Group 73.svg"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />
@@ -145,7 +145,7 @@ const AutoPayment: React.FC = () => {
                   Impact
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  Setup process reduced from 4 steps to 2
+                  Setup process reduced from 5 steps to 2
                 </p>
               </div>
             </div>
@@ -154,7 +154,7 @@ const AutoPayment: React.FC = () => {
       </div>
       <div className="w-full">
         <ProblemThree />
-        <ProblemTwo />
+        <Solution />
         <ContactSection />
       </div>
     </>
