@@ -112,7 +112,7 @@ const ProblemTwo = () => {
                 <div
                   className="col-span-1 aspect-[16/16] rounded-lg overflow-hidden 
           flex items-center justify-center
-          max-w-[260px] mx-auto md:max-w-none md:mx-0"
+          max-w-[300px] mx-auto md:max-w-none md:mx-0"
                 >
                   <img
                     src="/Group 90.svg"

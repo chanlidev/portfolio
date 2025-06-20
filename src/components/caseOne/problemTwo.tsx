@@ -74,7 +74,7 @@ const ProblemTwo = () => {
             {/* Column 3 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed ">
-                High Fidelity -2nd Round
+                High Fidelity - 2nd Round
               </p>
               <div className="space-y-4">
                 <div>
@@ -102,7 +102,10 @@ const ProblemTwo = () => {
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 Before
               </p>
-              <div className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center">
+              <div
+                className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center
+          max-w-[300px] mx-auto md:max-w-none md:mx-0"
+              >
                 <img
                   src="/Group 71.svg"
                   alt="Logo"
