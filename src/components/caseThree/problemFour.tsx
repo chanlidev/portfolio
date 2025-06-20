@@ -96,9 +96,12 @@ const ProblemTwo = () => {
             {/* Text Column (smaller width) */}
             <div className="col-span-1">
               <h3 className="text-white text-sm md:text-base font-normal text-left">
-                Previously, users had to open the three-dot menu and select
+                Previously, users needed to open the three-dot menu and select
                 “View Invoice” to access details, which then appeared in a
-                pop-up
+                pop-up. <br />
+                <br />
+                If they wanted to perform additional actions, they had to close
+                the pop-up and reopen the menu each time.
               </h3>
             </div>
 
