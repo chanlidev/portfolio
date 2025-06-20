@@ -106,7 +106,7 @@ const Solution = () => {
                 <span className="text-[#FF715C]">Final version</span>
               </h3>
             </div>
-            <div className="bg-white aspect-[16/11.5] rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center">
               <img
                 src="/Group 59.gif"
                 alt="After: cashback calculator"
