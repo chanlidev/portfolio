@@ -41,7 +41,7 @@ const SolutionFour = () => {
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Designed a collapsible inline preview that displays key invoice
-              details without navigating away
+              details without navigating away.
             </h3>
           </div>
 
@@ -64,7 +64,7 @@ const SolutionFour = () => {
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Moved “View Invoice” out of the main menu and embedded all action
               controls into the invoice modal, allowing users to perform tasks
-              without closing the pop-up and view in PDF format
+              without closing the pop-up and view in PDF format.
             </h3>
           </div>
 
@@ -87,7 +87,7 @@ const SolutionFour = () => {
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Introduced contextual action menus that adapt to each invoice’s
               status, enabling users to mark them as paid, refunded, or
-              uncollectable
+              uncollectable.
             </h3>
           </div>
 
