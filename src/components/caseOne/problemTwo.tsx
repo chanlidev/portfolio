@@ -149,12 +149,12 @@ const ProblemTwo = () => {
 
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              <h3 className="text-white text-sm md:text-base font-normal mb-4 text-left">
                 Integrated the transaction list to share the same timeframe
                 selector for consistent use
               </h3>
             </div>
-            <div className="aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className="spect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/dashboard1.gif"
                 alt="After: cashback calculator"

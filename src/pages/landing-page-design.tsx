@@ -125,7 +125,8 @@ const LandingPage: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer, Frontend Developer
+                  UX/UI Designer, <br />
+                  Frontend Developer
                 </p>
               </div>
             </div>

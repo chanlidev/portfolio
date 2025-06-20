@@ -94,7 +94,7 @@ const ProblemOne = () => {
 
             {/* Column 3 */}
             <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+              <p className="text-white text-sm md:text-base sm:mt-10 font-normal leading-relaxed">
                 Replaced lengthy payment-methods text with pagination for clear
                 navigation
               </p>
@@ -133,7 +133,7 @@ const ProblemOne = () => {
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-12">
             {/* Before Column */}
             <div>
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
