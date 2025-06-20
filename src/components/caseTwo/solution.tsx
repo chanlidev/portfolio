@@ -23,15 +23,22 @@ const Solution = () => {
             page and display a pop-up to add payment method
           </h1>
 
-          <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-6xl mx-auto">
-            This revised workflow reduces the process{" "}
-            <span className="text-[#FF715C]">from 5 steps to 2</span>: Create
-            Client &gt; Add Payment Method, streamlining and accelerating the
-            entire setup process.
+          <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
+            I thought about embedding the “Add Payment Method” steps into the
+            client-creation flow, but to minimize development effort and avoid
+            duplicating our existing details page component, I chose to navigate
+            straight to the new client’s details page and trigger a pop-up for
+            adding a payment method immediately after creation. This refined
+            workflow reduces the original process{" "}
+            <span className="text-[#FF715C]">from 5 steps to 2</span>,
+            streamlining and accelerating the entire setup process.
           </p>
         </div>
 
         <div className="mb-20 lg:mb-40">
+          <h3 className="max-w-4xl mx-auto text-white text-sm md:text-base font-normal mb-6 text-left">
+            Refined Workflow: Create Client &gt; Add Payment Method
+          </h3>
           <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
             {/* Before Column */}
             <div className="text-center">
@@ -51,9 +58,9 @@ const Solution = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Once a new payment method is added, it will show at the Payment
-              method section and users can set which credit card as default
-              payment
+              Once a new payment method is added, it appears in the Payment
+              Methods section on the client details page, where users can choose
+              a default card.
             </h3>
           </div>
 
@@ -70,13 +77,13 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 lg:gap-24">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Once a new payment method is added, it will show at the Payment
-              method section and users can set which credit card as default
-              payment
+              To complete the experience, I’ve added a Subscription section on
+              the same page so users can set up recurring payments for that
+              client without re-entering credit card information.
             </h3>
           </div>
 
@@ -88,6 +95,40 @@ const Solution = () => {
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
+          <div>
+            <div className="flex justify-between mb-4">
+              <h3 className="text-white text-sm md:text-base font-normal">
+                <span className="text-[#FF715C]">Final version</span>
+              </h3>
+            </div>
+            <div className="bg-white aspect-[16/11.5] rounded-lg overflow-hidden flex items-center justify-center">
+              <img
+                src="/Group 59.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center h-full">
+            <div className="space-y-10">
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                <span className="text-[#FF715C]">Feedback:</span>
+                <br /> Users prefer a light-mode theme on payment sites, as it
+                conveys transparency and security.
+              </p>
+
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                <span className="text-[#FF715C]">Takeaway:</span>
+                <br /> A simple, clear UI design eliminated confusion and
+                boosted user confidence, proving that clarity is essential for
+                engagement in fintech interfaces.
+              </p>
             </div>
           </div>
         </div>

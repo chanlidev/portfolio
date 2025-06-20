@@ -192,7 +192,7 @@ const FeaturedWork = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 4 Steps To 2
+                      From 5 Steps To 2
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       UX/UI Design

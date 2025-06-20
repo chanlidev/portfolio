@@ -34,7 +34,7 @@ const AutoPayment: React.FC = () => {
             className=" w-full max-w-[1000px] bg-gray-300 p-4 rounded-lg flex items-center justify-center overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
+            transition={{ duration: 0.8 }}
           >
             <img
               src="/payment.gif"
@@ -133,7 +133,7 @@ const AutoPayment: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  January – March 2025{`\n`}Calgary, AB
+                  March 2025{`\n`}Calgary, AB
                 </p>
               </div>
             </div>
