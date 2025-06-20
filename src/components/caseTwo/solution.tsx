@@ -135,6 +135,41 @@ const Solution = () => {
             </div>
           </div>
         </div>
+        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
+          <Link to="/landing-page-design">
+            <Button
+              className={cn(
+                "h-9 w-32 flex items-center justify-center",
+                "border border-[#1B64FF] text-white text-sm font-normal",
+                "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                "backdrop-blur-sm transition-all duration-200",
+                "hover:border-2 hover:border-[#1B64FF]",
+                "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
+              )}
+            >
+              &lt; Previous
+            </Button>
+          </Link>
+
+          <Link to="/automated-payment">
+            <Button
+              className={cn(
+                "h-9 w-32 flex items-center justify-center",
+                "border border-[#1B64FF] text-white text-sm font-normal",
+                "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                "backdrop-blur-sm transition-all duration-200",
+                "hover:border-2 hover:border-[#1B64FF]",
+                "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
+              )}
+            >
+              Next &gt;
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
