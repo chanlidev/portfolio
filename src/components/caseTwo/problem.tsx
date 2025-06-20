@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
           <p>
             Current Workflow (5 steps)
             <br />

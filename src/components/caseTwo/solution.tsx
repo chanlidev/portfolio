@@ -83,7 +83,7 @@ const Solution = () => {
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               To complete the experience, I’ve added a Subscription section on
               the same page so users can set up recurring payments for that
-              client directly.
+              client without leaving the view.
             </h3>
           </div>
 
