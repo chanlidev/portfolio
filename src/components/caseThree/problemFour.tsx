@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const ProblemTwo = () => {
+const ProblemFour = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
@@ -91,7 +91,7 @@ const ProblemTwo = () => {
           </div>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-0">
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 lg:gap-12">
             {/* Text Column (smaller width) */}
             <div className="col-span-1">
@@ -101,7 +101,7 @@ const ProblemTwo = () => {
                 pop-up. <br />
                 <br />
                 If they wanted to perform additional actions, they had to close
-                the pop-up and reopen the menu each time.
+                the pop-up and reopen the menu each time, adding extra clicks.
               </h3>
             </div>
 
@@ -133,83 +133,9 @@ const ProblemTwo = () => {
             </div>
           </div>
         </div>
-
-        {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
-          {/* Final Version */}
-
-          <div>
-            <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal mb-4 text-left">
-                Integrated the transaction list to share the same timeframe
-                selector for consistent use
-              </h3>
-            </div>
-            <div className="spect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
-              <img
-                src="/dashboard1.gif"
-                alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col justify-center h-full">
-            <div className="space-y-10">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Feedback:</span>
-                <br /> The light background and strong visual hierarchy made the
-                interface feel more trustworthy and professional, helping users
-                navigate their data with confidence.
-              </p>
-
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Takeaway:</span>
-                <br />
-                By focusing on simplicity and aligning the layout with real user
-                workflows, we improved clarity, reduced friction, and created a
-                more intuitive experience for managing financial data.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Navigation Buttons */}
-        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Button
-            disabled
-            className={cn(
-              "h-9 w-32 flex items-center justify-center",
-              "border border-[#1B64FF] text-white text-sm font-normal",
-              "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-              "backdrop-blur-sm transition-all duration-200",
-              "opacity-50 cursor-not-allowed",
-            )}
-          >
-            &lt; Previous
-          </Button>
-
-          <Link to="/automated-payment">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              Next &gt;
-            </Button>
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default ProblemTwo;
+export default ProblemFour;

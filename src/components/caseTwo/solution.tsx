@@ -35,28 +35,29 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="mb-20 lg:mb-40">
-          <h3 className="max-w-4xl mx-auto text-white text-sm md:text-base font-normal mb-6 text-left">
-            Refined Workflow: Create Client &gt; Add Payment Method
-          </h3>
-          <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
-            {/* Before Column */}
-            <div className="text-center">
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/solution.gif"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+          {/* Left: only the summary text */}
+          <div className="flex flex-col justify-center h-full">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              Refined Workflow: Create Client &gt; Add Payment Method
+            </h3>
+          </div>
+
+          {/* Right: Final Version screenshot */}
+          <div>
+            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+              <img
+                src="/solution.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
             </div>
           </div>
         </div>
 
-        {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
-          {/* Left: only the summary text */}
-          <div className="flex flex-col justify-center h-full">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+          {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
+          <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Once a new payment method is added, it appears in the Payment
               Methods section on the client details page, where users can choose
@@ -64,8 +65,8 @@ const Solution = () => {
             </h3>
           </div>
 
-          {/* Right: Final Version screenshot */}
-          <div>
+          {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
+          <div className="order-2 md:order-1">
             <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/after6.gif"
