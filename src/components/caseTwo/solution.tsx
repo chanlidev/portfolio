@@ -39,7 +39,8 @@ const Solution = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Refined Workflow: Create Client &gt; Add Payment Method
+              Refined 2-step Workflow: <br />
+              Create Client &gt; Add Payment Method
             </h3>
           </div>
 

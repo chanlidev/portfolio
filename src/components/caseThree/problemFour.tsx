@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProblemFour = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12  -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -19,20 +19,16 @@ const ProblemFour = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            Users lack a simple way to track their earned cashback, making it
-            difficult to monitor{" "}
-            <span className="text-[#08BCA1]">transactions</span> and{" "}
-            <span className="text-[#08BCA1]">payouts</span>
+            Lack of instant invoice previews requires users to open a pop-up for
+            every detail, doubling clicks and interrupting their workflow
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            While the landing pages captured interest, users had no easy way to
-            track their cashback after signing up. To address this, I designed a{" "}
-            <span className="text-[#08BCA1]">dashboard</span> focused on clarity
-            and ease of use. Key data points included Cashback Earned, Total
-            Customers, Open Invoices, and Overdue Invoices. These metrics
-            enabled users to quickly assess their earnings and outstanding
-            payments.
+            To inspect or act on an invoice, users had to open the three-dot
+            menu, choose “View Invoice,” then close the pop-up and reopen the
+            menu for any further action. I redesigned the invoice list to
+            include an inline preview and a more intuitive, status-aware action
+            menu that shows only the relevant options for each invoice.
           </p>
         </div>
 
@@ -96,9 +92,9 @@ const ProblemFour = () => {
             {/* Text Column (smaller width) */}
             <div className="col-span-1">
               <h3 className="text-white text-sm md:text-base font-normal text-left">
-                Previously, users needed to open the three-dot menu and select
-                “View Invoice” to access details, which then appeared in a
-                pop-up. <br />
+                Users needed to open the three-dot menu and select “View
+                Invoice” to access details, which then appeared in a pop-up.
+                <br />
                 <br />
                 If they wanted to perform additional actions, they had to close
                 the pop-up and reopen the menu each time, adding extra clicks.
@@ -131,6 +127,18 @@ const ProblemFour = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+            <p>
+              Original Workflow (4 steps)
+              <br />
+              <br /> Open Menu &gt; View Details &gt; Close Window &gt; Reopen
+              Menu For Actions
+              <br />
+              <br />
+              How can this process be streamlined to eliminate unnecessary
+              clicks?
+            </p>
           </div>
         </div>
       </div>

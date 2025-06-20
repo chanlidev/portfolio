@@ -19,19 +19,19 @@ const SolutionFour = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            Immediately after creating a client, land directly on their details
-            page and display a pop-up to add payment method
+            A collapsible inline preview showcases the essential invoice details
+            directly within the list
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            I thought about embedding the “Add Payment Method” steps into the
-            client-creation flow, but to minimize development effort and avoid
-            duplicating our existing details page component, I chose to navigate
-            straight to the new client’s details page and trigger a pop-up for
-            adding a payment method immediately after creation. This refined
-            workflow reduces the original process{" "}
-            <span className="text-[#FF715C]">from 5 steps to 2</span>,
-            streamlining and accelerating the entire setup process.
+            I compared competitors’ invoice management solutions to understand
+            their use of inline previews and contextual action menus. Rather
+            than rebuilding the entire table, I added a collapsible detail panel
+            in each row and extended the three-dot menu to display
+            status-specific actions inline, while still preserving the pop-up
+            preview for viewing invoices in PDF format. This update cuts the
+            workflow from 4 steps to 1 single click to both preview and act on
+            an invoice.
           </p>
         </div>
 
@@ -40,8 +40,8 @@ const SolutionFour = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Moved view invoice out of the menu, incorporated action menu also
-              in the pop up so users can tack actions without close the window
+              Designed a collapsible inline preview that displays key invoice
+              details without navigating away
             </h3>
           </div>
 
@@ -62,8 +62,9 @@ const SolutionFour = () => {
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Added collapsible quick preview with key information so users can
-              see details without leaving the page
+              Moved “View Invoice” out of the main menu and embedded all action
+              controls into the invoice modal, allowing users to perform tasks
+              without closing the pop-up and view in PDF format
             </h3>
           </div>
 
@@ -84,8 +85,9 @@ const SolutionFour = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Moved view invoice out of the menu, incorporated action menu also
-              in the pop up so users can tack actions without close the window
+              Introduced contextual action menus that adapt to each invoice’s
+              status, enabling users to mark them as paid, refunded, or
+              uncollectable
             </h3>
           </div>
 
