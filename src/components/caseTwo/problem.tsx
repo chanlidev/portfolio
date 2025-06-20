@@ -35,7 +35,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-20 ">
+        <div className="mb-10 lg:mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -69,8 +69,8 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center mx-auto max-w-4xl">
+        <div className="mb-10 lg:mb-20">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left mx-auto max-w-4xl">
             Users now have the options to enter card details directly or send a
             link to request payment info
           </h3>
@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-20">
           <p>
             Current Workflow (5 steps)
             <br />

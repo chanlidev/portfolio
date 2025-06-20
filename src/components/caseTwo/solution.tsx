@@ -35,7 +35,7 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="mb-20 lg:mb-40">
+        <div className="mb-10 md:mb-20 lg:mb-40">
           <h3 className="max-w-4xl mx-auto text-white text-sm md:text-base font-normal mb-6 text-left">
             Refined Workflow: Create Client &gt; Add Payment Method
           </h3>
@@ -54,7 +54,7 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10 md:mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -77,7 +77,7 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -99,7 +99,7 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
