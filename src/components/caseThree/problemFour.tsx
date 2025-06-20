@@ -92,27 +92,34 @@ const ProblemTwo = () => {
         </div>
 
         <div className="mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Previously, users had to open the three-dot menu and select “View
-            Invoice” to access details, which then appeared in a pop-up
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
-            {/* Before Column */}
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 lg:gap-12">
+            {/* Text Column (smaller width) */}
             <div className="col-span-1">
-              <div className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 90.svg"
-                  alt="Logo"
-                  className="h-full max-w-full object-contain"
-                />
-              </div>
+              <h3 className="text-white text-sm md:text-base font-normal text-left">
+                Previously, users had to open the three-dot menu and select
+                “View Invoice” to access details, which then appeared in a
+                pop-up
+              </h3>
             </div>
 
-            {/* After Column */}
-            <div className="col-span-1 md:col-span-2">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-                {/* Desktop UI: spans 2 of 3 on md+ */}
-                <div className="col-span-1 md:col-span-2 aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+            {/* After Column (more width) */}
+            <div className="col-span-3">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                {/* Mobile UI (Before) */}
+                <div
+                  className="col-span-1 aspect-[16/16] rounded-lg overflow-hidden 
+          flex items-center justify-center
+          max-w-[260px] mx-auto md:max-w-none md:mx-0"
+                >
+                  <img
+                    src="/Group 90.svg"
+                    alt="Mobile UI"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+
+                {/* Desktop UI (After) */}
+                <div className="col-span-2 aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src="/Group 92.svg"
                     alt="Desktop UI"
