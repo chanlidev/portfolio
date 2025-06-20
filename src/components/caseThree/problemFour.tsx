@@ -3,9 +3,9 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const ProblemFour = () => {
+const ProblemTwo = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
+    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -19,106 +19,187 @@ const ProblemFour = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            Users can't add a credit card to enable automatic payments, forcing
-            them into manual invoicing and follow-ups
+            Users lack a simple way to track their earned cashback, making it
+            difficult to monitor{" "}
+            <span className="text-[#08BCA1]">transactions</span> and{" "}
+            <span className="text-[#08BCA1]">payouts</span>
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            Initially, I considered adding the{" "}
-            <span className="text-[#FF715C]">Add Payment Method</span> step
-            during invoice creation. After mapping out the workflow, I realized
-            it would be more efficient to attach payment methods directly to
-            each payer. That way, when creating an invoice you simply select the
-            payer without needing to re-enter or choose a payment method each
-            time. Therefore, I implemented the feature on the payer’s detail
-            page.
+            While the landing pages captured interest, users had no easy way to
+            track their cashback after signing up. To address this, I designed a{" "}
+            <span className="text-[#08BCA1]">dashboard</span> focused on clarity
+            and ease of use. Key data points included Cashback Earned, Total
+            Customers, Open Invoices, and Overdue Invoices. These metrics
+            enabled users to quickly assess their earnings and outstanding
+            payments.
           </p>
+        </div>
+
+        {/* Design Evolution Process */}
+        <div className="mb-20 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
+            {/* Column 1: */}
+            <div className="space-y-6">
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                Original Design
+              </p>
+              <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                <img
+                  src="/Group 84.svg"
+                  alt="Logo"
+                  className="h-full max-w-full object-contain "
+                />
+              </div>
+            </div>
+
+            {/* Column 2 */}
+            <div className="space-y-6">
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                Condensed actions into menu
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/Group 85.svg"
+                      alt="Logo"
+                      className="h-auto w-auto object-contain "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Column 3 */}
+            <div className="space-y-6">
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed ">
+                Added Filters and Tax Rates
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/Group 86.svg"
+                      alt="Logo"
+                      className="h-full max-w-full object-contain "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Added an “Add Payment Method” feature on the payer’s detail page
+            Previously, users had to open the three-dot menu and select “View
+            Invoice” to access details, which then appeared in a pop-up
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Before Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Before
-              </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="col-span-1">
+              <div className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 75.gif"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  src="/Group 90.svg"
+                  alt="Logo"
+                  className="h-full max-w-full object-contain"
                 />
               </div>
             </div>
+
             {/* After Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                After
-              </p>
-              <div className=" aspect-[15/9.5]  rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 74.gif"
-                  alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
+            <div className="col-span-1 md:col-span-2">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
+                {/* Desktop UI: spans 2 of 3 on md+ */}
+                <div className="col-span-1 md:col-span-2 aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+                  <img
+                    src="/Group 92.svg"
+                    alt="Desktop UI"
+                    className="h-full w-full object-contain object-top"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left mx-auto max-w-4xl">
-            Users now have the options to enter credit card details directly or
-            send a link to request payment info
-          </h3>
-          <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
-            {/* Before Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
-                Add Payment Method
-              </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 78.gif"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
+        {/* Final Results Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
+          {/* Final Version */}
+
+          <div>
+            <div className="flex justify-between mb-4">
+              <h3 className="text-white text-sm md:text-base font-normal mb-4 text-left">
+                Integrated the transaction list to share the same timeframe
+                selector for consistent use
+              </h3>
             </div>
-            {/* After Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
-                Send Add Payment Method Link
+            <div className="spect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+              <img
+                src="/dashboard1.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col justify-center h-full">
+            <div className="space-y-10">
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                <span className="text-[#08BCA1]">Feedback:</span>
+                <br /> The light background and strong visual hierarchy made the
+                interface feel more trustworthy and professional, helping users
+                navigate their data with confidence.
               </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 77.gif"
-                  alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
+
+              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                <span className="text-[#08BCA1]">Takeaway:</span>
+                <br />
+                By focusing on simplicity and aligning the layout with real user
+                workflows, we improved clarity, reduced friction, and created a
+                more intuitive experience for managing financial data.
+              </p>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
-          <p>
-            Current Workflow (5 steps)
-            <br />
-            <br /> Create a Client &gt; Go to Client List &gt; Click “View
-            Client” &gt; Open the dropdown menu on the details page &gt; Click
-            “Add Payment Method”
-            <br />
-            <br />
-            It’s still too lengthy. Can it be further streamlined?
-          </p>
+        {/* Navigation Buttons */}
+        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
+          <Button
+            disabled
+            className={cn(
+              "h-9 w-32 flex items-center justify-center",
+              "border border-[#1B64FF] text-white text-sm font-normal",
+              "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+              "backdrop-blur-sm transition-all duration-200",
+              "opacity-50 cursor-not-allowed",
+            )}
+          >
+            &lt; Previous
+          </Button>
+
+          <Link to="/automated-payment">
+            <Button
+              className={cn(
+                "h-9 w-32 flex items-center justify-center",
+                "border border-[#1B64FF] text-white text-sm font-normal",
+                "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                "backdrop-blur-sm transition-all duration-200",
+                "hover:border-2 hover:border-[#1B64FF]",
+                "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
+                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
+              )}
+            >
+              Next &gt;
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProblemFour;
+export default ProblemTwo;

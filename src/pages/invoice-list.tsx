@@ -73,7 +73,7 @@ const InvoiceList: React.FC = () => {
 
               {/* Title */}
               <h1 className="text-white text-2xl lg:text-3xl mb-12 leading-normal">
-                No More Chasing Late Payments: Two-Step Recurring Payment Setup
+                Smarter Invoicing with Contextual Actions & Instant Previews
               </h1>
 
               {/* At-A-Glance */}
@@ -83,11 +83,13 @@ const InvoiceList: React.FC = () => {
 
               {/* Description */}
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
-                By adding a recurring payment feature, merchants can get paid
-                automatically and on time. As Pekopay’s sole UX/UI Designer, I
-                redesigned the payer’s detail page to implement the “Add Payment
-                Method” flow, collapsing the original five-step process into
-                just two.
+                I redesigned the invoice list page to support a smoother payment
+                workflow. Based on the status of each invoice, users can take
+                relevant actions such as editing, finalizing, sending, deleting,
+                or marking invoices as paid, refunded, or uncollectable. A
+                collapsible preview allows users to scan key details without
+                leaving the page, making invoice management faster and more
+                efficient.
               </p>
             </div>
 
@@ -111,8 +113,7 @@ const InvoiceList: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer, <br />
-                  Frontend Developer
+                  UX/UI Designer
                 </p>
               </div>
             </div>
@@ -124,7 +125,7 @@ const InvoiceList: React.FC = () => {
                   Team
                 </h3>
                 <p className="text-sm lg:text-base font-inter text-white/60 whitespace-pre-line">
-                  1 CTO{`\n`}1 Designer{`\n`}2 Developers
+                  1 CTO{`\n`}1 Designer{`\n`}1 Developer
                 </p>
               </div>
             </div>
@@ -136,7 +137,7 @@ const InvoiceList: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  March 2025{`\n`}Calgary, AB
+                  January 2025{`\n`}Calgary, AB
                 </p>
               </div>
             </div>
@@ -148,7 +149,7 @@ const InvoiceList: React.FC = () => {
                   Impact
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  Setup process reduced from 5 steps to 2
+                  Improved efficiency in managing invoices
                 </p>
               </div>
             </div>
