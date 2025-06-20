@@ -35,7 +35,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -71,8 +71,8 @@ const ProblemThree = () => {
 
         <div className="mb-10 lg:mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left mx-auto max-w-4xl">
-            Users now have the options to enter card details directly or send a
-            link to request payment info
+            Users now have the options to enter credit card details directly or
+            send a link to request payment info
           </h3>
           <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
             {/* Before Column */}

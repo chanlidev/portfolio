@@ -35,7 +35,7 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="mb-10 md:mb-20 lg:mb-40">
+        <div className="mb-20 lg:mb-40">
           <h3 className="max-w-4xl mx-auto text-white text-sm md:text-base font-normal mb-6 text-left">
             Refined Workflow: Create Client &gt; Add Payment Method
           </h3>
@@ -54,13 +54,13 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10 md:mb-20 lg:mb-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Once a new payment method is added, it appears in the Payment
               Methods section on the client details page, where users can choose
-              a default card.
+              a default credit card.
             </h3>
           </div>
 
@@ -83,7 +83,7 @@ const Solution = () => {
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               To complete the experience, I’ve added a Subscription section on
               the same page so users can set up recurring payments for that
-              client without re-entering credit card information.
+              client directly.
             </h3>
           </div>
 
@@ -106,7 +106,7 @@ const Solution = () => {
                 <span className="text-[#FF715C]">Final version</span>
               </h3>
             </div>
-            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
               <img
                 src="/Group 80.gif"
                 alt="After: cashback calculator"
