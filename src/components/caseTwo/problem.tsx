@@ -106,7 +106,7 @@ const ProblemThree = () => {
 
         <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
           <p>
-            Current Workflow (5 steps)
+            Original Workflow (5 steps)
             <br />
             <br /> Create a Client &gt; Go to Client List &gt; Click “View
             Client” &gt; Open the dropdown menu on the details page &gt; Click
