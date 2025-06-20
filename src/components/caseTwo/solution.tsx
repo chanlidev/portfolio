@@ -108,7 +108,7 @@ const Solution = () => {
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/Group 59.gif"
+                src="/Group 80.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -119,15 +119,18 @@ const Solution = () => {
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Feedback:</span>
-                <br /> Users prefer a light-mode theme on payment sites, as it
-                conveys transparency and security.
+                <br /> Landing directly on the client details page with an
+                immediate “Add Payment Method” prompt and integrated
+                Subscription section removed confusion and reduced repetitive
+                tasks. This clear, two-step process minimized setup time and
+                received positive comments for its seamless user experience.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Takeaway:</span>
-                <br /> A simple, clear UI design eliminated confusion and
-                boosted user confidence, proving that clarity is essential for
-                engagement in fintech interfaces.
+                <br /> Consolidating related actions into a single interface and
+                leveraging existing components can dramatically streamline
+                multi-step workflows.
               </p>
             </div>
           </div>
