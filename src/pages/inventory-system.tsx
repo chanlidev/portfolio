@@ -7,8 +7,9 @@ import { motion } from "framer-motion";
 import ProblemONe from "@/components/caseOne/problemOne";
 import ProblemTwo from "@/components/caseOne/problemTwo";
 import ProblemThree from "@/components/caseTwo/problem";
+import ProblemFive from "@/components/caseFour/problemFive";
 import ContactSection from "@/components/ContactSection";
-import Solution from "@/components/caseTwo/solution";
+import SolutionFive from "@/components/caseFour/solutionFive";
 
 const InventorySystem: React.FC = () => {
   return (
@@ -155,8 +156,8 @@ const InventorySystem: React.FC = () => {
         </div>
       </div>
       <div className="w-full">
-        <ProblemThree />
-        <Solution />
+        <ProblemFive />
+        <SolutionFive />
         <ContactSection />
       </div>
     </>
