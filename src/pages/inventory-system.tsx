@@ -71,7 +71,7 @@ const InventorySystem: React.FC = () => {
 
               {/* Title */}
               <h1 className="text-white text-2xl lg:text-3xl mb-12 leading-normal">
-                No More Chasing Late Payments: Two-Step Recurring Payment Setup
+                Ultimate Trade Material Manager
               </h1>
 
               {/* At-A-Glance */}
@@ -81,18 +81,20 @@ const InventorySystem: React.FC = () => {
 
               {/* Description */}
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
-                By adding a recurring payment feature, merchants can get paid
-                automatically and on time. As PekoPay’s sole UX/UI Designer, I
-                redesigned the payer’s detail page to implement the “Add Payment
-                Method” flow, collapsing the original five-step process into
-                just two.
+                TradeTrack is the essential software for tradespeople,
+                revolutionizing how you manage inventory in the shop or on the
+                job site. With real-time inventory tracking, effortlessly keep
+                track of where and what material you have. Say goodbye to
+                spreadsheet chaos and hello to streamlined efficiency. Stay on
+                top of stock levels, and material locations and ensure projects
+                run smoothly from start to finish.
               </p>
             </div>
 
             {/* Image Card */}
-            <div className="bg-gray-300 rounded-lg p-0 lg:p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="bg-[#D1D5DB] rounded-lg p-0 lg:p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/Group 79.gif"
+                src="/Shot.svg"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />
@@ -109,8 +111,7 @@ const InventorySystem: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer, <br />
-                  Frontend Developer
+                  UX/UI Designer
                 </p>
               </div>
             </div>
@@ -122,7 +123,7 @@ const InventorySystem: React.FC = () => {
                   Team
                 </h3>
                 <p className="text-sm lg:text-base font-inter text-white/60 whitespace-pre-line">
-                  1 CTO{`\n`}1 Designer{`\n`}2 Developers
+                  1 Designer{`\n`}3 Developers
                 </p>
               </div>
             </div>
@@ -134,7 +135,7 @@ const InventorySystem: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  March 2025{`\n`}Calgary, AB
+                  March - May 2024{`\n`}Calgary, AB
                 </p>
               </div>
             </div>
