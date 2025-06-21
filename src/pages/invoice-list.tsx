@@ -150,7 +150,7 @@ const InvoiceList: React.FC = () => {
                   Impact
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  Improved efficiency in managing invoices
+                  Invoice management workflow reduced from 4 steps to 1
                 </p>
               </div>
             </div>
