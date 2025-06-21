@@ -323,7 +323,7 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
-                  src="/TTIphone 14.svg"
+                  src="/ttphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
                 />

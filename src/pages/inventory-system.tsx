@@ -19,7 +19,7 @@ const InventorySystem: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #24003C 0%, #64392F 100%)",
+            background: "linear-gradient(180deg, #24003C 0%, #004B78 100%)",
           }}
         />
 
@@ -31,13 +31,13 @@ const InventorySystem: React.FC = () => {
         {/* Top images container: relative on small, absolute on large */}
         <div className="relative mt-24 px-4 lg:px-8 z-10 flex justify-center">
           <motion.div
-            className=" w-full max-w-[1000px] bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
+            className=" w-full max-w-[1000px]  p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/payment.gif"
+              src="/Group 10.svg"
               alt="Mobile app screenshot"
               className="w-full h-auto  object-cover rounded"
             />
@@ -51,7 +51,7 @@ const InventorySystem: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #64392F 0%, #666666 100%)",
+            background: "linear-gradient(180deg, #004B78 0%, #666666 100%)",
           }}
         />
 
@@ -63,9 +63,9 @@ const InventorySystem: React.FC = () => {
               {/* Logo placeholder */}
               <div className="mb-8">
                 <img
-                  src="/PekoPay 1.svg"
+                  src="/tt.svg"
                   alt="Logo"
-                  className="w-[120px] h-auto object-cover rounded"
+                  className="w-[80px] h-auto object-cover rounded"
                 />
               </div>
 
