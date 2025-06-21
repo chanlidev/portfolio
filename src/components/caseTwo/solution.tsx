@@ -121,11 +121,9 @@ const Solution = () => {
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Feedback:</span>
-                <br /> Landing directly on the client details page with an
-                immediate “Add Payment Method” prompt and integrated
-                Subscription section removed confusion and reduced repetitive
-                tasks. This clear, two-step process minimized setup time and
-                received positive comments for its seamless user experience.
+                <br /> Landing on the client details page with an immediate “Add
+                Payment Method” prompt and a Subscription section on the same
+                page cut setup to two steps and eliminated repetitive tasks.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">

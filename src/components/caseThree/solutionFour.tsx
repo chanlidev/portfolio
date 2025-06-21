@@ -131,7 +131,7 @@ const SolutionFour = () => {
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Takeaway:</span>
                 <br /> By minimizing the steps to view and act on invoices, we
-                deliver a more intuitive, efficient, and satisfying user
+                delivered a more intuitive, efficient, and satisfying user
                 experience.
               </p>
             </div>

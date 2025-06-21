@@ -53,7 +53,7 @@ const ProblemFour = () => {
             {/* Column 2 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Condensed Actions Into Menu
+                Condensed Actions into a Menu
               </p>
               <div className="space-y-4">
                 <div>
