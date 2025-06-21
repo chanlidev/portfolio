@@ -47,7 +47,7 @@ const ProblemThree = () => {
               </p>
               <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 75.gif"
+                  src="/Group 94.svg"
                   alt="Before: cashback calculator"
                   className="max-w-full max-h-full object-contain rounded-lg"
                 />
@@ -60,7 +60,7 @@ const ProblemThree = () => {
               </p>
               <div className=" aspect-[15/9.5]  rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 74.gif"
+                  src="/Group 95.svg"
                   alt="After: cashback calculator"
                   className="max-w-full max-h-full object-contain rounded-lg"
                 />
@@ -82,7 +82,7 @@ const ProblemThree = () => {
               </p>
               <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 78.gif"
+                  src="/Group 97.gif"
                   alt="Before: cashback calculator"
                   className="max-w-full max-h-full object-contain rounded-lg"
                 />
@@ -95,7 +95,7 @@ const ProblemThree = () => {
               </p>
               <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 77.gif"
+                  src="/Group 96.gif"
                   alt="After: cashback calculator"
                   className="max-w-full max-h-full object-contain rounded-lg"
                 />

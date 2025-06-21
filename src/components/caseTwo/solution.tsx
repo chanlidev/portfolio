@@ -155,7 +155,7 @@ const Solution = () => {
             </Button>
           </Link>
 
-          <Link to="/automated-payment">
+          <Link to="/invoice-list">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",
