@@ -105,7 +105,7 @@ const ProblemOne = () => {
                   </p>
                   <div className="bg-gray-300 aspect-[16/11.5] rounded-lg">
                     <img
-                      src="/before 2.svg"
+                      src="/Group 104.svg"
                       alt="Logo"
                       className="h-full max-w-full object-contain"
                     />
