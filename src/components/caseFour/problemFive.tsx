@@ -28,89 +28,72 @@ const ProblemFive = () => {
             must physically go to the warehouse to check and count their
             supplies, so we decided to help them build an application which will
             show them the real-time status of the supplies in their warehouse.
+            Employees can use this app to check the inventory, and update the
+            inventory as needed.
           </p>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-20 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Added an “Add Payment Method” feature on the payer’s detail page
+            Mobile App Design
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Before Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Before
-              </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 94.svg"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6">
+            {[
+              ["Log in", "/Log in.svg"],
+              ["Navigation", "/Navigation.svg"],
+              ["Inventory", "/Inventory.svg"],
+              ["Inventory", "/Inventory-1.svg"],
+              ["Check out", "/Check out.svg"],
+              ["Check in", "/Check in.svg"],
+
+              ["Orders", "/Orders.svg"],
+              ["Profile", "/Profile.svg"],
+            ].map(([label, src]) => (
+              <div key={label}>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  {label}
+                </p>
+                <div className="aspect-[6/13] rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto">
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
               </div>
-            </div>
-            {/* After Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                After
-              </p>
-              <div className=" aspect-[15/9.5]  rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 95.svg"
-                  alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left mx-auto max-w-4xl">
-            Users now have the options to enter credit card details directly or
-            send a link to request payment info
+        <div className="mb-20 mx-auto max-w-7xl">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            Web App Design
           </h3>
-          <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
-            {/* Before Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
-                Add Payment Method
-              </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 97.gif"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
-            {/* After Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
-                Send Add Payment Method Link
-              </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/Group 96.gif"
-                  alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+            {[
+              ["Log in", "/Log in desk.svg"],
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
-          <p>
-            Original Workflow (5 steps)
-            <br />
-            <br /> Create a Client &gt; Go to Client List &gt; Click “View
-            Client” &gt; Open the dropdown menu on the details page &gt; Click
-            “Add Payment Method”
-            <br />
-            <br />
-            It’s still too lengthy. Can it be further streamlined?
-          </p>
+              ["Inventory", "/Inventory desk.svg"],
+              ["Inventory", "/Inventory-1 desk.svg"],
+
+              ["Check out", "/Check out desk.svg"],
+              ["Check in", "/Check in desk.svg"],
+              ["Orders", "/Orders desk.svg"],
+            ].map(([label, src]) => (
+              <div key={label}>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  {label}
+                </p>
+                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
