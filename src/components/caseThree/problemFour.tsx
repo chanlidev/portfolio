@@ -24,11 +24,12 @@ const ProblemFour = () => {
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            To inspect or act on an invoice, users had to open the three-dot
+            To inspect or act on an invoice, users had to open the more options
             menu, choose “View Invoice,” then close the pop-up and reopen the
-            menu for any further action. I redesigned the invoice list to
-            include an inline preview and a more intuitive, status-aware action
-            menu that shows only the relevant options for each invoice.
+            menu for any further action. I redesigned the{" "}
+            <span className="text-[#FF31AC]">invoice list</span> to include an
+            inline preview and a more intuitive, contextual action menu that
+            shows only the relevant options for each invoice.
           </p>
         </div>
 
@@ -52,7 +53,7 @@ const ProblemFour = () => {
             {/* Column 2 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Condensed actions into menu
+                Condensed Actions Into Menu
               </p>
               <div className="space-y-4">
                 <div>
@@ -92,7 +93,7 @@ const ProblemFour = () => {
             {/* Text Column (smaller width) */}
             <div className="col-span-1">
               <h3 className="text-white text-sm md:text-base font-normal text-left">
-                Users needed to open the three-dot menu and select “View
+                Users needed to open the more options menu and select “View
                 Invoice” to access details, which then appeared in a pop-up.
                 <br />
                 <br />

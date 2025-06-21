@@ -97,7 +97,7 @@ const InvoiceList: React.FC = () => {
             {/* Image Card */}
             <div className="bg-gray-300 rounded-lg p-0 lg:p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
               <img
-                src="/Group 79.gif"
+                src="/Group 99.gif"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />

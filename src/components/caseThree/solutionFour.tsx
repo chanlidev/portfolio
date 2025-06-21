@@ -19,19 +19,19 @@ const SolutionFour = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            A collapsible inline preview showcases the essential invoice details
-            directly within the list
+            A collapsible inline preview displays key invoice details right in
+            the list, with an optional PDF-layout pop-up for full invoice review
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
             I compared competitors’ invoice management solutions to understand
             their use of inline previews and contextual action menus. Rather
             than rebuilding the entire table, I added a collapsible detail panel
-            in each row and extended the three-dot menu to display
+            in each row and extended the more options menu to display
             status-specific actions inline, while still preserving the pop-up
-            preview for viewing invoices in PDF format. This update cuts the
-            workflow from 4 steps to 1 single click to both preview and act on
-            an invoice.
+            preview for viewing invoices in PDF layout. This update cuts the
+            workflow <span className="text-[#FF31AC]">from 4 steps to 1</span>{" "}
+            single click to both preview and act on an invoice.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ const SolutionFour = () => {
           <div>
             <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/after6.gif"
+                src="/invoiceview.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -64,7 +64,7 @@ const SolutionFour = () => {
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Moved “View Invoice” out of the main menu and embedded all action
               controls into the invoice modal, allowing users to perform tasks
-              without closing the pop-up and view in PDF format.
+              without closing the pop-up and view in PDF layout.
             </h3>
           </div>
 
@@ -72,7 +72,7 @@ const SolutionFour = () => {
           <div className="order-2 md:order-1">
             <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/after7.gif"
+                src="/invoicepdf.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
