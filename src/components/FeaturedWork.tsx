@@ -26,7 +26,7 @@ const FeaturedWork = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -97,13 +97,13 @@ const FeaturedWork = () => {
                 </div>
 
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Designed the entire frontend from landing page to dashboard
+                  Designing the Entire Frontend from Landing Page to Dashboard
                 </h3>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 0 To 1
+                      From 0 to 1
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       Fintech
@@ -186,13 +186,13 @@ const FeaturedWork = () => {
                 </div>
 
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Simplified the automated payment setup workflow
+                  Simplifying the Automated Payment Setup Workflow
                 </h3>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 5 Steps To 2
+                      From 5 Steps to 2
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       UX/UI Design
@@ -271,14 +271,13 @@ const FeaturedWork = () => {
                 </div>
 
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Crafted the invoice list with integrated inline action
-                  controls
+                  Crafting the Invoice List with Inline Action Controls
                 </h3>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 4 Steps To 2
+                      From 4 Steps to 2
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       UX/UI Design
@@ -343,8 +342,7 @@ const FeaturedWork = () => {
                 </div>
 
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Created a mobile & desktop inventory system for the trades
-                  industry
+                  Building an Inventory System for the Trades Industry
                 </h3>
 
                 <div className="flex items-center justify-between">
