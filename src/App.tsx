@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound";
 import LandingPage from "./pages/landing-page-design";
 import AutoPayment from "./pages/automated-payment";
 import InvoiceList from "./pages/invoice-list";
+import InventorySystem from "./pages/inventory-system";
 import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/landing-page-design" element={<LandingPage />} />
           <Route path="/automated-payment" element={<AutoPayment />} />
           <Route path="/invoice-list" element={<InvoiceList />} />
+          <Route path="/inventory-system" element={<InventorySystem />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>

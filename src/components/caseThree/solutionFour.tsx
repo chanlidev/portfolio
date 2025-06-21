@@ -95,7 +95,7 @@ const SolutionFour = () => {
           <div>
             <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/after6.gif"
+                src="/final.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -112,7 +112,7 @@ const SolutionFour = () => {
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
               <img
-                src="/Group 80.gif"
+                src="/Group 103.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -123,24 +123,22 @@ const SolutionFour = () => {
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Feedback:</span>
-                <br /> Landing directly on the client details page with an
-                immediate “Add Payment Method” prompt and integrated
-                Subscription section removed confusion and reduced repetitive
-                tasks. This clear, two-step process minimized setup time and
-                received positive comments for its seamless user experience.
+                <br /> The inline preview eliminates repetitive clicks and lets
+                users scan invoice details instantly within the list, driving
+                faster decision-making and smoother workflows.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Takeaway:</span>
-                <br /> Consolidating related actions into a single interface and
-                leveraging existing components can dramatically streamline
-                multi-step workflows.
+                <br /> By minimizing the steps to view and act on invoices, we
+                deliver a more intuitive, efficient, and satisfying user
+                experience.
               </p>
             </div>
           </div>
         </div>
         <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Link to="/landing-page-design">
+          <Link to="/automated-payment">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",
@@ -157,7 +155,7 @@ const SolutionFour = () => {
             </Button>
           </Link>
 
-          <Link to="/automated-payment">
+          <Link to="/inventory-system">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",
