@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ProblemTwo = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -19,26 +19,24 @@ const ProblemTwo = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            Users lack a simple way to track their earned cashback, making it
-            difficult to monitor{" "}
-            <span className="text-[#08BCA1]">transactions</span> and{" "}
-            <span className="text-[#08BCA1]">payouts</span>
+            Users lack a simple way to track earned cashback or monitor
+            transactions and payouts
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            While the landing pages captured interest, users had no easy way to
-            track their cashback after signing up. To address this, I designed a{" "}
-            <span className="text-[#08BCA1]">dashboard</span> focused on clarity
-            and ease of use. Key data points included Cashback Earned, Total
-            Customers, Open Invoices, and Overdue Invoices. These metrics
-            enabled users to quickly assess their earnings and outstanding
-            payments.
+            While the landing pages captured initial interest, users lacked a
+            clear way to track cashback after signing up. I addressed this by
+            designing a{" "}
+            <span className="text-[#08BCA1]">user-friendly dashboard</span>{" "}
+            highlighting key metrics like Cashback Earned, Total Customers, Open
+            Invoices, and Overdue Invoices, making it easy for users to assess
+            earnings and outstanding payments at a glance.
           </p>
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
+        <div className="mb-10 lg:mb-20 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
@@ -56,7 +54,7 @@ const ProblemTwo = () => {
             {/* Column 2 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                High Fidelity - 1st Round
+                High Fidelity
               </p>
               <div className="space-y-4">
                 <div>
@@ -70,96 +68,99 @@ const ProblemTwo = () => {
                 </div>
               </div>
             </div>
-
-            {/* Column 3 */}
-            <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed ">
-                High Fidelity - 2nd Round
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/high4.png"
-                      alt="Logo"
-                      className="h-full max-w-full object-contain "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-10 md:mb-20 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Redesigned the timeframe selector for improved clarity and
-            usability, enhanced the responsive layout for mobile
+            Redesigned the timeframe selector
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
-            {/* Before Column */}
-            <div className="col-span-1">
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Before
-              </p>
-              <div
-                className="bg-white aspect-[16/16] rounded-lg overflow-hidden flex items-center justify-center
-          max-w-[300px] mx-auto md:max-w-none md:mx-0"
-              >
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
+            {[
+              ["Before", "/Group 71.svg"],
+              ["After", "/after5.gif"],
+            ].map(([label, src], index) => (
+              <div key={label} className="md:col-span-1">
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-center md:text-left">
+                  {label}
+                </p>
+                <div
+                  className={`rounded-lg overflow-hidden flex items-start justify-start ${
+                    index === 0
+                      ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
+                      : ""
+                  }`}
+                >
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-20 md:mb-40 mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
+            {/* Left Side: Image + Title */}
+            <div className="md:col-span-1">
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+                Integrated the transaction list to share the same timeframe
+                selector for consistent use
+              </h3>
+              <div className="rounded-lg overflow-hidden flex items-start justify-start mx-auto">
                 <img
-                  src="/Group 71.svg"
-                  alt="Logo"
-                  className="h-full max-w-full object-contain"
+                  src="/dashboard1.gif"
+                  alt="Dashboard"
+                  className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
             </div>
 
-            {/* After Column */}
-            <div className="col-span-1 md:col-span-2">
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                After
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
-                {/* Desktop UI: spans 2 of 3 on md+ */}
-                <div className="col-span-1 md:col-span-2 aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
-                  <img
-                    src="/after5.gif"
-                    alt="Desktop UI"
-                    className="h-full w-full object-contain object-top"
-                  />
-                </div>
-
-                {/* Mobile UI: always 1 of 3 (so full width on small, 1/3 on md+) */}
-                <div
-                  className="col-span-1 aspect-[10.5/15] rounded-lg overflow-hidden 
-                    flex items-center justify-center
-                    max-w-[260px] mx-auto md:max-w-none md:mx-0"
-                >
-                  <img
-                    src="/Group 68.gif"
-                    alt="Mobile UI"
-                    className="h-full w-full object-contain"
-                  />
-                </div>
+            {/* Right Side: Image + Title */}
+            <div className="md:col-span-1">
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+                Enhanced the responsive layout for mobile
+              </h3>
+              <div
+                className="col-span-1 aspect-[10.5/13] rounded-lg overflow-hidden 
+               flex items-center justify-center
+               max-w-[300px] mx-auto md:max-w-none md:mx-0"
+              >
+                <img
+                  src="/Group 68.gif"
+                  alt="Mobile"
+                  className="w-full h-full object-contain rounded-lg"
+                />
               </div>
             </div>
           </div>
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
           {/* Final Version */}
 
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal mb-4 text-left">
-                Integrated the transaction list to share the same timeframe
-                selector for consistent use
+              <h3 className="text-white text-sm md:text-base font-normal">
+                <span className="text-[#08BCA1]">Final version</span>
+              </h3>
+              <h3 className="text-sm md:text-base font-normal">
+                <a
+                  href="https://pekopay.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-[#08BCA1]">View live website</span>
+                </a>
               </h3>
             </div>
-            <div className="spect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/dashboard1.gif"
+                src="/Group 43.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -178,8 +179,8 @@ const ProblemTwo = () => {
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Takeaway:</span>
                 <br />
-                By focusing on simplicity and aligning the layout with real user
-                workflows, we improved clarity, reduced friction, and created a
+                By focusing on simplicity and aligning the layout with actual
+                user needs, we improved clarity, reduced friction, and created a
                 more intuitive experience for managing financial data.
               </p>
             </div>

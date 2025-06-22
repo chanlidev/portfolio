@@ -28,145 +28,142 @@ const ProblemOne = () => {
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
             To validate market demand, I was tasked with designing the{" "}
             <span className="text-[#08BCA1]">landing pages</span> to capture
-            leads and measure interest. Early on, I had only a rough
-            understanding of the product (how cashback would be calculated,
-            which payment methods and currencies we'd support, which countries
-            we'd serve, and what set PekoPay apart). I produced an initial
-            high-level draft with that limited information, then refined it over{" "}
-            <span className="text-[#08BCA1]">four rounds</span> of iterations
-            based on stakeholder feedback, incorporating each new detail until
-            the site accurately reflected the full feature set and value
-            proposition.
+            leads and measure interest. At first, I had only a rough idea of the
+            product, including how cashback would work, which currencies and
+            countries we’d support, and what made PekoPay unique. I created a
+            high-level draft based on limited info and refined it through{" "}
+            <span className="text-[#08BCA1]">four rounds</span> of stakeholder
+            feedback, updating the content as new product details emerged until
+            the site clearly communicated our value proposition.
           </p>
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 ">
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 lg:gap-12">
-            {/* Column 1: single tall image */}
-            <div className="space-y-0 lg:space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Created initial drafts of the waitlist and landing pages without
-                full visibility into the nitty-gritty
-              </p>
-              <div className="aspect-[3/5] rounded-lg flex items-center justify-center overflow-hidden ">
+        <div className="mb-10 lg:mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
+            {/* Left: Intro + Image */}
+            <div className="flex flex-col items-center justify-start">
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+                Initial draft of the waitlist and landing pages
+              </h3>
+              <div className="rounded-lg overflow-hidden">
                 <img
                   src="/landing1.svg"
-                  alt="Logo"
-                  className="max-w-full max-h-full object-contain "
+                  alt="Initial draft"
+                  className="w-[300px] md:w-[400px] object-contain rounded-lg"
                 />
               </div>
             </div>
 
-            {/* Column 2 */}
-            <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Switched to light color scheme to convey transparency and
-                security
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                    Before
-                  </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg  flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/before.png"
-                      alt="Logo"
-                      className="max-w-full max-h-full object-contain"
-                    />
+            {/* Right: Before / After Comparison */}
+            <div>
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+                Moved countdown timer to the top
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
+                {[
+                  ["Before", "/Waitlist Page.svg"],
+                  ["After", "/Waitlist Page 1.svg"],
+                ].map(([label, src]) => (
+                  <div key={label}>
+                    <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-center">
+                      {label}
+                    </p>
+                    <div className="rounded-lg overflow-hidden flex items-center justify-center">
+                      <img
+                        src={src}
+                        alt={label}
+                        className="w-[214px] object-contain rounded-lg"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                    After
-                  </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg flex items-center justify-start overflow-hidden">
-                    <img
-                      src="/pekodesk.png"
-                      alt="Logo"
-                      className="max-w-full max-h-full object-contain "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Column 3 */}
-            <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Replaced lengthy payment-methods text with pagination for clear
-                navigation
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                    Before
-                  </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg">
-                    <img
-                      src="/Group 104.svg"
-                      alt="Logo"
-                      className="h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                    After
-                  </p>
-                  <div className="bg-gray-300 aspect-[16/11.5] rounded-lg flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/after 2.gif"
-                      alt="Logo"
-                      className="h-full max-w-full object-contain"
-                    />
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            Switched to light color scheme to convey transparency
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {[
+              ["Before", "/before.png"],
+
+              ["After", "/pekodesk.png"],
+            ].map(([label, src]) => (
+              <div key={label}>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  {label}
+                </p>
+                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            Replaced lengthy text with pagination to improve clarity
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {[
+              ["Before", "/Group 104.svg"],
+
+              ["After", "/after 2.gif"],
+            ].map(([label, src]) => (
+              <div key={label}>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  {label}
+                </p>
+                <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mb-20 md:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-0 md:gap-8 lg:gap-12">
-            {/* Before Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Before
-              </p>
-              <div className=" aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
-                <img
-                  src="/before 3.gif"
-                  alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            {[
+              ["Before", "/before 3.gif"],
+
+              ["After", "/after 3.gif"],
+            ].map(([label, src]) => (
+              <div key={label}>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  {label}
+                </p>
+                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                  <img
+                    src={src}
+                    alt={label}
+                    className="w-full h-auto object-contain rounded-lg"
+                  />
+                </div>
               </div>
-            </div>
-            {/* After Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                After
-              </p>
-              <div className=" aspect-[16/11.5] rounded-lg overflow-hidden flex items-start justify-start">
-                <img
-                  src="/after 3.gif"
-                  alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
-          {/* Final Version */}
-
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
+          {/* Left side: Final Version */}
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
@@ -182,7 +179,7 @@ const ProblemOne = () => {
                 </a>
               </h3>
             </div>
-            <div className=" aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/Group 59.gif"
                 alt="After: cashback calculator"
@@ -191,26 +188,17 @@ const ProblemOne = () => {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center h-full">
-            <div className="space-y-10">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Result:</span>
-                <br /> Within the first month, the site generated 90+ sign-ups,
-                and users were eager to see their potential cashback earnings.
-              </p>
-
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Feedback:</span>
-                <br /> Users prefer a light-mode theme on payment sites, as it
-                conveys transparency and security.
-              </p>
-
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Takeaway:</span>
-                <br /> A simple, clear UI design eliminated confusion and
-                boosted user confidence, proving that clarity is essential for
-                engagement in fintech interfaces.
-              </p>
+          {/* Right side: Smaller phone image */}
+          <div className="flex flex-col justify-center h-full items-center md:items-center">
+            <div
+              className="bg-black p-3 aspect-[6.5/13.5] rounded-lg overflow-hidden flex items-center justify-center 
+             w-[200px] lg::w-[256px]"
+            >
+              <img
+                src="/phone.gif"
+                alt="After: cashback calculator"
+                className="w-full h-auto object-contain rounded-lg"
+              />
             </div>
           </div>
         </div>
