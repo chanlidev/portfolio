@@ -70,41 +70,41 @@ const ProblemThree = () => {
         </div>
 
         <div className="mb-10 lg:mb-20">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left mx-auto max-w-4xl">
+          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Users now have the options to enter credit card details directly or
             send a link to request payment info
           </h3>
-          <div className="grid grid-cols-1 max-w-4xl gap-8 lg:gap-12 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Before Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
+            <div>
+              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 Add Payment Method
               </p>
-              <div className="rounded-lg overflow-hidden flex items-center justify-center">
+              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 97.gif"
                   alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
             {/* After Column */}
-            <div className="text-center">
-              <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
+            <div>
+              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 Send Add Payment Method Link
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 96.gif"
                   alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center">
           <p>
             Original Workflow (5 steps)
             <br />
