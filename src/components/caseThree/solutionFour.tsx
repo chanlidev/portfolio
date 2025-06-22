@@ -38,7 +38,7 @@ const SolutionFour = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
               Quick Invoice Preview
             </h3>
           </div>
