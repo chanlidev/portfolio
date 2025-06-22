@@ -192,7 +192,7 @@ const ProblemOne = () => {
           <div className="flex flex-col justify-center h-full items-center md:items-center">
             <div
               className="bg-black p-3 aspect-[6.5/13.5] rounded-lg overflow-hidden flex items-center justify-center 
-             w-[200px] lg::w-[256px]"
+             w-[200px]  lg:w-[256px]"
             >
               <img
                 src="/phone.gif"
