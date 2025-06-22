@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ProblemThree = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
@@ -35,7 +35,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-20">
+        <div className="mb-10 lg:mb-20">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -45,11 +45,11 @@ const ProblemThree = () => {
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 Before
               </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
+              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 94.svg"
                   alt="Before: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
@@ -58,11 +58,11 @@ const ProblemThree = () => {
               <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                 After
               </p>
-              <div className=" aspect-[15/9.5]  rounded-lg overflow-hidden flex items-center justify-center">
+              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 95.svg"
                   alt="After: cashback calculator"
-                  className="max-w-full max-h-full object-contain rounded-lg"
+                  className="w-full h-full object-contain rounded-lg"
                 />
               </div>
             </div>
@@ -80,7 +80,7 @@ const ProblemThree = () => {
               <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
                 Add Payment Method
               </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 97.gif"
                   alt="Before: cashback calculator"
@@ -93,7 +93,7 @@ const ProblemThree = () => {
               <p className="text-white/60 text-sm md:text-base text-left font-normal mb-2">
                 Send Add Payment Method Link
               </p>
-              <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-center justify-center">
+              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/Group 96.gif"
                   alt="After: cashback calculator"
@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center ">
           <p>
             Original Workflow (5 steps)
             <br />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Solution = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
@@ -46,7 +46,7 @@ const Solution = () => {
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/solution.gif"
                 alt="After: cashback calculator"
@@ -68,7 +68,7 @@ const Solution = () => {
 
           {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
           <div className="order-2 md:order-1">
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/after6.gif"
                 alt="After: cashback calculator"
@@ -83,15 +83,15 @@ const Solution = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              To complete the experience, I’ve added a Subscription section on
-              the same page so users can set up recurring payments for that
+              To complete the experience, I’ve included a Subscription section
+              on the same page so users can set up recurring payments for that
               client without leaving the view.
             </h3>
           </div>
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/after7.gif"
                 alt="After: cashback calculator"
