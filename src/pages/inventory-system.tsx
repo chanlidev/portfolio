@@ -123,7 +123,7 @@ const InventorySystem: React.FC = () => {
                 <h3 className="text-sm sm:text-base lg:text-lg text-white/60 mb-2">
                   Team
                 </h3>
-                <p className="text-sm lg:text-base font-inter text-white/60 whitespace-pre-line">
+                <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
                   1 Designer{`\n`}3 Developers
                 </p>
               </div>
