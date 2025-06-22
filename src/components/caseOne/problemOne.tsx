@@ -162,7 +162,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 ">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
           {/* Left side: Final Version */}
           <div>
             <div className="flex justify-between mb-4">

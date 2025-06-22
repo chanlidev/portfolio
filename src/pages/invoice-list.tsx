@@ -74,7 +74,7 @@ const InvoiceList: React.FC = () => {
 
               {/* Title */}
               <h1 className="text-white text-2xl lg:text-3xl mb-12 leading-normal">
-                Smarter Invoicing with Contextual Actions & Instant Previews
+                Smarter Invoicing with Inline Actions & Quick Previews
               </h1>
 
               {/* At-A-Glance */}

@@ -150,7 +150,7 @@ const ProblemTwo = () => {
               </h3>
               <h3 className="text-sm md:text-base font-normal">
                 <a
-                  href="https://pekopay.com"
+                  href="https://pekopay.com/dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
