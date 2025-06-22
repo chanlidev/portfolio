@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SolutionFour = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-[1450px] mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#FF31AC] max-w-sm"></div>
@@ -19,19 +19,18 @@ const SolutionFour = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            A collapsible inline preview displays key invoice details right in
-            the list, with an optional PDF-layout pop-up for full invoice review
+            A collapsible preview shows key invoice details in the list, with a
+            pop-up option for full PDF-style viewing
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            I compared competitors’ invoice management solutions to understand
-            their use of inline previews and contextual action menus. Rather
-            than rebuilding the entire table, I added a collapsible detail panel
-            in each row and extended the more options menu to display
-            status-specific actions inline, while still preserving the pop-up
-            preview for viewing invoices in PDF layout. This update cuts the
-            workflow <span className="text-[#FF31AC]">from 4 steps to 1</span>{" "}
-            single click to both preview and act on an invoice.
+            I looked at how competitors handled invoice previews and actions.
+            Instead of rebuilding the table, I added an expandable panel to each
+            row and updated the action menu to show only the options that match
+            the invoice status. Users can still open a pop-up for a full
+            PDF-style view. This change cuts the workflow{" "}
+            <span className="text-[#FF31AC]">from 4 steps to 1</span>, allowing
+            users to preview and act on an invoice in a single click.
           </p>
         </div>
 
@@ -40,14 +39,13 @@ const SolutionFour = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Designed a collapsible inline preview that displays key invoice
-              details without navigating away.
+              Quick Invoice Preview
             </h3>
           </div>
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/invoiceview.gif"
                 alt="After: cashback calculator"
@@ -62,15 +60,15 @@ const SolutionFour = () => {
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Moved “View Invoice” out of the main menu and embedded all action
-              controls into the invoice modal, allowing users to perform tasks
-              without closing the pop-up and view in PDF layout.
+              Moved “View Invoice” out of the menu and added all actions inside
+              the invoice pop-up, so users can complete tasks without closing
+              it.
             </h3>
           </div>
 
           {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
           <div className="order-2 md:order-1">
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/invoicepdf.gif"
                 alt="After: cashback calculator"
@@ -85,15 +83,14 @@ const SolutionFour = () => {
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Introduced contextual action menus that adapt to each invoice’s
-              status, enabling users to mark them as paid, refunded, or
-              uncollectable.
+              Updated the action menu to change based on the invoice status,
+              letting users mark invoices as paid, refunded, or uncollectable.
             </h3>
           </div>
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className="aspect-[15/9.5] rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
                 src="/final.gif"
                 alt="After: cashback calculator"
