@@ -39,7 +39,7 @@ const SolutionFive = () => {
         <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
         {/* Section Title */}
-        <p className="text-white text-center text-base lg:text-lg md:text-lg mb-10">
+        <p className="text-white text-center text-base lg:text-lg md:text-lg mb-6 md:mb-10">
           Mobile App Design
         </p>
 
@@ -116,7 +116,7 @@ const SolutionFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base lg:text-lg  mb-10">
+          <p className="text-white text-center text-base lg:text-lg mb-6 md:mb-10">
             Web App Design
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
