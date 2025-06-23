@@ -12,11 +12,11 @@ interface Section {
 const sections: Section[] = [
   {
     title: "My Background",
-    content: `I hold an MBA from Eastern Washington University and have spent over five years in e-commerce as a data analyst and account manager. This experience gives me a strong understanding of how good design supports business goals. Growing up, I was always interested in design and art. While studying at EWU, I worked at the student gallery, creating posters and postcards and helping to host events with local artists. At the time, I didn’t consider design a serious career path. That changed in early 2023 when I began my journey at SAIT, which quickly sparked my passion for UX design. Since then, I’ve pivoted into this field and realized how much I love it. My goal is to keep growing as a designer and take on projects that make a real impact.`,
+    content: `I hold an MBA from Eastern Washington University and have spent over five years in e-commerce as a data analyst and account manager. This experience gives me a strong understanding of how good design supports business goals. \n\n Growing up, I was always interested in design and art. While studying at EWU, I worked at the student gallery, creating posters and postcards and helping to host events with local artists. At the time, I didn’t consider design a serious career path. \n\nThat changed in early 2023 when I began my journey at SAIT, which quickly sparked my passion for UX design. Since then, I’ve pivoted into this field and realized how much I love it. My goal is to keep growing as a designer and take on projects that make a real impact.`,
   },
   {
     title: "Design Philosophy",
-    content: `With experience in both business and tech, I center my designs on real user needs, minimize cognitive load, and craft simple, intuitive interfaces. I believe every element on the screen should serve a clear purpose, guiding users smoothly toward their goals without distraction. Every feature must address a genuine pain point. By aligning user objectives with business goals, I create solutions that not only feel effortless but also deliver tangible value.`,
+    content: `With experience in both business and tech, I center my designs on real user needs, minimize cognitive load, and craft simple, intuitive interfaces.\n\n I believe every element on the screen should serve a clear purpose, guiding users smoothly toward their goals without distraction. Every feature must address a genuine pain point. The last thing I want is to design and build something no one uses. \n\nBy aligning user objectives with business goals, I create solutions that not only feel effortless but also deliver tangible value.`,
   },
   {
     title: "Things I Love",
@@ -60,10 +60,11 @@ const AutoPayment: React.FC = () => {
             <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-normal  mb-4">
               Hi, I’m Chan 😊
             </h1>
-            <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+            <p className="text-white text-sm sm:text-base lg:text-lg font-normal leading-relaxed">
               I’m a SAIT alum with a diploma in Software Development and a
               passion for crafting seamless, joyful user experiences. I designed
               and coded this portfolio myself using Vite, React, and TypeScript.
+              <br />
               <br />
               Currently, I work as a UX/UI Designer at PekoPay, where I blend
               thoughtful design with business insight to simplify payment
