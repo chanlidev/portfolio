@@ -41,7 +41,7 @@ const AutoPayment: React.FC = () => {
   return (
     <>
       {/* Top Section */}
-      <div className="w-full relative overflow-hidden pb-16 lg:pb-24 -mb-px">
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-32 -mb-px">
         {/* Solid background color */}
         <div className="absolute inset-0 bg-[#07033B]" />
 
