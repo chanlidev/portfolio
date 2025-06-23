@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
@@ -14,13 +15,13 @@ const Header: React.FC = () => {
       <div className="flex justify-between items-center">
         {/* Profile Avatar */}
         <div className="flex-shrink-0">
-          <a href="/" className="flex-shrink-0">
+          <Link to="/">
             <img
               src="/profile.jpeg"
               alt="Profile"
               className="w-12 h-12 rounded-full border border-[#1B64FF]"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop nav */}
@@ -28,7 +29,6 @@ const Header: React.FC = () => {
           {navItems.map((label) => {
             const button = (
               <Button
-                key={label}
                 variant="outline"
                 className={cn(
                   "h-9 w-32 flex items-center justify-center",
@@ -45,13 +45,24 @@ const Header: React.FC = () => {
               </Button>
             );
 
-            return label === "My Work" ? (
-              <a key={label} href="/" className="block">
-                {button}
-              </a>
-            ) : (
-              <React.Fragment key={label}>{button}</React.Fragment>
-            );
+            if (label === "My Work") {
+              return (
+                <Link key={label} to="/">
+                  {button}
+                </Link>
+              );
+            }
+
+            if (label === "About Me") {
+              return (
+                <Link key={label} to="/about-me">
+                  {button}
+                </Link>
+              );
+            }
+
+            // Default for Resume (or other items)
+            return <React.Fragment key={label}>{button}</React.Fragment>;
           })}
         </nav>
 
@@ -71,7 +82,6 @@ const Header: React.FC = () => {
           {navItems.map((label) => {
             const button = (
               <Button
-                key={label}
                 variant="outline"
                 className={cn(
                   "w-full flex items-center justify-center",
@@ -88,13 +98,23 @@ const Header: React.FC = () => {
               </Button>
             );
 
-            return label === "My Work" ? (
-              <a key={label} href="/" className="block w-full">
-                {button}
-              </a>
-            ) : (
-              <React.Fragment key={label}>{button}</React.Fragment>
-            );
+            if (label === "My Work") {
+              return (
+                <Link key={label} to="/">
+                  {button}
+                </Link>
+              );
+            }
+
+            if (label === "About Me") {
+              return (
+                <Link key={label} to="/about-me">
+                  {button}
+                </Link>
+              );
+            }
+
+            return <React.Fragment key={label}>{button}</React.Fragment>;
           })}
         </nav>
       )}

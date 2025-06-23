@@ -115,7 +115,7 @@ const FeaturedWork = () => {
                       Responsive Web
                     </span>
                   </div>
-                  <Link to="/landing-page-design">
+                  <Link to="/landing-page">
                     <Button
                       className={cn(
                         "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",

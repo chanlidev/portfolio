@@ -136,7 +136,7 @@ const Solution = () => {
           </div>
         </div>
         <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Link to="/landing-page-design">
+          <Link to="/landing-page">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",
