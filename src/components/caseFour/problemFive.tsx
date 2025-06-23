@@ -42,7 +42,7 @@ const ProblemFive = () => {
           </p>
 
           {/* Stakeholders & Users - one line */}
-          <div className="flex justify-between text-white text-sm md:text-base text-center font-normal max-w-xl mx-auto mb-10">
+          <div className="flex justify-between text-white text-sm md:text-base lg:text-lg text-center font-normal max-w-xl mx-auto mb-10">
             <span>Stakeholders: Office Admins</span>
             <span>Primary Users: Trade Professionals</span>
           </div>
@@ -124,7 +124,7 @@ const ProblemFive = () => {
           <p className="text-white text-center text-base lg:text-lg mb-6">
             Empathize
           </p>
-          <p className="text-white text-center text-sm md:text-base mb-6">
+          <p className="text-white text-center text-sm md:text-base lg:text-lg mb-6">
             Uncovering what users need and where they struggle
           </p>
 
@@ -144,7 +144,7 @@ const ProblemFive = () => {
           <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-6">
             Ideate
           </p>
-          <p className="text-center text-white text-sm md:text-base mb-6">
+          <p className="text-center text-white text-sm md:text-base lg:text-lg mb-6">
             Based on user needs, priorities, and trade professional feedback, I
             proposed the following features to solve the most critical pain
             points.
@@ -160,22 +160,23 @@ const ProblemFive = () => {
               <p>Real-Time Inventory Management</p>
               <p>Inventory Search & Filter</p>
               <p>Mobile & Desktop Access</p>
-              <p>Employee & Admin Roles</p>
+
               <p>Secure Login System</p>
             </div>
 
             {/* Should Have */}
-            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-white text-center text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lgtext-white text-center mb-4">
+            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Should Have
               </h3>
               <p>Check-Out / Check-In Validation</p>
               <p>Order Request System</p>
               <p>User Activity Logs</p>
+              <p>Employee & Admin Roles</p>
             </div>
 
             {/* Could Have */}
-            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-white text-center text-sm md:text-base leading-relaxed space-y-2">
+            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
               <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Could Have
               </h3>
