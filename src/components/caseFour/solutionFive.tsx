@@ -42,67 +42,73 @@ const SolutionFive = () => {
           Mobile App Design
         </p>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Refined 2-step Workflow: <br />
-              Create Client &gt; Add Payment Method
+              Check Out Material
+            </h3>
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              Select material to check out &gt; Choose check out quantity &
+              duration &gt; Confirm
             </h3>
           </div>
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/solution.gif"
+                src="/first.gif"
                 alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="w-full h-full object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              Once a new payment method is added, it appears in the Payment
-              Methods section on the client details page, where users can choose
-              a default credit card.
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-right">
+              Return Material
+            </h3>
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-right">
+              Go to profile &gt; Choose material to check in &gt; Confirm
             </h3>
           </div>
 
           {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
           <div className="order-2 md:order-1">
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/after6.gif"
+                src="/2nd.gif"
                 alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="w-full h-full  object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-              To complete the experience, I’ve included a Subscription section
-              on the same page so users can set up recurring payments for that
-              client without leaving the view.
+              Order Material
+            </h3>
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              Select material to order &gt; Choose order quantity &gt; Send
+              request
             </h3>
           </div>
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+            <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/after7.gif"
+                src="/3rd.gif"
                 alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="w-full h-full  object-contain rounded-lg"
               />
             </div>
           </div>
