@@ -26,17 +26,19 @@ const LandingPage: React.FC = () => {
           <Header />
         </div>
 
-        {/* Top images container: relative on small, absolute on large */}
         <div className="relative mt-12 lg:absolute lg:top-30 left-0 right-0 px-4 lg:px-8 z-10">
-          {/* Inner container switches from block to flex-col on small */}
-          <div className="relative w-full max-w-[1287px] mx-auto flex flex-col lg:block h-auto lg:h-[630px]">
-            {/* Left white card: block on small, absolute on large */}
-
+          <div className="relative w-full max-w-[1287px] mx-auto flex flex-col items-center  lg:block h-auto lg:h-[630px]">
             {/* Computer Image inside left card */}
             <motion.img
               src="/Group 43.gif"
               alt="Computer showing dashboard"
-              className="w-full lg:absolute  lg:w-[780px] lg:h-auto object-contain"
+              className="
+        w-full
+        max-w-[500px]       /* xs screens cap raised */
+        sm:max-w-[600px]    /* small screens cap raised */
+        lg:absolute lg:w-[780px] lg:max-w-none
+        object-contain
+      "
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
@@ -44,7 +46,14 @@ const LandingPage: React.FC = () => {
 
             {/* Right gray card: full width on small, absolute overlap on large */}
             <motion.div
-              className="w-full lg:absolute lg:right-0 lg:top-[199px] bg-gray-300 rounded-lg flex items-center justify-center overflow-hidden mt-16 lg:mt-0 lg:w-[624px] lg:h-[421px]"
+              className="
+        w-full
+        max-w-[500px]       /* xs screens cap raised */
+        sm:max-w-[600px]    /* small screens cap raised */
+        lg:absolute lg:right-0 lg:top-[199px] lg:w-[624px] lg:h-[421px] lg:max-w-none
+        bg-gray-300 rounded-lg flex items-center justify-center overflow-hidden
+        mt-16 lg:mt-0
+      "
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -52,7 +61,13 @@ const LandingPage: React.FC = () => {
               <img
                 src="/pekophone.png"
                 alt="Mobile app screenshot"
-                className="w-full h-auto lg:w-[591px] lg:h-[391px] object-cover rounded"
+                className="
+          w-full h-auto
+          max-w-[500px]      /* xs screens cap raised */
+          sm:max-w-[600px]   /* small screens cap raised */
+          lg:w-[591px] lg:h-[391px] lg:max-w-none
+          object-cover rounded
+        "
               />
             </motion.div>
           </div>
