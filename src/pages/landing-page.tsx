@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
   return (
     <>
       {/* Top Section: matches Index layout exactly */}
-      <div className="w-full relative overflow-hidden pb-16 lg:pb-[780px] -mb-px ">
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-32 -mb-px ">
         {/* Purple→Blue background */}
         <div
           className="absolute inset-0"
@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
           <Header />
         </div>
 
-        <div className="relative mt-24 lg:absolute left-0 right-0 px-4 lg:px-8 z-10">
+        <div className="relative mt-12 md:mt-24 lg:absolute left-0 right-0 px-4 lg:px-8 z-10">
           <div className="relative w-full max-w-7xl mx-auto flex flex-col items-center  lg:block h-auto ">
             {/* Computer Image inside left card */}
             <motion.img
