@@ -64,6 +64,7 @@ const AutoPayment: React.FC = () => {
               I’m a SAIT alum with a diploma in Software Development and a
               passion for crafting seamless, joyful user experiences. I designed
               and coded this portfolio myself using Vite, React, and TypeScript.
+              <br />
               Currently, I work as a UX/UI Designer at PekoPay, where I blend
               thoughtful design with business insight to simplify payment
               workflows.
