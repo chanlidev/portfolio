@@ -104,7 +104,7 @@ const SolutionFour = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#FF715C]">Final version</span>
+                <span className="text-[#FF31AC]">Final version</span>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
@@ -119,14 +119,14 @@ const SolutionFour = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Feedback:</span>
+                <span className="text-[#FF31AC]">Feedback:</span>
                 <br /> The inline preview eliminates repetitive clicks and lets
                 users scan invoice details instantly within the list, driving
                 faster decision-making and smoother workflows.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Takeaway:</span>
+                <span className="text-[#FF31AC]">Takeaway:</span>
                 <br /> Simplifying the steps to view and manage invoices taught
                 me how small changes in user flow can greatly improve efficiency
                 and user satisfaction.

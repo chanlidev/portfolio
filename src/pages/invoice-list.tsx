@@ -59,10 +59,10 @@ const InvoiceList: React.FC = () => {
         />
 
         {/* Content container */}
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 lg:py-24">
-          <div className="flex flex-col xl:flex-row items-center gap-y-0 xl:gap-y-0 xl:gap-x-16">
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
+          <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details Card (transparent) */}
-            <div className="rounded-lg flex-1 xl:max-w-2xl">
+            <div className="rounded-lg md:w-1/2">
               {/* Logo placeholder */}
               <div className="mb-8">
                 <img
@@ -95,7 +95,7 @@ const InvoiceList: React.FC = () => {
             </div>
 
             {/* Image Card */}
-            <div className="bg-gray-300 rounded-lg p-0 lg:p-2 w-full xl:w-[650px] h-[300px] lg:h-[400px] flex items-center justify-center overflow-hidden flex-shrink-0">
+            <div className="bg-gray-300 rounded-lg p-4 md:w-1/2  flex items-center justify-center overflow-hidden">
               <img
                 src="/Group 99.gif"
                 alt="PekoPay application screenshots"
