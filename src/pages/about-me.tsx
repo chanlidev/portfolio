@@ -41,7 +41,7 @@ const AutoPayment: React.FC = () => {
   return (
     <>
       {/* Top Section */}
-      <div className="w-full relative overflow-hidden pb-24 md:pb-32 lg:pb-32 -mb-px">
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-24 -mb-px">
         {/* Solid background color */}
         <div className="absolute inset-0 bg-[#07033B]" />
 
@@ -51,7 +51,7 @@ const AutoPayment: React.FC = () => {
         </div>
 
         {/* Static Intro */}
-        <div className="relative mt-36 px-4 lg:px-8 z-10 max-w-3xl mx-auto text-left">
+        <div className="relative mt-24 px-4 lg:px-8 z-10 max-w-3xl mx-auto text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
