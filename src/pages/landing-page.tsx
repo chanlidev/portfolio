@@ -26,8 +26,8 @@ const LandingPage: React.FC = () => {
           <Header />
         </div>
 
-        <div className="relative mt-12 lg:absolute lg:top-30 left-0 right-0 px-4 lg:px-8 z-10">
-          <div className="relative w-full max-w-[1287px] mx-auto flex flex-col items-center  lg:block h-auto lg:h-[630px]">
+        <div className="relative mt-16 lg:absolute left-0 right-0 px-4 lg:px-8 z-10">
+          <div className="relative w-full max-w-7xl mx-auto flex flex-col items-center  lg:block h-auto ">
             {/* Computer Image inside left card */}
             <motion.img
               src="/Group 43.gif"
@@ -36,7 +36,7 @@ const LandingPage: React.FC = () => {
         w-full
         max-w-[500px]       /* xs screens cap raised */
         sm:max-w-[600px]    /* small screens cap raised */
-        lg:absolute lg:w-[780px] lg:max-w-none
+        lg:absolute lg:w-[724px] lg:max-w-none
         object-contain
       "
               initial={{ opacity: 0, y: 30 }}
@@ -50,9 +50,9 @@ const LandingPage: React.FC = () => {
         w-full
         max-w-[500px]       /* xs screens cap raised */
         sm:max-w-[600px]    /* small screens cap raised */
-        lg:absolute lg:right-0 lg:top-[199px] lg:w-[624px] lg:h-[421px] lg:max-w-none
+        lg:absolute lg:right-0 lg:top-[160px] lg:w-[624px] lg:h-[421px] lg:max-w-none
         bg-gray-300 rounded-lg flex items-center justify-center overflow-hidden
-        mt-16 lg:mt-0
+        mt-12 lg:mt-0
       "
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
