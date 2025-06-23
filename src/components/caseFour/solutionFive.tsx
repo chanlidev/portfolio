@@ -19,55 +19,103 @@ const SolutionFive = () => {
         {/* Main Headline */}
         <div className="text-center mb-10 lg:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
-            A collapsible preview shows key invoice details in the list, with a
-            pop-up option for full PDF-style viewing
+            Ultimate trade material manager: a real-time app for tracking and
+            managing tools and materials
           </h1>
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
-            we decided to help them build an application which will show them
-            the real-time status of the supplies in their warehouse. Employees
-            can use this app to check the inventory, and update the inventory as
-            needed.
+            To address the inefficiencies at Stampede Plumbing, I designed an
+            intuitive mobile and desktop application that gives employees
+            instant visibility into warehouse inventory. Instead of physically
+            walking to the warehouse or relying on error-prone spreadsheets,
+            staff can now view, log, and update supply levels directly through
+            the app. This ensures tools and materials are accurately tracked,
+            reduces losses, and saves time across job sites and office
+            operations.
           </p>
         </div>
 
-        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Mobile App Design
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
-            {[
-              ["Log in", "/Log in.svg"],
-              ["Navigation", "/Navigation.svg"],
-              ["Inventory", "/Inventory.svg"],
-              ["Inventory", "/Inventory-1.svg"],
-              ["Check out", "/Check out.svg"],
-              ["Check in", "/Check in.svg"],
+        <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
-              ["Orders", "/Orders.svg"],
-              ["Profile", "/Profile.svg"],
-            ].map(([label, src]) => (
-              <div key={label}>
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                  {label}
-                </p>
-                <div className="aspect-[6/13] rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto">
-                  <img
-                    src={src}
-                    alt={label}
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
-                </div>
-              </div>
-            ))}
+        {/* Section Title */}
+        <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-10">
+          Mobile App Design
+        </p>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+          {/* Left: only the summary text */}
+          <div className="flex flex-col justify-center h-full">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              Refined 2-step Workflow: <br />
+              Create Client &gt; Add Payment Method
+            </h3>
+          </div>
+
+          {/* Right: Final Version screenshot */}
+          <div>
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+              <img
+                src="/solution.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+          {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
+          <div className="order-1 md:order-2 flex flex-col justify-center h-full">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              Once a new payment method is added, it appears in the Payment
+              Methods section on the client details page, where users can choose
+              a default credit card.
+            </h3>
+          </div>
+
+          {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
+          <div className="order-2 md:order-1">
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+              <img
+                src="/after6.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Final Results Section */}
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+          {/* Left: only the summary text */}
+          <div className="flex flex-col justify-center h-full">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              To complete the experience, I’ve included a Subscription section
+              on the same page so users can set up recurring payments for that
+              client without leaving the view.
+            </h3>
+          </div>
+
+          {/* Right: Final Version screenshot */}
+          <div>
+            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+              <img
+                src="/after7.gif"
+                alt="After: cashback calculator"
+                className="max-w-full max-h-full object-contain rounded-lg"
+              />
+            </div>
           </div>
         </div>
 
         <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+          <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
+
+          {/* Section Title */}
+          <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-10">
             Web App Design
-          </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {[
               ["Log in", "/Log in desk.svg"],
 
@@ -82,7 +130,7 @@ const SolutionFive = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className=" rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
                   <img
                     src={src}
                     alt={label}

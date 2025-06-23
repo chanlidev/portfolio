@@ -141,7 +141,7 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-6">
+          <p className="text-white text-center text-base lg:text-lg  mb-6">
             Ideate
           </p>
           <p className="text-center text-white text-sm md:text-base lg:text-lg mb-6">
