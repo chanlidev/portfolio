@@ -128,9 +128,9 @@ const Solution = () => {
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Takeaway:</span>
-                <br /> Consolidating related actions into a single interface and
-                leveraging existing components can dramatically streamline
-                multi-step workflows.
+                <br /> I learned that consolidating related actions into one
+                interface and reusing existing components can dramatically
+                streamline complex workflows and improve usability.
               </p>
             </div>
           </div>

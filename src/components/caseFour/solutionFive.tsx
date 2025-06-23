@@ -25,13 +25,14 @@ const SolutionFive = () => {
 
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-7xl mx-auto">
             To address the inefficiencies at Stampede Plumbing, I designed an
-            intuitive mobile and desktop application that gives employees
-            instant visibility into warehouse inventory. Instead of physically
-            walking to the warehouse or relying on error-prone spreadsheets,
-            staff can now view, log, and update supply levels directly through
-            the app. This ensures tools and materials are accurately tracked,
-            reduces losses, and saves time across job sites and office
-            operations.
+            intuitive{" "}
+            <span className="text-[#0D82B8]">mobile and web application</span>{" "}
+            that gives employees instant visibility into warehouse inventory.
+            Instead of physically walking to the warehouse or relying on
+            error-prone spreadsheets, staff can now view, log, and update supply
+            levels directly through the app. This ensures tools and materials
+            are accurately tracked, reduces losses, and saves time across job
+            sites and office operations.
           </p>
         </div>
 
@@ -68,7 +69,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-right">
+            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Return Material
               <br />
               Go to profile &gt; Choose material to check in &gt; Confirm
@@ -152,7 +153,7 @@ const SolutionFive = () => {
                 <span className="text-[#0D82B8]">Final version</span>
               </h3>
             </div>
-            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
+            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start mb-4">
               <img
                 src="/Shot (10).svg"
                 alt="After: cashback calculator"
@@ -173,9 +174,10 @@ const SolutionFive = () => {
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#0D82B8]">Takeaway:</span>
-                <br /> TradeTrack makes it easy for teams to check, update, and
-                manage tools and materials all in one place, helping them stay
-                organized and avoid missing items.
+                <br /> Designing TradeTrack taught me the value of an all-in-one
+                solution. By combining inventory checking, updating, and
+                tracking into one app, I helped users stay focused on their work
+                instead of juggling tools and spreadsheets.
               </p>
             </div>
           </div>

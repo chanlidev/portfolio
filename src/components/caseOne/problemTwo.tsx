@@ -179,9 +179,9 @@ const ProblemTwo = () => {
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#08BCA1]">Takeaway:</span>
                 <br />
-                By focusing on simplicity and aligning the layout with actual
-                user needs, we improved clarity, reduced friction, and created a
-                more intuitive experience for managing financial data.
+                By focusing on simplicity and aligning the layout with real user
+                needs, I was able to improve clarity, reduce friction, and
+                create a more intuitive experience for viewing financial data.
               </p>
             </div>
           </div>

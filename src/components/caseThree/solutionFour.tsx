@@ -127,9 +127,9 @@ const SolutionFour = () => {
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 <span className="text-[#FF715C]">Takeaway:</span>
-                <br /> By minimizing the steps to view and act on invoices, we
-                delivered a more intuitive, efficient, and satisfying user
-                experience.
+                <br /> Simplifying the steps to view and manage invoices taught
+                me how small changes in user flow can greatly improve efficiency
+                and user satisfaction.
               </p>
             </div>
           </div>
