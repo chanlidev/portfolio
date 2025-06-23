@@ -52,7 +52,7 @@ const ProblemFive = () => {
             Pain Points
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 max-w-7xl mx-auto px-4 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Uncertainty about part availability without visiting the warehouse
             </div>
@@ -74,7 +74,7 @@ const ProblemFive = () => {
             Key Insights
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto px-4 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Mobile Experience
@@ -136,6 +136,7 @@ const ProblemFive = () => {
             />
           </div>
         </div>
+
         <div className="mb-10">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
@@ -151,7 +152,7 @@ const ProblemFive = () => {
           </p>
 
           {/* Three Column Feature Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto px-4">
             {/* Must Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
               <h3 className="text-base lg:text-lg text-white text-center mb-4">

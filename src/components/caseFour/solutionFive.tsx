@@ -38,17 +38,16 @@ const SolutionFive = () => {
         <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
         {/* Section Title */}
-        <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-10">
+        <p className="text-white text-center text-base lg:text-lg md:text-lg mb-10">
           Mobile App Design
         </p>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Check Out Material
-            </h3>
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              <br />
               Select material to check out &gt; Choose check out quantity &
               duration &gt; Confirm
             </h3>
@@ -60,19 +59,18 @@ const SolutionFive = () => {
               <img
                 src="/first.gif"
                 alt="After: cashback calculator"
-                className="w-full h-full object-contain rounded-lg"
+                className="w-[200px] md:w-[250px] lg:w-[300px] h-auto object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-right">
               Return Material
-            </h3>
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-right">
+              <br />
               Go to profile &gt; Choose material to check in &gt; Confirm
             </h3>
           </div>
@@ -83,20 +81,19 @@ const SolutionFive = () => {
               <img
                 src="/2nd.gif"
                 alt="After: cashback calculator"
-                className="w-full h-full  object-contain rounded-lg"
+                className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
               Order Material
-            </h3>
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              <br />
               Select material to order &gt; Choose order quantity &gt; Send
               request
             </h3>
@@ -108,29 +105,29 @@ const SolutionFive = () => {
               <img
                 src="/3rd.gif"
                 alt="After: cashback calculator"
-                className="w-full h-full  object-contain rounded-lg"
+                className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-10">
+          <p className="text-white text-center text-base lg:text-lg  mb-10">
             Web App Design
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {[
               ["Log in", "/Log in desk.svg"],
 
-              ["Inventory", "/Inventory desk.svg"],
-              ["Inventory", "/Inventory-1 desk.svg"],
+              ["Inventory", "/Inventory.svg"],
+              ["Inventory", "/Inventory-1.svg"],
 
-              ["Check out", "/Check out desk.svg"],
-              ["Check in", "/Check in desk.svg"],
-              ["Orders", "/Orders desk.svg"],
+              ["Check out", "/Check out.svg"],
+              ["Check in", "/Check in.svg"],
+              ["Orders", "/Orders.svg"],
             ].map(([label, src]) => (
               <div key={label}>
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -152,12 +149,12 @@ const SolutionFive = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#FF715C]">Final version</span>
+                <span className="text-[#0D82B8]">Final version</span>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
               <img
-                src="/Group 103.gif"
+                src="/Shot (10).svg"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -167,23 +164,24 @@ const SolutionFive = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Feedback:</span>
-                <br /> The inline preview eliminates repetitive clicks and lets
-                users scan invoice details instantly within the list, driving
-                faster decision-making and smoother workflows.
+                <span className="text-[#0D82B8]">Feedback:</span>
+                <br /> Staff found it helpful to check tool and material
+                availability without going to the warehouse. It also reduced
+                confusion and made it easier to track what was used and
+                returned.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Takeaway:</span>
-                <br /> By minimizing the steps to view and act on invoices, we
-                delivered a more intuitive, efficient, and satisfying user
-                experience.
+                <span className="text-[#0D82B8]">Takeaway:</span>
+                <br /> TradeTrack makes it easy for teams to check, update, and
+                manage tools and materials all in one place, helping them stay
+                organized and avoid missing items.
               </p>
             </div>
           </div>
         </div>
         <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Link to="/automated-payment">
+          <Link to="/invoice-list">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",
@@ -200,22 +198,19 @@ const SolutionFive = () => {
             </Button>
           </Link>
 
-          <Link to="/inventory-system">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              Next &gt;
-            </Button>
-          </Link>
+          <Button
+            disabled
+            className={cn(
+              "h-9 w-32 flex items-center justify-center",
+              "border border-[#1B64FF] text-white text-sm font-normal",
+              "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
+              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+              "backdrop-blur-sm transition-all duration-200",
+              "opacity-50 cursor-not-allowed",
+            )}
+          >
+            Next &gt;
+          </Button>
         </div>
       </div>
     </div>
