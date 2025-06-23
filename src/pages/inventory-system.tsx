@@ -66,7 +66,7 @@ const InventorySystem: React.FC = () => {
                 <img
                   src="/tt.svg"
                   alt="Logo"
-                  className="w-[80px] h-auto object-cover rounded"
+                  className="w-[65px] h-auto object-cover rounded"
                 />
               </div>
 

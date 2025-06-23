@@ -42,7 +42,7 @@ const ProblemFive = () => {
           </p>
 
           {/* Stakeholders & Users - one line */}
-          <div className="flex justify-between text-white text-sm md:text-base  font-normal max-w-xl mx-auto mb-10">
+          <div className="flex justify-between text-white text-sm md:text-base text-center font-normal max-w-xl mx-auto mb-10">
             <span>Stakeholders: Office Admins</span>
             <span>Primary Users: Trade Professionals</span>
           </div>
@@ -66,7 +66,7 @@ const ProblemFive = () => {
               Office staff struggle with manual spreadsheets and late returns
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              Manual ordering process when stock is low
+              Manual ordering process when stock level is low
             </div>
           </div>
 
