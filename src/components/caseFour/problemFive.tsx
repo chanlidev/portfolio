@@ -37,18 +37,18 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base md:text-lg mb-6">
+          <p className="text-white text-center text-base lg:text-lg mb-6">
             User Research
           </p>
 
           {/* Stakeholders & Users - one line */}
-          <div className="flex justify-between text-white md:text-base lg:text-lg font-normal max-w-xl mx-auto mb-10">
+          <div className="flex justify-between text-white text-sm md:text-base  font-normal max-w-xl mx-auto mb-10">
             <span>Stakeholders: Office Admins</span>
             <span>Primary Users: Trade Professionals</span>
           </div>
 
           {/* Pain Points Section */}
-          <div className="text-white text-center text-base md:text-lg font-normal mb-6">
+          <div className="text-white text-center text-base lg:text-lg font-normal mb-6">
             Pain Points
           </div>
 
@@ -70,13 +70,13 @@ const ProblemFive = () => {
             </div>
           </div>
 
-          <div className="text-white text-center text-base md:text-lg font-normal mt-10 mb-6">
-            User Needs
+          <div className="text-white text-center text-base lg:text-lg font-normal mt-10 mb-6">
+            Key Insights
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto px-4 text-center">
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Mobile Experience
               </h3>
               <p>
@@ -85,7 +85,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Sync Across Devices
               </h3>
               <p>
@@ -94,7 +94,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Less Manual Work
               </h3>
               <p>
@@ -104,7 +104,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Clear Tracking
               </h3>
               <p>
@@ -121,8 +121,11 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base md:text-lg mb-6">
+          <p className="text-white text-center text-base lg:text-lg mb-6">
             Empathize
+          </p>
+          <p className="text-white text-center text-sm md:text-base mb-6">
+            Uncovering what users need and where they struggle
           </p>
 
           <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden max-w-xl mx-auto">
@@ -138,10 +141,10 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base md:text-lg mb-6">
+          <p className="text-white text-center text-sm md:text-base lg:text-lg md:text-lg mb-6">
             Ideate
           </p>
-          <p className="text-center text-white text-sm md:text-base lg:text-lg mb-6">
+          <p className="text-center text-white text-sm md:text-base mb-6">
             Based on user needs, priorities, and trade professional feedback, I
             proposed the following features to solve the most critical pain
             points.
@@ -151,7 +154,9 @@ const ProblemFive = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
             {/* Must Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-lg text-white text-center mb-4">Must Have</h3>
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+                Must Have
+              </h3>
               <p>Real-Time Inventory Management</p>
               <p>Inventory Search & Filter</p>
               <p>Mobile & Desktop Access</p>
@@ -161,7 +166,7 @@ const ProblemFive = () => {
 
             {/* Should Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-white text-center text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lgtext-white text-center mb-4">
                 Should Have
               </h3>
               <p>Check-Out / Check-In Validation</p>
@@ -171,7 +176,7 @@ const ProblemFive = () => {
 
             {/* Could Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-white text-center text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-lg text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Could Have
               </h3>
               <p>QR Code Scanning</p>
