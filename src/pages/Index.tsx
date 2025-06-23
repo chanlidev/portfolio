@@ -229,23 +229,25 @@ const Index = () => {
               </p>
 
               {/* Contact Button */}
-              <Button
-                className={cn(
-                  "h-14 px-8 border border-[#08BCA1] text-white text-base font-normal",
-                  "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                  "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
-                  "transition-all duration-200",
-                  "min-w-[240px]",
-                  "backdrop-blur-sm drop-shadow-lg",
-                  "hover:border-2",
-                  "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                  "opacity-0 animate-slideInFromBottom animate-delay-600",
-                )}
-              >
-                <span className="text-[#08BCA1]">///</span>
-                <span className="mx-4">Contact Me Now</span>
-                <span className="text-[#08BCA1]">///</span>
-              </Button>
+              <a href="mailto:chan.li.yyc@gmail.com">
+                <Button
+                  className={cn(
+                    "h-14 px-8 border border-[#08BCA1] text-white text-base font-normal",
+                    "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
+                    "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                    "transition-all duration-200",
+                    "min-w-[240px]",
+                    "backdrop-blur-sm drop-shadow-lg",
+                    "hover:border-2",
+                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                    "opacity-0 animate-slideInFromBottom animate-delay-600",
+                  )}
+                >
+                  <span className="text-[#08BCA1]">///</span>
+                  <span className="mx-4">Contact Me Now</span>
+                  <span className="text-[#08BCA1]">///</span>
+                </Button>
+              </a>
             </div>
           </main>
         </div>

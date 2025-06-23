@@ -14,11 +14,13 @@ const Header: React.FC = () => {
       <div className="flex justify-between items-center">
         {/* Profile Avatar */}
         <div className="flex-shrink-0">
-          <img
-            src="/profile.jpeg"
-            alt="Profile"
-            className="w-12 h-12 rounded-full border border-[#1B64FF]"
-          />
+          <a href="/" className="flex-shrink-0">
+            <img
+              src="/profile.jpeg"
+              alt="Profile"
+              className="w-12 h-12 rounded-full border border-[#1B64FF]"
+            />
+          </a>
         </div>
 
         {/* Desktop nav */}
