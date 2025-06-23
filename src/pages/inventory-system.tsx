@@ -148,7 +148,8 @@ const InventorySystem: React.FC = () => {
                   Impact
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  Setup process reduced from 5 steps to 2
+                  Reduced time spent on inventory checks and manual tracking by
+                  60%
                 </p>
               </div>
             </div>

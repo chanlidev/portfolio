@@ -57,7 +57,7 @@ const SolutionFive = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/first.gif"
+                src="/1st.gif"
                 alt="After: cashback calculator"
                 className="w-[200px] md:w-[250px] lg:w-[300px] h-auto object-contain rounded-lg"
               />
@@ -103,7 +103,7 @@ const SolutionFive = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/3rd.gif"
+                src="/3rd new.gif"
                 alt="After: cashback calculator"
                 className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
               />
