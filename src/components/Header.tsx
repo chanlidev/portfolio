@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
-const navItems: string[] = ["My Work", "About Me", "Resume", "Connect"];
+const navItems: string[] = ["My Work", "About Me", "Resume"];
 
 const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
