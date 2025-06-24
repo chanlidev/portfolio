@@ -27,7 +27,7 @@ const LandingPage: React.FC = () => {
         </div>
 
         <div className="relative mt-12 md:mt-24 lg:absolute left-0 right-0 px-4 lg:px-8 z-10">
-          <div className="relative w-full max-w-7xl mx-auto flex flex-col items-center  lg:block h-auto ">
+          <div className="relative w-full  max-w-[1160px] mx-auto flex flex-col items-center  lg:block h-auto ">
             {/* Computer Image inside left card */}
             <motion.img
               src="/Group 43.gif"
@@ -85,7 +85,7 @@ const LandingPage: React.FC = () => {
         />
 
         {/* Content container */}
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 ">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16 ">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details Card (transparent) */}
             <div className="rounded-lg md:w-1/2">

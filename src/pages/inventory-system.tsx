@@ -57,7 +57,7 @@ const InventorySystem: React.FC = () => {
         />
 
         {/* Content container */}
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 ">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16 ">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details Card (transparent) */}
             <div className="rounded-lg md:w-1/2">
