@@ -20,7 +20,7 @@ const sections: Section[] = [
   },
   {
     title: "Things I Love",
-    content: `I love to travel and experience different cultures, which often inspire my design thinking. When I’m not designing, you’ll probably find me binge-watching TV shows or soaking up the sun at the beach. I’m always up for a swim!`,
+    content: `I love to travel and experience different cultures, which often inspire my design thinking. When I’m not designing, you’ll probably find me binge-watching TV shows (love The White Lotus!) or soaking up the sun at the beach. I’m always up for a swim!`,
   },
 ];
 
@@ -83,7 +83,7 @@ const AutoPayment: React.FC = () => {
             {sections.map((section, idx) => (
               <div
                 key={section.title}
-                className="border-b border-gray-800 py-4"
+                className="border-b border-gray-600 py-4"
               >
                 <button
                   className="w-full flex justify-between items-center text-white text-xl font-normal"
