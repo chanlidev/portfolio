@@ -112,7 +112,7 @@ const InventorySystem: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer
+                  Product Designer
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ const InventorySystem: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  March - May 2024{`\n`}Calgary, AB
+                  January - April 2024{`\n`}Calgary, AB
                 </p>
               </div>
             </div>

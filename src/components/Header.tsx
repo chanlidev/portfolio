@@ -60,6 +60,18 @@ const Header: React.FC = () => {
                 </Link>
               );
             }
+            if (label === "Resume") {
+              return (
+                <a
+                  key={label}
+                  href="https://drive.google.com/file/d/1x8raOaPZaJ7R15J4VXqcUh6atdxw7lh8/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {button}
+                </a>
+              );
+            }
 
             // Default for Resume (or other items)
             return <React.Fragment key={label}>{button}</React.Fragment>;
@@ -111,6 +123,18 @@ const Header: React.FC = () => {
                 <Link key={label} to="/about-me">
                   {button}
                 </Link>
+              );
+            }
+            if (label === "Resume") {
+              return (
+                <a
+                  key={label}
+                  href="https://drive.google.com/file/d/1x8raOaPZaJ7R15J4VXqcUh6atdxw7lh8/view"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {button}
+                </a>
               );
             }
 
