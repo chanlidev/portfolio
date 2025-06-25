@@ -39,11 +39,11 @@ const SolutionFive = () => {
         <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
         {/* Section Title */}
-        <p className="text-white text-center text-base lg:text-lg  mb-6 md:mb-10">
+        <p className="text-white text-center text-lg lg:text-xl  mb-6 md:mb-10">
           Mobile App Design
         </p>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24mb-20 lg:mb-40 ">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -116,7 +116,7 @@ const SolutionFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base lg:text-lg mb-6 md:mb-10">
+          <p className="text-white text-center text-lg lg:text-xl mb-6 md:mb-10">
             Web App Design
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">

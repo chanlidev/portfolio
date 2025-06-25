@@ -37,7 +37,7 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base lg:text-lg mb-6">
+          <p className="text-white text-center text-lg lg:text-xl mb-6">
             User Research
           </p>
 
@@ -121,7 +121,7 @@ const ProblemFive = () => {
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white  text-center text-base lg:text-lg mb-6">
+          <p className="text-white  text-center text-lg lg:text-xl mb-6">
             Empathize
           </p>
           <p className="text-white text-center text-sm md:text-base  mb-6">
@@ -137,12 +137,12 @@ const ProblemFive = () => {
           </div>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-12">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base lg:text-lg  mb-6">
+          <p className="text-white text-center text-lg lg:text-xl  mb-6">
             Ideate
           </p>
           <p className="text-center text-white text-sm md:text-base mb-6">

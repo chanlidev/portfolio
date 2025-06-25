@@ -34,7 +34,7 @@ const ProblemFour = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 lg:mb-40 ">
+        <div className="mb-10 lg:mb-20 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
@@ -122,7 +122,7 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10 lg:mb-20">
           <p>
             Original Workflow (4 steps)
             <br />
