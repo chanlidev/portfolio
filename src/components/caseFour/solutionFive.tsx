@@ -39,11 +39,11 @@ const SolutionFive = () => {
         <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
         {/* Section Title */}
-        <p className="text-white text-center text-base lg:text-lg md:text-lg mb-6 md:mb-10">
+        <p className="text-white text-center text-base lg:text-lg  mb-6 md:mb-10">
           Mobile App Design
         </p>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24mb-20 lg:mb-40 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -58,7 +58,7 @@ const SolutionFive = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/1st.gif"
+                src="/images/1st.gif"
                 alt="After: cashback calculator"
                 className="w-[200px] md:w-[250px] lg:w-[300px] h-auto object-contain rounded-lg"
               />
@@ -66,7 +66,7 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -80,7 +80,7 @@ const SolutionFive = () => {
           <div className="order-2 md:order-1">
             <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/2nd.gif"
+                src="/images/2nd.gif"
                 alt="After: cashback calculator"
                 className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
               />
@@ -104,7 +104,7 @@ const SolutionFive = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-center justify-center">
               <img
-                src="/3rd new.gif"
+                src="/images/3rd new.gif"
                 alt="After: cashback calculator"
                 className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
               />
@@ -121,14 +121,14 @@ const SolutionFive = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {[
-              ["Log in", "/Log in desk.svg"],
+              ["Log in", "/images/Log in desk.svg"],
 
-              ["Inventory", "/Inventory.svg"],
-              ["Inventory", "/Inventory-1.svg"],
+              ["Inventory", "/images/Inventory.svg"],
+              ["Inventory", "/images/Inventory-1.svg"],
 
-              ["Check out", "/Check out.svg"],
-              ["Check in", "/Check in.svg"],
-              ["Orders", "/Orders.svg"],
+              ["Check out", "/images/Check out.svg"],
+              ["Check in", "/images/Check in.svg"],
+              ["Orders", "/images/Orders.svg"],
             ].map(([label, src]) => (
               <div key={label}>
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -155,7 +155,7 @@ const SolutionFive = () => {
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start mb-4">
               <img
-                src="/Shot (10).svg"
+                src="/images/Shot (10).svg"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />

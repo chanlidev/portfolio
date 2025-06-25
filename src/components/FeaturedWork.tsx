@@ -57,12 +57,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
-                  src="/peko.svg"
+                  src="/images/peko.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded hover:rotate-12"
                 />
                 <img
-                  src="/loginphone.svg"
+                  src="/images/loginphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
                 />
@@ -151,7 +151,7 @@ const FeaturedWork = () => {
               <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="/payment.gif"
+                    src="/images/payment.gif"
                     alt="Payment"
                     className="w-full h-full object-overflow"
                   />
@@ -236,7 +236,7 @@ const FeaturedWork = () => {
               <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="/invoice.gif"
+                    src="/images/invoice.gif"
                     alt="Payment"
                     className="w-full h-full object-overflow"
                   />
@@ -322,12 +322,12 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
-                  src="/ttphone.svg"
+                  src="/images/ttphone.svg"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
                 />
                 <img
-                  src="/TTdesk.svg"
+                  src="/images/TTdesk.svg"
                   alt="Landing Preview"
                   className="w-4/5 h-auto object-contain rounded rotate-12 hover:-rotate-12"
                 />

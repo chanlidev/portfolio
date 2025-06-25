@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         <div className="flex-shrink-0">
           <Link to="/">
             <img
-              src="/profile.jpeg"
+              src="/images/profile.jpeg"
               alt="Profile"
               className="w-12 h-12 rounded-full border border-[#1B64FF]"
             />

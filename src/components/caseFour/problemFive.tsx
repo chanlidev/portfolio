@@ -32,7 +32,7 @@ const ProblemFive = () => {
           </p>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
@@ -42,7 +42,7 @@ const ProblemFive = () => {
           </p>
 
           {/* Stakeholders & Users - one line */}
-          <div className="flex justify-between text-white text-sm md:text-base lg:text-lg text-center font-normal max-w-xl mx-auto mb-10">
+          <div className="flex justify-between text-white text-sm md:text-base text-center font-normal max-w-xl mx-auto mb-10">
             <span>Stakeholders: Office Admins</span>
             <span>Primary Users: Trade Professionals</span>
           </div>
@@ -76,7 +76,7 @@ const ProblemFive = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base text-white text-center mb-4">
                 Mobile Experience
               </h3>
               <p>
@@ -85,7 +85,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base text-white text-center mb-4">
                 Sync Across Devices
               </h3>
               <p>
@@ -94,7 +94,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base  text-white text-center mb-4">
                 Less Manual Work
               </h3>
               <p>
@@ -104,7 +104,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base  text-white text-center mb-4">
                 Clear Tracking
               </h3>
               <p>
@@ -116,21 +116,21 @@ const ProblemFive = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
 
           {/* Section Title */}
-          <p className="text-white text-center text-base lg:text-lg mb-6">
+          <p className="text-white  text-center text-base lg:text-lg mb-6">
             Empathize
           </p>
-          <p className="text-white text-center text-sm md:text-base lg:text-lg mb-6">
+          <p className="text-white text-center text-sm md:text-base  mb-6">
             Uncovering what users need and where they struggle
           </p>
 
           <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden max-w-xl mx-auto">
             <img
-              src="/user.svg"
+              src="/images/user.svg"
               alt="Logo"
               className="w-full h-full  object-contain"
             />
@@ -145,7 +145,7 @@ const ProblemFive = () => {
           <p className="text-white text-center text-base lg:text-lg  mb-6">
             Ideate
           </p>
-          <p className="text-center text-white text-sm md:text-base lg:text-lg mb-6">
+          <p className="text-center text-white text-sm md:text-base mb-6">
             Based on user needs, priorities, and trade professional feedback, I
             proposed the following features to solve the most critical pain
             points.
@@ -155,7 +155,7 @@ const ProblemFive = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto px-4">
             {/* Must Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base text-white text-center mb-4">
                 Must Have
               </h3>
               <p>Real-Time Inventory Management</p>
@@ -167,7 +167,7 @@ const ProblemFive = () => {
 
             {/* Should Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base  text-white text-center mb-4">
                 Should Have
               </h3>
               <p>Check-Out / Check-In Validation</p>
@@ -178,7 +178,7 @@ const ProblemFive = () => {
 
             {/* Could Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
+              <h3 className="text-base  text-white text-center mb-4">
                 Could Have
               </h3>
               <p>QR Code Scanning</p>

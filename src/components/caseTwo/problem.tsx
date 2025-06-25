@@ -35,7 +35,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -47,7 +47,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 94.svg"
+                  src="/images/Group 94.svg"
                   alt="Before: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -60,7 +60,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 95.svg"
+                  src="/images/Group 95.svg"
                   alt="After: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -69,7 +69,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Users now have the options to enter credit card details directly or
             send a link to request payment info
@@ -82,7 +82,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 97.gif"
+                  src="/images/Group 97.gif"
                   alt="Before: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -95,7 +95,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/Group 96.gif"
+                  src="/images/Group 96.gif"
                   alt="After: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10 lg:mb-0">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
           <p>
             Original Workflow (5 steps)
             <br />

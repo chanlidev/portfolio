@@ -48,7 +48,7 @@ const Solution = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/solution.gif"
+                src="/images/solution.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -70,7 +70,7 @@ const Solution = () => {
           <div className="order-2 md:order-1">
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/after6.gif"
+                src="/images/after6.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -93,7 +93,7 @@ const Solution = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/after7.gif"
+                src="/images/after7.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -105,12 +105,12 @@ const Solution = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#FF715C]">Final version</span>
+                <span className="text-[#FF715C]">Final Version</span>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
               <img
-                src="/Group 80.gif"
+                src="/images/Group 80.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />

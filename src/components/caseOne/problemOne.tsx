@@ -39,16 +39,16 @@ const ProblemOne = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
             {/* Left: Intro + Image */}
-            <div className="flex flex-col items-center justify-start">
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+            <div>
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center ml-0 md:-ml-20">
                 Initial draft of the waitlist and landing pages
               </h3>
-              <div className="rounded-lg overflow-hidden">
+              <div className="flex flex-col items-center justify-center rounded-lg overflow-hidden">
                 <img
-                  src="/landing1.svg"
+                  src="/images/landing1.svg"
                   alt="Initial draft"
                   className="w-[300px] md:w-[400px] object-contain rounded-lg"
                 />
@@ -57,19 +57,19 @@ const ProblemOne = () => {
 
             {/* Right: Before / After Comparison */}
             <div>
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
                 Moved countdown timer to the top
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
                 {[
-                  ["Before", "/Waitlist Page.svg"],
-                  ["After", "/Waitlist Page 1.svg"],
+                  ["Before", "/images/Waitlist Page.svg"],
+                  ["After", "/images/Waitlist Page 1.svg"],
                 ].map(([label, src]) => (
                   <div key={label}>
-                    <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-center">
+                    <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-start">
                       {label}
                     </p>
-                    <div className="rounded-lg overflow-hidden flex items-center justify-center">
+                    <div className="rounded-lg overflow-hidden flex items-start justify-start">
                       <img
                         src={src}
                         alt={label}
@@ -83,15 +83,15 @@ const ProblemOne = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Switched to light color scheme to convey transparency
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {[
-              ["Before", "/before.png"],
+              ["Before", "/images/before.png"],
 
-              ["After", "/pekodesk.png"],
+              ["After", "/images/pekodesk.png"],
             ].map(([label, src]) => (
               <div key={label}>
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -109,15 +109,15 @@ const ProblemOne = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Replaced lengthy text with pagination to improve clarity
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {[
-              ["Before", "/Group 104.svg"],
+              ["Before", "/images/Group 104.svg"],
 
-              ["After", "/after 2.gif"],
+              ["After", "/images/after 2.gif"],
             ].map(([label, src]) => (
               <div key={label}>
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -134,16 +134,16 @@ const ProblemOne = () => {
             ))}
           </div>
         </div>
-        <div className="mb-20 md:mb-40 mx-auto max-w-7xl">
+        <div className="mb-20 md:mb-40 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {[
-              ["Before", "/before 3.gif"],
+              ["Before", "/images/before 3.gif"],
 
-              ["After", "/after 3.gif"],
+              ["After", "/images/after 3.gif"],
             ].map(([label, src]) => (
               <div key={label}>
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
@@ -167,7 +167,7 @@ const ProblemOne = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#08BCA1]">Final version</span>
+                <span className="text-[#08BCA1]">Final Version</span>
               </h3>
               <h3 className="text-sm md:text-base font-normal">
                 <a
@@ -175,13 +175,13 @@ const ProblemOne = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-[#08BCA1]">View live website</span>
+                  <span className="text-[#08BCA1]">View Live Website</span>
                 </a>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/Group 59.gif"
+                src="/images/Group 59.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -195,7 +195,7 @@ const ProblemOne = () => {
              w-[200px]  lg:w-[256px]"
             >
               <img
-                src="/phone.gif"
+                src="/images/phone.gif"
                 alt="After: cashback calculator"
                 className="w-full h-auto object-contain rounded-lg"
               />

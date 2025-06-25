@@ -57,7 +57,7 @@ const ContactSection = () => {
                   fillOpacity="0.7"
                 />
               </svg>
-              <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 text-white text-sm font-normal px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-20">
+              <span className="absolute top-full left-1/2 -translate-x-1/2 mt-2 text-white text-sm md:text-base font-normal px-2 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-20">
                 Contact Me
               </span>
             </div>

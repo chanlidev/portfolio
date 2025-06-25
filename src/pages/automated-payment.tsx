@@ -37,7 +37,7 @@ const AutoPayment: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/payment.gif"
+              src="/images/payment.gif"
               alt="Mobile app screenshot"
               className="w-full h-auto  object-cover rounded"
             />
@@ -63,7 +63,7 @@ const AutoPayment: React.FC = () => {
               {/* Logo placeholder */}
               <div className="mb-8">
                 <img
-                  src="/PekoPay 1.svg"
+                  src="/images/PekoPay 1.svg"
                   alt="Logo"
                   className="w-[120px] h-auto object-cover rounded"
                 />
@@ -92,7 +92,7 @@ const AutoPayment: React.FC = () => {
             {/* Image Card */}
             <div className="bg-gray-300 rounded-lg p-4 md:w-1/2  flex items-center justify-center overflow-hidden">
               <img
-                src="/Group 79.gif"
+                src="/images/Group 79.gif"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />

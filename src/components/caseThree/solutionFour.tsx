@@ -47,7 +47,7 @@ const SolutionFour = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/invoiceview.gif"
+                src="/images/invoiceview.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -70,7 +70,7 @@ const SolutionFour = () => {
           <div className="order-2 md:order-1">
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/invoicepdf.gif"
+                src="/images/invoicepdf.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -92,7 +92,7 @@ const SolutionFour = () => {
           <div>
             <div className=" rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/final.gif"
+                src="/images/final.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
@@ -104,12 +104,12 @@ const SolutionFour = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#FF31AC]">Final version</span>
+                <span className="text-[#FF31AC]">Final Version</span>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
               <img
-                src="/Group 103.gif"
+                src="/images/Group 103.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />

@@ -35,7 +35,7 @@ const ProblemTwo = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20 ">
+        <div className="mb-20 lg:mb-40 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
@@ -44,7 +44,7 @@ const ProblemTwo = () => {
               </p>
               <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/low1.svg"
+                  src="/images/low1.svg"
                   alt="Logo"
                   className="h-full max-w-full object-contain "
                 />
@@ -60,7 +60,7 @@ const ProblemTwo = () => {
                 <div>
                   <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/Dashboard (8).svg"
+                      src="/images/Dashboard (8).svg"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
@@ -71,17 +71,17 @@ const ProblemTwo = () => {
           </div>
         </div>
 
-        <div className="mb-10 md:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Redesigned the timeframe selector
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {[
-              ["Before", "/Group 71.svg"],
-              ["After", "/after5.gif"],
+              ["Before", "/images/Group 71.svg"],
+              ["After", "/images/after5.gif"],
             ].map(([label, src], index) => (
               <div key={label} className="md:col-span-1">
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-center md:text-left">
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-left">
                   {label}
                 </p>
                 <div
@@ -102,7 +102,7 @@ const ProblemTwo = () => {
           </div>
         </div>
 
-        <div className="mb-20 md:mb-40 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
             <div className="md:col-span-1">
@@ -112,7 +112,7 @@ const ProblemTwo = () => {
               </h3>
               <div className="rounded-lg overflow-hidden flex items-start justify-start mx-auto">
                 <img
-                  src="/dashboard1.gif"
+                  src="/images/dashboard1.gif"
                   alt="Dashboard"
                   className="w-full h-auto object-contain rounded-lg"
                 />
@@ -130,7 +130,7 @@ const ProblemTwo = () => {
                max-w-[300px] mx-auto md:max-w-none md:mx-0"
               >
                 <img
-                  src="/Group 68.gif"
+                  src="/images/Group 68.gif"
                   alt="Mobile"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -140,13 +140,13 @@ const ProblemTwo = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
+        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Final Version */}
 
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#08BCA1]">Final version</span>
+                <span className="text-[#08BCA1]">Final Version</span>
               </h3>
               <h3 className="text-sm md:text-base font-normal">
                 <a
@@ -154,13 +154,13 @@ const ProblemTwo = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-[#08BCA1]">View live website</span>
+                  <span className="text-[#08BCA1]">View Live Website</span>
                 </a>
               </h3>
             </div>
             <div className=" aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/Group 43.gif"
+                src="/images/Group 43.gif"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />

@@ -34,7 +34,7 @@ const ProblemFour = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20 ">
+        <div className="mb-20 lg:mb-40 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
@@ -43,7 +43,7 @@ const ProblemFour = () => {
               </p>
               <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/Group 84.svg"
+                  src="/images/Group 84.svg"
                   alt="Logo"
                   className="h-full max-w-full object-contain "
                 />
@@ -59,7 +59,7 @@ const ProblemFour = () => {
                 <div>
                   <div className="bg-white  rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/Group 85.svg"
+                      src="/images/Group 85.svg"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
@@ -70,32 +70,34 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="mb-10 md:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
             Added Filters and Tax Rates
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
-            {["/Group 86.svg", "/Group 90.svg"].map((src, index) => (
-              <div key={src} className="md:col-span-1">
-                <div
-                  className={`rounded-lg overflow-hidden flex items-start justify-start ${
-                    index === 1
-                      ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
-                      : ""
-                  }`}
-                >
-                  <img
-                    src={src}
-                    alt=""
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
+            {["/images/Group 86.svg", "/images/Group 90.svg"].map(
+              (src, index) => (
+                <div key={src} className="md:col-span-1">
+                  <div
+                    className={`rounded-lg overflow-hidden flex items-start justify-start ${
+                      index === 1
+                        ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
+                        : ""
+                    }`}
+                  >
+                    <img
+                      src={src}
+                      alt=""
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </div>
 
-        <div className="mb-10 md:mb-20 mx-auto max-w-7xl">
+        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {/* Left Side: Text only, vertically centered and left-aligned */}
             <div className="flex items-center">
@@ -112,7 +114,7 @@ const ProblemFour = () => {
             {/* Right Side: Single image */}
             <div className="rounded-lg overflow-hidden flex items-start justify-start">
               <img
-                src="/Group 92.svg"
+                src="/images/Group 92.svg"
                 alt="Updated invoice interaction"
                 className="w-full h-auto object-contain rounded-lg"
               />
@@ -120,19 +122,16 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="mb-10">
-          <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
-            <p>
-              Original Workflow (4 steps)
-              <br />
-              <br /> Open Menu &gt; View Details &gt; Close Window &gt; Reopen
-              Menu For Actions
-              <br />
-              <br />
-              How can this process be streamlined to eliminate unnecessary
-              clicks?
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+          <p>
+            Original Workflow (4 steps)
+            <br />
+            <br /> Open Menu &gt; View Details &gt; Close Window &gt; Reopen
+            Menu For Actions
+            <br />
+            <br />
+            How can this process be streamlined to eliminate unnecessary clicks?
+          </p>
         </div>
       </div>
     </div>

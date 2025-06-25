@@ -30,7 +30,7 @@ const LandingPage: React.FC = () => {
           <div className="relative w-full  max-w-[1200px] mx-auto flex flex-col items-center  lg:block h-auto ">
             {/* Computer Image inside left card */}
             <motion.img
-              src="/Group 43.gif"
+              src="/images/Group 43.gif"
               alt="Computer showing dashboard"
               className="
         w-full
@@ -59,7 +59,7 @@ const LandingPage: React.FC = () => {
               transition={{ duration: 0.8, delay: 0.5 }}
             >
               <img
-                src="/pekophone.png"
+                src="/images/pekophone.png"
                 alt="Mobile app screenshot"
                 className="
           w-full h-auto
@@ -92,7 +92,7 @@ const LandingPage: React.FC = () => {
               {/* Logo placeholder */}
               <div className="mb-8">
                 <img
-                  src="/PekoPay 1.svg"
+                  src="/images/PekoPay 1.svg"
                   alt="Logo"
                   className="w-[120px] h-auto object-cover rounded"
                 />
@@ -123,7 +123,7 @@ const LandingPage: React.FC = () => {
             {/* Image Card */}
             <div className="bg-gray-300 rounded-lg p-4 md:w-1/2  flex items-center justify-center overflow-hidden">
               <img
-                src="/Group 55.gif"
+                src="/images/Group 55.gif"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />
