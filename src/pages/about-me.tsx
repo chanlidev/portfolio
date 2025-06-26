@@ -86,14 +86,14 @@ const AutoPayment: React.FC = () => {
                 className="border-b border-gray-600 py-4"
               >
                 <button
-                  className="w-full flex justify-between items-center text-white text-xl font-normal"
+                  className="w-full flex justify-between items-center text-white text-lg lg:text-xl font-normal"
                   onClick={() => toggle(idx)}
                 >
                   <span>{section.title}</span>
                   {openSections[idx] ? <Minus size={20} /> : <Plus size={20} />}
                 </button>
                 {openSections[idx] && (
-                  <p className="mt-6 mb-10 text-white text-base leading-relaxed whitespace-pre-line">
+                  <p className="mt-6 mb-10 text-white text-sm lg:text-base leading-relaxed whitespace-pre-line">
                     {section.content}
                   </p>
                 )}
