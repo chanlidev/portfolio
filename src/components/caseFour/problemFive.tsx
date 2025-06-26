@@ -70,44 +70,65 @@ const ProblemFive = () => {
             </div>
           </div>
 
-          <div className="text-white text-center text-base lg:text-lg font-normal mt-10 mb-6">
+          <div className="text-white text-center text-base lg:text-lg font-normal mt-10 mb-10">
             Key Insights
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className=" text-white text-center mb-4">
-                Mobile Experience
-              </h3>
-              <p>
-                Users need an interface that is intuitive and fast on mobile so
-                they can check and update inventory from any job site.
-              </p>
-            </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-white text-center mb-4">
-                Sync Across Devices
-              </h3>
-              <p>
-                Inventory data must stay consistent and up to date across
-                devices to prevent miscommunication and double entry.
-              </p>
-            </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-white text-center mb-4">Less Manual Work</h3>
-              <p>
-                The more users have to type or remember, the more likely it is
-                they’ll forget or input incorrect info, automated process
-                reduces mistakes.
-              </p>
-            </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className=" text-white text-center mb-4">Clear Tracking</h3>
-              <p>
-                When tools and materials are tracked clearly by who used what
-                and when, it reduces loss and makes teams more accountable for
-                returns.
-              </p>
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-stretch">
+              {/* Mobile Experience */}
+              <div className="relative h-full">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                  Mobile Experience
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                  <p>
+                    Users need an interface that is intuitive and fast on mobile
+                    so they can check and update inventory from any job site.
+                  </p>
+                </div>
+              </div>
+
+              {/* Sync Across Devices */}
+              <div className="relative h-full">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                  Sync Across Devices
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                  <p>
+                    Inventory data must stay consistent and up to date across
+                    devices to prevent miscommunication and double entry.
+                  </p>
+                </div>
+              </div>
+
+              {/* Less Manual Work */}
+              <div className="relative h-full">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                  Less Manual Work
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                  <p>
+                    The more users have to type or remember, the more likely
+                    they’ll forget or input incorrect info—automated processes
+                    reduce mistakes.
+                  </p>
+                </div>
+              </div>
+
+              {/* Clear Tracking */}
+              <div className="relative h-full">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                  Clear Tracking
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                  <p>
+                    When tools and materials are tracked clearly by who used
+                    what and when, it reduces loss and makes teams more
+                    accountable for returns.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -141,46 +162,53 @@ const ProblemFive = () => {
           <p className="text-white text-center text-lg lg:text-xl  mb-6">
             Ideate
           </p>
-          <p className="text-center text-white text-sm md:text-base mb-6">
+          <p className="text-center text-white text-sm md:text-base mb-10">
             Based on user needs, priorities, and trade professional feedback, I
             proposed the following features to solve the most critical pain
             points.
           </p>
 
           {/* Three Column Feature Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto px-4">
-            {/* Must Have */}
-            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
-                Must Have
-              </h3>
-              <p>Real-Time Inventory Management</p>
-              <p>Inventory Search & Filter</p>
-              <p>Mobile & Desktop Access</p>
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+              {/* Must Have */}
+              <div className="relative">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                  Must Have
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                  <p>Real-Time Inventory Management</p>
+                  <p>Inventory Search &amp; Filter</p>
+                  <p>Mobile &amp; Desktop Access</p>
+                  <p>Secure Login System</p>
+                </div>
+              </div>
 
-              <p>Secure Login System</p>
-            </div>
+              {/* Should Have */}
+              <div className="relative">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                  Should Have
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                  <p>Check-Out / Check-In Validation</p>
+                  <p>Order Request System</p>
+                  <p>User Activity Logs</p>
+                  <p>Employee &amp; Admin Roles</p>
+                </div>
+              </div>
 
-            {/* Should Have */}
-            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg text-white text-center mb-4">
-                Should Have
-              </h3>
-              <p>Check-Out / Check-In Validation</p>
-              <p>Order Request System</p>
-              <p>User Activity Logs</p>
-              <p>Employee & Admin Roles</p>
-            </div>
-
-            {/* Could Have */}
-            <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base lg:text-lg  text-white text-center mb-4">
-                Could Have
-              </h3>
-              <p>QR Code Scanning</p>
-              <p>Low Stock Alerts</p>
-              <p>Analytics Dashboard</p>
-              <p>Offline Mode</p>
+              {/* Could Have */}
+              <div className="relative">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                  Could Have
+                </h3>
+                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                  <p>QR Code Scanning</p>
+                  <p>Low Stock Alerts</p>
+                  <p>Analytics Dashboard</p>
+                  <p>Offline Mode</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
