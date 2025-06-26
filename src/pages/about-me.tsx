@@ -57,10 +57,10 @@ const AutoPayment: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-white text-xl sm:text-2xl lg:text-3xl font-normal  mb-4">
+            <h1 className="text-white text-xl md:text-2xl lg:text-3xl font-normal  mb-4">
               Hi, I’m Chan 😊
             </h1>
-            <p className="text-white text-sm sm:text-base lg:text-lg font-normal leading-relaxed">
+            <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
               I’m a SAIT alum with a diploma in Software Development and a
               passion for crafting seamless, joyful user experiences. I designed
               and coded this portfolio myself using Vite, React, and TypeScript.

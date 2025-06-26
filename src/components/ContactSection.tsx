@@ -28,7 +28,7 @@ const ContactSection = () => {
         </motion.h2>
 
         <motion.p
-          className="text-white text-sm sm:text-base lg:text-lg font-normal opacity-90"
+          className="text-white text-base lg:text-lg font-normal opacity-90"
           variants={itemVariants}
         >
           - Currently Exploring Exciting New Opportunities -
