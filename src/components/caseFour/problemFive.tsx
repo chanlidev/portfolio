@@ -76,7 +76,7 @@ const ProblemFive = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base text-white text-center mb-4">
+              <h3 className=" text-white text-center mb-4">
                 Mobile Experience
               </h3>
               <p>
@@ -85,7 +85,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base text-white text-center mb-4">
+              <h3 className="text-white text-center mb-4">
                 Sync Across Devices
               </h3>
               <p>
@@ -94,9 +94,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base  text-white text-center mb-4">
-                Less Manual Work
-              </h3>
+              <h3 className="text-white text-center mb-4">Less Manual Work</h3>
               <p>
                 The more users have to type or remember, the more likely it is
                 they’ll forget or input incorrect info, automated process
@@ -104,9 +102,7 @@ const ProblemFive = () => {
               </p>
             </div>
             <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
-              <h3 className="text-base  text-white text-center mb-4">
-                Clear Tracking
-              </h3>
+              <h3 className=" text-white text-center mb-4">Clear Tracking</h3>
               <p>
                 When tools and materials are tracked clearly by who used what
                 and when, it reduces loss and makes teams more accountable for
@@ -155,7 +151,7 @@ const ProblemFive = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto px-4">
             {/* Must Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Must Have
               </h3>
               <p>Real-Time Inventory Management</p>
@@ -167,7 +163,7 @@ const ProblemFive = () => {
 
             {/* Should Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base  text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg text-white text-center mb-4">
                 Should Have
               </h3>
               <p>Check-Out / Check-In Validation</p>
@@ -178,7 +174,7 @@ const ProblemFive = () => {
 
             {/* Could Have */}
             <div className="border border-[#0D82B8] rounded-lg p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
-              <h3 className="text-base  text-white text-center mb-4">
+              <h3 className="text-base lg:text-lg  text-white text-center mb-4">
                 Could Have
               </h3>
               <p>QR Code Scanning</p>
