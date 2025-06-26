@@ -12,7 +12,7 @@ interface Section {
 const sections: Section[] = [
   {
     title: "My Background",
-    content: `I hold an MBA from Eastern Washington University and have spent over five years in e-commerce as a data analyst and account manager. This experience gives me a strong understanding of how good design supports business goals. \n\n Growing up, I was always interested in design and art. While studying at EWU, I worked at the student gallery, creating posters and postcards and helping to host events with local artists. At the time, I didn’t consider design a serious career path. \n\nThat changed in early 2023 when I began my journey at SAIT, which quickly sparked my passion for UX design. Since then, I’ve pivoted into this field and realized how much I love it. My goal is to keep growing as a designer and take on projects that make a real impact.`,
+    content: `I hold an MBA from Eastern Washington University and have spent over five years in e-commerce as a data analyst and account manager. This experience gives me deep insight into user flows and how strategic design drives retention and business results. \n\n Growing up, I was always interested in design and art. While studying at EWU, I worked at the student gallery, creating posters and postcards and helping to host events with local artists. At the time, I didn’t consider design a serious career path. \n\nThat changed in early 2023 when I began my journey at SAIT, which quickly sparked my passion for UX design. Since then, I’ve pivoted into this field and realized how much I love it. My goal is to keep growing as a designer and take on projects that make a real impact.`,
   },
   {
     title: "Design Philosophy",
