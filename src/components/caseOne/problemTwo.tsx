@@ -42,7 +42,7 @@ const ProblemTwo = () => {
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 Low Fidelity
               </p>
-              <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+              <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
                 <img
                   src="/images/low1.svg"
                   alt="Logo"
@@ -58,9 +58,9 @@ const ProblemTwo = () => {
               </p>
               <div className="space-y-4">
                 <div>
-                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/Group 112.svg"
+                      src="/images/1.png"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
