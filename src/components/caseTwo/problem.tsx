@@ -82,7 +82,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/images/Group 97.gif"
+                  src="/images/Group 119.gif"
                   alt="Before: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
@@ -95,7 +95,7 @@ const ProblemThree = () => {
               </p>
               <div className=" rounded-lg overflow-hidden flex items-center justify-center">
                 <img
-                  src="/images/Group 96.gif"
+                  src="/images/Group 118.gif"
                   alt="After: cashback calculator"
                   className="w-full h-full object-contain rounded-lg"
                 />
