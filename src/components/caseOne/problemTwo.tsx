@@ -42,7 +42,7 @@ const ProblemTwo = () => {
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
                 Low Fidelity
               </p>
-              <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
+              <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                 <img
                   src="/images/low1.svg"
                   alt="Logo"
@@ -58,7 +58,7 @@ const ProblemTwo = () => {
               </p>
               <div className="space-y-4">
                 <div>
-                  <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
+                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
                       src="/images/Group 115.png"
                       alt="Logo"
@@ -77,7 +77,7 @@ const ProblemTwo = () => {
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {[
-              ["Before", "/images/Group 114.svg"],
+              ["Before", "/images/Group 117.png"],
               ["After", "/images/after5.gif"],
             ].map(([label, src], index) => (
               <div key={label} className="md:col-span-1">
