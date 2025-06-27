@@ -53,7 +53,7 @@ const ProblemFour = () => {
             {/* Column 2 */}
             <div className="space-y-6">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                Condensed Actions into a Menu
+                Condensed action buttons into a menu to accommodate more options
               </p>
               <div className="space-y-4">
                 <div>
@@ -72,7 +72,7 @@ const ProblemFour = () => {
 
         <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Added Filters and Tax Rates
+            Added filters and tax rates
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {["/images/Group 86.svg", "/images/Group 90.svg"].map(

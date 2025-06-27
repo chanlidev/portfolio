@@ -60,7 +60,7 @@ const ProblemTwo = () => {
                 <div>
                   <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/Dashboard (8).svg"
+                      src="/images/Group 112.svg"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
@@ -73,11 +73,11 @@ const ProblemTwo = () => {
 
         <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
           <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-            Redesigned the timeframe selector
+            Redesigned the timeframe selector to improve usability
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {[
-              ["Before", "/images/Group 71.svg"],
+              ["Before", "/images/Group 114.svg"],
               ["After", "/images/after5.gif"],
             ].map(([label, src], index) => (
               <div key={label} className="md:col-span-1">

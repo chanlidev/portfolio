@@ -222,7 +222,7 @@ const Index = () => {
               </h1>
               {/* Description */}
               <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
-                Hey there! 👋 I’m a UX/UI Designer based in Calgary with a
+                Hey there! 👋 I’m a UX/UI designer based in Calgary with a
                 background in e-commerce. At PekoPay, I turn user insights into
                 seamless, intuitive payment experiences that delight every tap
                 and click. 🚀 I designed and coded this portfolio myself—enjoy

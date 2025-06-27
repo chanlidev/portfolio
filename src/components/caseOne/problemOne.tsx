@@ -58,7 +58,7 @@ const ProblemOne = () => {
             {/* Right: Before / After Comparison */}
             <div>
               <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
-                Moved countdown timer to the top
+                Moved the countdown timer to the top to increase engagement
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
                 {[
