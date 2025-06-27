@@ -44,7 +44,7 @@ const ProblemTwo = () => {
               </p>
               <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="/images/low1.svg"
+                  src="/images/low3.svg"
                   alt="Logo"
                   className="h-full max-w-full object-contain "
                 />
