@@ -150,7 +150,7 @@ const SolutionFive = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#0D82B8]">Final version</span>
+                <span className="text-[#0D82B8]">Final Version</span>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start mb-4">
