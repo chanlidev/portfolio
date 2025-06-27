@@ -62,7 +62,7 @@ const FeaturedWork = () => {
                   className="w-4/5 h-auto object-contain rounded hover:rotate-12"
                 />
                 <img
-                  src="/images/loginphone.svg"
+                  src="/images/Iphone 16.png"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
                 />
@@ -322,7 +322,7 @@ const FeaturedWork = () => {
               {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
-                  src="/images/ttphone.svg"
+                  src="/images/Iphone 14.png"
                   alt="Login Preview"
                   className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
                 />
