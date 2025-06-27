@@ -38,7 +38,7 @@ const InventorySystem: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src="/images/Group 13 (1).svg"
+              src="/images/Group 13.png"
               alt="Mobile app screenshot"
               className="w-full h-auto  object-cover rounded"
             />
@@ -95,7 +95,7 @@ const InventorySystem: React.FC = () => {
             {/* Image Card */}
             <div className="bg-gray-300 rounded-lg  md:w-1/2  flex items-center justify-center overflow-hidden">
               <img
-                src="/images/Shot (8).svg"
+                src="/images/Shot.png"
                 alt="PekoPay application screenshots"
                 className="h-full max-w-full object-contain"
               />

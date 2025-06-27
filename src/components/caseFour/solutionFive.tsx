@@ -155,7 +155,7 @@ const SolutionFive = () => {
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start mb-4">
               <img
-                src="/images/Shot (10).svg"
+                src="/images/Shot (1).png"
                 alt="After: cashback calculator"
                 className="max-w-full max-h-full object-contain rounded-lg"
               />
