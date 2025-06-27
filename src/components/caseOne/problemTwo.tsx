@@ -60,7 +60,7 @@ const ProblemTwo = () => {
                 <div>
                   <div className="bg-white aspect-[16/10] rounded-lg flex items-center justify-center overflow-hidden">
                     <img
-                      src="/images/1.png"
+                      src="/images/Group 115.png"
                       alt="Logo"
                       className="h-auto w-auto object-contain "
                     />
