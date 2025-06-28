@@ -27,7 +27,7 @@ const ProblemTwo = () => {
             While the landing pages captured initial interest, users lacked a
             clear way to track cashback after signing up. I addressed this by
             designing a{" "}
-            <span className="text-[#08BCA1]">user-friendly dashboard</span>{" "}
+            <span className="text-[#08BCA1]">user-centered dashboard</span>{" "}
             highlighting key metrics like Cashback Earned, Total Customers, Open
             Invoices, and Overdue Invoices, making it easy for users to assess
             earnings and outstanding payments at a glance.
