@@ -10,56 +10,42 @@ const Header: React.FC = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const toggleMobile = () => setMobileOpen((prev) => !prev);
 
+  // One solid bg, plus border and the same hover effects
+  const btnBase = cn(
+    "flex items-center justify-center",
+    "border border-[#1B64FF] text-white font-normal",
+    "bg-[#1C0C7A]",
+    "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+    "backdrop-blur-sm transition-all duration-200",
+    // hover effects preserved:
+    "hover:border-2 hover:border-[#1B64FF]",
+    "hover:bg-[#1C0C7A]",
+    "hover:text-white",
+    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+  );
+
   return (
     <header className="w-full px-4 sm:px-8 lg:px-12 pt-4 lg:pt-10 bg-transparent">
       <div className="flex justify-between items-center">
-        {/* Profile Avatar */}
-        <div className="flex-shrink-0">
-          <Link to="/">
-            <img
-              src="/images/profile.jpeg"
-              alt="Profile"
-              className="w-12 h-12 rounded-full border border-[#1B64FF]"
-            />
-          </Link>
-        </div>
+        <Link to="/" className="flex-shrink-0">
+          <img
+            src="/images/profile.jpeg"
+            alt="Profile"
+            className="w-12 h-12 rounded-full border border-[#1B64FF]"
+          />
+        </Link>
 
-        {/* Desktop nav */}
-        <nav className="hidden md:flex flex-wrap gap-3 sm:gap-6">
+        <nav className="hidden md:flex gap-4">
           {navItems.map((label) => {
-            const button = (
+            const btn = (
               <Button
                 variant="outline"
-                className={cn(
-                  "h-9 w-32 flex items-center justify-center",
-                  "border border-[#1B64FF] text-white text-sm font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
+                className={cn(btnBase, "h-9 w-32 text-sm")}
               >
                 {label}
               </Button>
             );
 
-            if (label === "My Work") {
-              return (
-                <Link key={label} to="/">
-                  {button}
-                </Link>
-              );
-            }
-
-            if (label === "About Me") {
-              return (
-                <Link key={label} to="/about-me">
-                  {button}
-                </Link>
-              );
-            }
             if (label === "Resume") {
               return (
                 <a
@@ -68,17 +54,19 @@ const Header: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {button}
+                  {btn}
                 </a>
               );
             }
 
-            // Default for Resume (or other items)
-            return <React.Fragment key={label}>{button}</React.Fragment>;
+            return (
+              <Link key={label} to={label === "About Me" ? "/about-me" : "/"}>
+                {btn}
+              </Link>
+            );
           })}
         </nav>
 
-        {/* Mobile menu button */}
         <button
           className="md:hidden p-2 text-white"
           onClick={toggleMobile}
@@ -88,43 +76,18 @@ const Header: React.FC = () => {
         </button>
       </div>
 
-      {/* Mobile menu items */}
       {mobileOpen && (
         <nav className="sm:hidden mt-4 flex flex-col gap-3">
           {navItems.map((label) => {
-            const button = (
+            const btn = (
               <Button
                 variant="outline"
-                className={cn(
-                  "w-full flex items-center justify-center",
-                  "border border-[#1B64FF] text-white text-base font-normal",
-                  "bg-gradient-to-r from-[#1C0C7A] to-[#200349]",
-                  "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                  "backdrop-blur-sm transition-all duration-200",
-                  "hover:border-2 hover:border-[#1B64FF]",
-                  "hover:bg-gradient-to-r hover:from-[#1C0C7A] hover:to-[#200349]",
-                  "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                )}
+                className={cn(btnBase, "w-full text-base")}
               >
                 {label}
               </Button>
             );
 
-            if (label === "My Work") {
-              return (
-                <Link key={label} to="/">
-                  {button}
-                </Link>
-              );
-            }
-
-            if (label === "About Me") {
-              return (
-                <Link key={label} to="/about-me">
-                  {button}
-                </Link>
-              );
-            }
             if (label === "Resume") {
               return (
                 <a
@@ -133,12 +96,16 @@ const Header: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {button}
+                  {btn}
                 </a>
               );
             }
 
-            return <React.Fragment key={label}>{button}</React.Fragment>;
+            return (
+              <Link key={label} to={label === "About Me" ? "/about-me" : "/"}>
+                {btn}
+              </Link>
+            );
           })}
         </nav>
       )}

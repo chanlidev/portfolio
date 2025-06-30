@@ -50,7 +50,7 @@ const FeaturedWork = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "radial-gradient(48.7% 100% at 50% 100%, #24003C 0%, #090F78 100%)",
+                  "linear-gradient(180deg, #090F78 40%,  #07033B 120%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -118,10 +118,10 @@ const FeaturedWork = () => {
                   <Link to="/landing-page">
                     <Button
                       className={cn(
-                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
-                        "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                        "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
-                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "w-24 h-10 border border-[#1B64FF] text-white text-sm font-normal flex-shrink-0",
+                        "bg-[#090F78]",
+                        "hover:bg-[#090F78]",
+                        "hover:shadow-lg hover:shadow-[#1B64FF]/20",
                         "hover:border-2",
                         "transition-all duration-200",
                         "backdrop-blur-sm",
@@ -143,8 +143,7 @@ const FeaturedWork = () => {
             <div
               className="absolute inset-0"
               style={{
-                background:
-                  "linear-gradient(180deg, #64392F 10.83%, #3E1C31 89.17%)",
+                background: "linear-gradient(180deg, #64392F 0%, #3E1C31 100%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -205,8 +204,8 @@ const FeaturedWork = () => {
                     <Button
                       className={cn(
                         "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
-                        "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
-                        "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
+                        "bg-[#64392F]",
+                        "hover:bg-[#64392F]",
                         "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                         "hover:border-2",
                         "transition-all duration-200",
@@ -229,7 +228,7 @@ const FeaturedWork = () => {
             <div
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, #4A044C 0%, #20083A 76%)",
+                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -289,10 +288,10 @@ const FeaturedWork = () => {
                   <Link to="/invoice-list">
                     <Button
                       className={cn(
-                        "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
-                        "bg-gradient-to-r from-[#FF34A4] to-[#FF9937]",
-                        "hover:from-[#FF34A4]/90 hover:to-[#FF9937]/90",
-                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
+                        "bg-[#4A044C]",
+                        "hover:bg-[#4A044C]",
+                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
                         "hover:border-2",
                         "transition-all duration-200",
                         "backdrop-blur-sm",
@@ -308,14 +307,13 @@ const FeaturedWork = () => {
 
           {/* Project 4 - Coming Soon */}
           <motion.div
-            className="group relative overflow-hidden border border-[#0D82B8] rounded-lg backdrop-blur-sm"
+            className="group relative overflow-hidden border border-[#08BCA1] rounded-lg backdrop-blur-sm"
             variants={cardVariants}
           >
             <div
               className="absolute inset-0"
               style={{
-                background:
-                  "linear-gradient(284deg, #004B78 0%, #020C38 98.11%)",
+                background: "linear-gradient(180deg, #004B78 0%, #020C38 100%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -361,8 +359,8 @@ const FeaturedWork = () => {
                     <Button
                       className={cn(
                         "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
-                        "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                        "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                        "bg-[#004B78]",
+                        "hover:bg-[#004B78]",
                         "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                         "hover:border-2",
                         "transition-all duration-200",

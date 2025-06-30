@@ -24,7 +24,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 500; // Number of stars
+      const starCount = 300; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
@@ -206,15 +206,14 @@ const Index = () => {
                     fontWeight: "700",
                     color: "#FFFFFF",
                     textShadow: `
-                    0 0 10px rgba(255, 105, 180, 0.8),
-                    0 0 20px rgba(255, 105, 180, 0.6),
-                    0 0 30px rgba(255, 105, 180, 0.4),
-                    0 0 40px rgba(255, 20, 147, 0.3),
-                    2px 2px 4px rgba(0, 0, 0, 0.8),
-                    4px 4px 8px rgba(0, 0, 0, 0.6)
-                  `,
+        0 0 5px rgba(255,105,180,0.8),
+        0 0 10px rgba(255,105,180,0.6),
+        0 0 15px rgba(255,105,180,0.4),
+        1px 1px 3px rgba(0,0,0,0.8),
+        2px 2px 6px rgba(0,0,0,0.6)
+      `,
                     filter:
-                      "drop-shadow(0 0 25px rgba(255, 105, 180, 0.6)) drop-shadow(0 0 35px rgba(255, 20, 147, 0.4))",
+                      "drop-shadow(0 0 15px rgba(255,105,180,0.6)) drop-shadow(0 0 25px rgba(255,20,147,0.4))",
                   }}
                 >
                   CHAN LI
