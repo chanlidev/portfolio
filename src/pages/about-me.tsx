@@ -51,7 +51,7 @@ const AutoPayment: React.FC = () => {
         </div>
 
         {/* Static Intro */}
-        <div className="relative mt-12 md:mt-24 px-4 lg:px-8 z-10 max-w-3xl mx-auto text-left">
+        <div className="relative mt-16 md:mt-24 px-4 lg:px-8 z-10 max-w-3xl mx-auto text-left">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

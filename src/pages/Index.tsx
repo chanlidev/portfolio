@@ -232,14 +232,16 @@ const Index = () => {
               <a href="mailto:chan.li.yyc@gmail.com">
                 <Button
                   className={cn(
-                    "h-14 px-8 border border-[#1B64FF] text-white text-base font-normal",
-                    "bg-[#1C0C7A]",
-                    "hover:bg-[#1C0C7A]",
-                    "transition-all duration-200",
-                    "min-w-[240px]",
-                    "backdrop-blur-sm drop-shadow-lg",
-                    "hover:border-2",
-                    "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                    // mobile first (smaller)
+                    "h-14 px-4 text-sm min-w-[160px]",
+                    // from sm upwards, use original sizes
+                    "sm:h-14 sm:px-8 sm:text-base sm:min-w-[240px]",
+
+                    // rest of your styles
+                    "border border-[#1B64FF] text-white font-normal",
+                    "bg-[#1C0C7A] hover:bg-[#1C0C7A]",
+                    "transition-all duration-200 backdrop-blur-sm drop-shadow-lg",
+                    "hover:border-2 hover:shadow-lg hover:shadow-[#08BCA1]/20",
                     "opacity-0 animate-slideInFromBottom animate-delay-600",
                   )}
                 >
