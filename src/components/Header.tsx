@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 pt-6 lg:pt-10 bg-transparent">
+    <header className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 pt-4 lg:pt-8 bg-transparent">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex-shrink-0">
           <img
@@ -75,7 +75,7 @@ const Header: React.FC = () => {
         </nav>
 
         <button
-          className="md:hidden p-2 text-white"
+          className="md:hidden p-0 text-white"
           onClick={toggleMobile}
           aria-label="Toggle menu"
         >
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
       </div>
 
       {mobileOpen && (
-        <nav className="sm:hidden mt-4 flex flex-col gap-3">
+        <nav className="sm:hidden mt-4 flex flex-col gap-4">
           {navItems.map((label) => {
             const btn = (
               <Button

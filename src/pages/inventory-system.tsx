@@ -32,7 +32,7 @@ const InventorySystem: React.FC = () => {
         {/* Top images container: relative on small, absolute on large */}
         <div className="relative mt-24 px-4 lg:px-8 z-10 flex justify-center">
           <motion.div
-            className=" w-full max-w-[1000px]  p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
+            className=" w-full max-w-[1000px] mx-auto p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
