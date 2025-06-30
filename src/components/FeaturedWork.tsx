@@ -26,7 +26,7 @@ const FeaturedWork = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-[1300px] mx-auto">
+      <div className="max-w-[1400px] mx-auto px-2 sm:px-4 md:px-12">
         {/* Section Header */}
         <div className=" mt-0 flex items-center justify-center mb-16 lg:mb-24">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>

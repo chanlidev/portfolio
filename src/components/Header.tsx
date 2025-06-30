@@ -25,13 +25,20 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header className="w-full px-4 sm:px-8 lg:px-12 pt-4 lg:pt-10 bg-transparent">
+    <header className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 pt-6 lg:pt-10 bg-transparent">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex-shrink-0">
           <img
             src="/images/profile.jpeg"
             alt="Profile"
-            className="w-12 h-12 rounded-full border border-[#1B64FF]"
+            className={cn(
+              "w-12 h-12 rounded-full",
+              // keep the same 2px border always
+              "border border-[#1B64FF] box-border",
+              // on hover, add a ring + shadow rather than changing the border
+              "hover:ring-2 hover:ring-[#1B64FF] hover:shadow-lg hover:shadow-[#08BCA1]/20",
+              "backdrop-blur-sm transition-all duration-200",
+            )}
           />
         </Link>
 
