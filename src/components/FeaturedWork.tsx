@@ -26,9 +26,9 @@ const FeaturedWork = () => {
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
     >
-      <div className="max-w-[1350px] mx-auto">
+      <div className="max-w-[1300px] mx-auto">
         {/* Section Header */}
-        <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+        <div className=" mt-0 flex items-center justify-center mb-16 lg:mb-24">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Featured Work
@@ -38,7 +38,7 @@ const FeaturedWork = () => {
 
         {/* Projects Grid */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
           variants={containerVariants}
         >
           {/* Project 1 - PekoPay Landing */}
