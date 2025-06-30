@@ -12,12 +12,12 @@ const LandingPage: React.FC = () => {
   return (
     <>
       {/* Top Section: matches Index layout exactly */}
-      <div className="w-full relative overflow-hidden pb-16 lg:pb-[780px] -mb-px ">
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-[780px] -mt-px -mb-px ">
         {/* Purple→Blue background */}
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #07033B 0%, #1C0C7A 100%)",
+            background: "linear-gradient(180deg, #07033B 40%, #1C0C7A 100%)",
           }}
         />
 
