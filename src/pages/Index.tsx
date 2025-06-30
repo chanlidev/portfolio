@@ -104,38 +104,6 @@ const StarField = () => {
           />
         );
       })}
-
-      {/* Add some larger glowing stars */}
-      <div
-        className="absolute w-1 h-1 bg-white rounded-full opacity-80"
-        style={{
-          top: "20%",
-          left: "15%",
-          boxShadow:
-            "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
-          animation: "pulse 3s infinite, drift 20s infinite linear",
-        }}
-      />
-      <div
-        className="absolute w-1.5 h-1.5 bg-white rounded-full opacity-60"
-        style={{
-          top: "65%",
-          left: "85%",
-          boxShadow:
-            "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
-          animation: "pulse 4s infinite, driftAlt 25s infinite linear",
-        }}
-      />
-      <div
-        className="absolute w-1 h-1 bg-white rounded-full opacity-70"
-        style={{
-          top: "40%",
-          left: "75%",
-          boxShadow:
-            "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
-          animation: "pulse 2.5s infinite, driftSlow 22s infinite linear",
-        }}
-      />
     </div>
   );
 };
@@ -155,47 +123,13 @@ const Index = () => {
         {/* Galaxy starfield effect */}
         <StarField />
 
-        {/* Nebula-like glow effects */}
-        <div className="absolute inset-0">
-          <div
-            className="absolute w-96 h-96 rounded-full opacity-10"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(147,112,219,0.4) 0%, transparent 70%)",
-              top: "10%",
-              left: "70%",
-              filter: "blur(60px)",
-            }}
-          />
-          <div
-            className="absolute w-80 h-80 rounded-full opacity-15"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(100,149,237,0.3) 0%, transparent 70%)",
-              top: "60%",
-              left: "10%",
-              filter: "blur(50px)",
-            }}
-          />
-          <div
-            className="absolute w-64 h-64 rounded-full opacity-8"
-            style={{
-              background:
-                "radial-gradient(circle, rgba(173,216,230,0.2) 0%, transparent 70%)",
-              top: "30%",
-              left: "40%",
-              filter: "blur(40px)",
-            }}
-          />
-        </div>
-
         {/* Content container */}
         <div className="relative z-10 min-h-screen flex flex-col">
           {/* Header Navigation */}
           <Header />
 
           {/* Main Content */}
-          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 pt-0 lg:pt-20 pb-12 lg:pb-20">
+          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 mt-16 md:mt-32 pb-16 lg:pb-32">
             <div className="text-center max-w-4xl mx-auto">
               {/* Main Heading */}
               <h1 className="mb-8 lg:mb-12 opacity-0 animate-fadeInScale">
@@ -220,40 +154,17 @@ const Index = () => {
                 </span>
               </h1>
               {/* Description */}
-              <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed mb-12 lg:mb-16 drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
+              <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed  drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
                 Hey there! 👋 I’m a Calgary-based UX/UI designer and developer
                 who loves turning complex problems into simple solutions. I
                 designed and coded this portfolio myself—enjoy exploring my
                 work!
               </p>
-
-              {/* Contact Button */}
-              <a href="mailto:chan.li.yyc@gmail.com">
-                <Button
-                  className={cn(
-                    // mobile first (smaller)
-                    "h-14 px-4 text-sm min-w-[160px]",
-                    // from sm upwards, use original sizes
-                    "sm:h-14 sm:px-8 sm:text-base sm:min-w-[240px]",
-
-                    // rest of your styles
-                    "border border-[#1B64FF] text-white font-normal",
-                    "bg-[#1C0C7A] hover:bg-[#1C0C7A]",
-                    "transition-all duration-200 backdrop-blur-sm drop-shadow-lg",
-                    "hover:border-2 hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                    "opacity-0 animate-slideInFromBottom animate-delay-600",
-                  )}
-                >
-                  <span className="text-[#08BCA1]">///</span>
-                  <span className="mx-4">Contact Me Now</span>
-                  <span className="text-[#08BCA1]">///</span>
-                </Button>
-              </a>
             </div>
           </main>
         </div>
       </div>
-      <div className="w-full bg-[#07033B]">
+      <div className="w-full">
         <FeaturedWork />
         <ContactSection />
       </div>
