@@ -24,7 +24,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 200; // Number of stars
+      const starCount = 120; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
@@ -206,9 +206,9 @@ const Index = () => {
                     fontWeight: "700",
                     color: "#FFFFFF",
                     textShadow: `
-        0 0 5px rgba(255,105,180,0.8),
-        0 0 5px rgba(255,105,180,0.6),
-        0 0 5px rgba(255,105,180,0.4),
+        0 0 2px rgba(255,105,180,0.8),
+        0 0 2px rgba(255,105,180,0.6),
+        0 0 2px rgba(255,105,180,0.4),
         1px 1px 3px rgba(0,0,0,0.8),
         2px 2px 6px rgba(0,0,0,0.6)
       `,
