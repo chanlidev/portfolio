@@ -232,9 +232,9 @@ const Index = () => {
               <a href="mailto:chan.li.yyc@gmail.com">
                 <Button
                   className={cn(
-                    "h-14 px-8 border border-[#08BCA1] text-white text-base font-normal",
-                    "bg-gradient-to-r from-[#0A23AF] to-[#147FA4]",
-                    "hover:from-[#0A23AF]/90 hover:to-[#147FA4]/90",
+                    "h-14 px-8 border border-[#1B64FF] text-white text-base font-normal",
+                    "bg-[#1C0C7A]",
+                    "hover:bg-[#1C0C7A]",
                     "transition-all duration-200",
                     "min-w-[240px]",
                     "backdrop-blur-sm drop-shadow-lg",

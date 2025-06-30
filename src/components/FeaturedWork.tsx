@@ -50,7 +50,7 @@ const FeaturedWork = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, #090F78 40%,  #07033B 120%)",
+                  "linear-gradient(180deg, #1C0C7A 40%,  #07033B 120%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -119,8 +119,8 @@ const FeaturedWork = () => {
                     <Button
                       className={cn(
                         "w-24 h-10 border border-[#1B64FF] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#090F78]",
-                        "hover:bg-[#090F78]",
+                        "bg-[#1C0C7A]",
+                        "hover:bg-[#1C0C7A]",
                         "hover:shadow-lg hover:shadow-[#1B64FF]/20",
                         "hover:border-2",
                         "transition-all duration-200",

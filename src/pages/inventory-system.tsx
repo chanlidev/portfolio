@@ -20,7 +20,7 @@ const InventorySystem: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #24003C 0%, #004B78 100%)",
+            background: "linear-gradient(180deg, #07033B 0%, #004B78 100%)",
           }}
         />
 

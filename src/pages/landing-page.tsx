@@ -17,7 +17,7 @@ const LandingPage: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #24003C 0%, #090F78 100%)",
+            background: "linear-gradient(180deg, #07033B 0%, #1C0C7A 100%)",
           }}
         />
 
@@ -80,7 +80,7 @@ const LandingPage: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #090F78 0%, #666666 100%)",
+            background: "linear-gradient(180deg, #1C0C7A 0%, #666666 100%)",
           }}
         />
 

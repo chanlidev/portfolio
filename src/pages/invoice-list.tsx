@@ -22,7 +22,7 @@ const InvoiceList: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #24003C 0%, #4A044C 100%)",
+            background: "linear-gradient(180deg, #07033B 0%, #4A044C 100%)",
           }}
         />
 
