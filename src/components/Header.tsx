@@ -25,7 +25,7 @@ const Header: React.FC = () => {
   );
 
   return (
-    <header className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 md:px-12 pt-4 lg:pt-8 bg-transparent">
+    <header className="w-full max-w-[1400px] mx-auto px-4 lg:px-12 pt-4 lg:pt-8 bg-transparent">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex-shrink-0">
           <img
