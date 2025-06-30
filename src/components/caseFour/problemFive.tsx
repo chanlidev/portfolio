@@ -9,11 +9,11 @@ const ProblemFive = () => {
       <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#0D82B8] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#149EDD] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Problem
           </h2>
-          <div className="flex-1 h-px bg-[#0D82B8] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#149EDD] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}
@@ -34,7 +34,7 @@ const ProblemFive = () => {
 
         <div className="mb-20 lg:mb-40">
           {/* Section Header Line */}
-          <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
+          <div className="h-px w-20 bg-[#149EDD] mx-auto mb-4" />
 
           {/* Section Title */}
           <p className="text-white text-center text-lg lg:text-xl mb-6">
@@ -53,19 +53,19 @@ const ProblemFive = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 max-w-7xl mx-auto px-4 text-center">
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
+            <div className="border border-[#149EDD] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Uncertainty about part availability without visiting the warehouse
             </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
+            <div className="border border-[#149EDD] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Inventory updates often forgotten or entered twice
             </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
+            <div className="border border-[#149EDD] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Tools frequently go missing due to lack of proper logging
             </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
+            <div className="border border-[#149EDD] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Office staff struggle with manual spreadsheets and late returns
             </div>
-            <div className="border border-[#0D82B8] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
+            <div className="border border-[#149EDD] rounded-lg p-4 text-white text-sm md:text-base leading-relaxed bg-transparent">
               Manual ordering process when stock level is low
             </div>
           </div>
@@ -78,10 +78,10 @@ const ProblemFive = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 items-stretch">
               {/* Mobile Experience */}
               <div className="relative h-full">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white whitespace-nowrap">
                   Mobile Experience
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
                   <p>
                     Users need an interface that is intuitive and fast on mobile
                     so they can check and update inventory from any job site.
@@ -91,10 +91,10 @@ const ProblemFive = () => {
 
               {/* Sync Across Devices */}
               <div className="relative h-full">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white whitespace-nowrap">
                   Sync Across Devices
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
                   <p>
                     Inventory data must stay consistent and up to date across
                     devices to prevent miscommunication and double entry.
@@ -104,10 +104,10 @@ const ProblemFive = () => {
 
               {/* Less Manual Work */}
               <div className="relative h-full">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white whitespace-nowrap">
                   Less Manual Work
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
                   <p>
                     The more users have to type or remember, the more likely
                     they’ll forget or input incorrect info—automated processes
@@ -118,10 +118,10 @@ const ProblemFive = () => {
 
               {/* Clear Tracking */}
               <div className="relative h-full">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white whitespace-nowrap">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white whitespace-nowrap">
                   Clear Tracking
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2 h-full flex flex-col justify-start">
                   <p>
                     When tools and materials are tracked clearly by who used
                     what and when, it reduces loss and makes teams more
@@ -135,7 +135,7 @@ const ProblemFive = () => {
 
         <div className="mb-20 lg:mb-40">
           {/* Section Header Line */}
-          <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
+          <div className="h-px w-20 bg-[#149EDD] mx-auto mb-4" />
 
           {/* Section Title */}
           <p className="text-white  text-center text-lg lg:text-xl mb-6">
@@ -156,7 +156,7 @@ const ProblemFive = () => {
 
         <div className="mb-12">
           {/* Section Header Line */}
-          <div className="h-px w-20 bg-[#0D82B8] mx-auto mb-4" />
+          <div className="h-px w-20 bg-[#149EDD] mx-auto mb-4" />
 
           {/* Section Title */}
           <p className="text-white text-center text-lg lg:text-xl  mb-6">
@@ -173,10 +173,10 @@ const ProblemFive = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Must Have */}
               <div className="relative">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white">
                   Must Have
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
                   <p>Real-Time Inventory Management</p>
                   <p>Inventory Search &amp; Filter</p>
                   <p>Mobile &amp; Desktop Access</p>
@@ -186,10 +186,10 @@ const ProblemFive = () => {
 
               {/* Should Have */}
               <div className="relative">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white">
                   Should Have
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
                   <p>Check-Out / Check-In Validation</p>
                   <p>Order Request System</p>
                   <p>User Activity Logs</p>
@@ -199,10 +199,10 @@ const ProblemFive = () => {
 
               {/* Could Have */}
               <div className="relative">
-                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#0D82B8] px-2 text-sm md:text-base text-white">
+                <h3 className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-[#149EDD] px-2 text-sm md:text-base text-white">
                   Could Have
                 </h3>
-                <div className="border border-[#0D82B8] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
+                <div className="border border-[#149EDD] rounded-lg pt-8 p-4 bg-transparent text-center text-white text-sm md:text-base leading-relaxed space-y-2">
                   <p>QR Code Scanning</p>
                   <p>Low Stock Alerts</p>
                   <p>Analytics Dashboard</p>
