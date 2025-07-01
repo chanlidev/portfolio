@@ -24,7 +24,7 @@ const StarField = () => {
     // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = 200; // Number of stars
+      const starCount = window.innerWidth < 640 ? 100 : 200; // Number of stars
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
