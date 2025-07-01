@@ -137,8 +137,8 @@ const StarField = () => {
         style={{
           top: "65%",
           left: "85%",
-          width: "12px",
-          height: "12px",
+          width: "8px",
+          height: "8px",
           opacity: 0.6,
           boxShadow:
             "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
