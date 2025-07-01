@@ -48,6 +48,16 @@ const StarField = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
       <style jsx>{`
+        @keyframes pulse {
+          0%,
+          100% {
+            opacity: 0.3;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+
         @keyframes drift {
           0% {
             transform: translate(0, 0);
@@ -75,6 +85,7 @@ const StarField = () => {
           }
         }
       `}</style>
+
       {stars.map((star) => {
         const driftAnimationName =
           star.driftDirection < 120
@@ -86,7 +97,7 @@ const StarField = () => {
         return (
           <div
             key={star.id}
-            className="absolute rounded-full bg-white animate-pulse"
+            className="absolute rounded-full bg-white"
             style={{
               left: `${star.x}%`,
               top: `${star.y}%`,
@@ -99,11 +110,54 @@ const StarField = () => {
                 star.size > 2.5
                   ? `0 0 ${star.size * 2}px rgba(255,255,255,0.5)`
                   : "none",
-              animation: `pulse ${star.twinkleSpeed}s infinite ${star.animationDelay}s, ${driftAnimationName} ${star.driftSpeed}s infinite linear`,
+              animation:
+                `pulse ${star.twinkleSpeed}s infinite ${star.animationDelay}s, ` +
+                `${driftAnimationName} ${star.driftSpeed}s infinite linear`,
             }}
           />
         );
       })}
+
+      {/* Add some larger glowing stars */}
+      <div
+        className="absolute rounded-full bg-white"
+        style={{
+          top: "20%",
+          left: "15%",
+          width: "8px",
+          height: "8px",
+          opacity: 0.8,
+          boxShadow:
+            "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
+          animation: "pulse 3s infinite, drift 20s infinite linear",
+        }}
+      />
+      <div
+        className="absolute rounded-full bg-white"
+        style={{
+          top: "65%",
+          left: "85%",
+          width: "12px",
+          height: "12px",
+          opacity: 0.6,
+          boxShadow:
+            "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
+          animation: "pulse 4s infinite, driftAlt 25s infinite linear",
+        }}
+      />
+      <div
+        className="absolute rounded-full bg-white"
+        style={{
+          top: "40%",
+          left: "75%",
+          width: "8px",
+          height: "8px",
+          opacity: 0.7,
+          boxShadow:
+            "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
+          animation: "pulse 2.5s infinite, driftSlow 22s infinite linear",
+        }}
+      />
     </div>
   );
 };
@@ -129,7 +183,7 @@ const Index = () => {
           <Header />
 
           {/* Main Content */}
-          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 pt-0 lg:pt-20 pb-16 lg:pb-32">
+          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 mt-16 md:mt-32 pb-16 lg:pb-32">
             <div className="text-center max-w-4xl mx-auto">
               {/* Main Heading */}
               <h1 className="mb-8 lg:mb-12 opacity-0 animate-fadeInScale">
@@ -139,13 +193,9 @@ const Index = () => {
                     fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
                     fontWeight: "700",
                     color: "#FFFFFF",
-                    textShadow: `
-        0 0 2px rgba(255,105,180,0.8),
-        0 0 2px rgba(255,105,180,0.6),
-        0 0 2px rgba(255,105,180,0.4),
-        1px 1px 3px rgba(0,0,0,0.8),
-        2px 2px 6px rgba(0,0,0,0.6)
-      `,
+                    textShadow:
+                      "0 0 2px rgba(255,105,180,0.8), 0 0 2px rgba(255,105,180,0.6), " +
+                      "0 0 2px rgba(255,105,180,0.4), 1px 1px 3px rgba(0,0,0,0.8), 2px 2px 6px rgba(0,0,0,0.6)",
                     filter:
                       "drop-shadow(0 0 15px rgba(255,105,180,0.6)) drop-shadow(0 0 25px rgba(255,20,147,0.4))",
                   }}
@@ -154,7 +204,7 @@ const Index = () => {
                 </span>
               </h1>
               {/* Description */}
-              <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed  drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
+              <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
                 Hey there! 👋 I’m a Calgary-based UX/UI designer and developer
                 who loves turning complex problems into simple solutions. I
                 designed and coded this portfolio myself—enjoy exploring my
