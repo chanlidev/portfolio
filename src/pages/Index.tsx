@@ -148,7 +148,7 @@ const StarField = () => {
       <div
         className="absolute rounded-full bg-white"
         style={{
-          top: "40%",
+          top: "35%",
           left: "75%",
           width: "8px",
           height: "8px",
