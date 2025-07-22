@@ -9,6 +9,8 @@ import ProblemTwo from "@/components/caseOne/problemTwo";
 import ProblemThree from "@/components/caseTwo/problem";
 import ContactSection from "@/components/ContactSection";
 import Solution from "@/components/caseTwo/solution";
+import ProblemFour from "@/components/caseThree/problemFour";
+import SolutionFour from "@/components/caseThree/solutionFour";
 
 const AutoPayment: React.FC = () => {
   return (
@@ -134,7 +136,7 @@ const AutoPayment: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  March 2025{`\n`}Calgary, AB
+                  January - March 2025{`\n`}Calgary, AB
                 </p>
               </div>
             </div>
@@ -154,8 +156,11 @@ const AutoPayment: React.FC = () => {
         </div>
       </div>
       <div className="w-full">
+        <ProblemFour />
+        <SolutionFour />
         <ProblemThree />
         <Solution />
+
         <ContactSection />
       </div>
     </>

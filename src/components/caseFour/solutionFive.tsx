@@ -112,7 +112,7 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
+        <div className="mb-32 lg:mb-60 mx-auto max-w-7xl">
           <div className="h-px w-20 bg-[#149EDD] mx-auto mb-4" />
 
           {/* Section Title */}

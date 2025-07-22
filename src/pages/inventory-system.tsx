@@ -136,7 +136,7 @@ const InventorySystem: React.FC = () => {
                   Timeline
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  January - April 2024{`\n`}Calgary, AB
+                  January - March 2024{`\n`}Calgary, AB
                 </p>
               </div>
             </div>

@@ -232,57 +232,34 @@ const FeaturedWork = () => {
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
+              <div className="flex-1 mb-12 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
                   <img
-                    src="/images/invoice.gif"
+                    src="/images/image 8.png"
                     alt="Payment"
-                    className="w-full h-full object-overflow"
+                    className="w-5/6 h-auto object-contain"
                   />
                 </div>
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <a
-                    href="https://pekopay.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    <span className="text-[#08BCA1] text-sm lg:text-base">
-                      PekoPay
-                    </span>
-                    <svg
-                      className="w-4 h-4 text-[#08BCA1]"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={1.5}
-                        d="M10 6.25H5.83333C5.50181 6.25 5.18387 6.3817 4.94945 6.61612C4.71503 6.85054 4.58333 7.16848 4.58333 7.5V14.1667C4.58333 14.4982 4.71503 14.8161 4.94945 15.0505C5.18387 15.285 5.50181 15.4167 5.83333 15.4167H12.5C12.8315 15.4167 13.1495 15.285 13.3839 15.0505C13.6183 14.8161 13.75 14.4982 13.75 14.1667V10M10.4167 9.58333L15.72 4.28M12.0833 3.75H16.25V7.91667"
-                      />
-                    </svg>
-                  </a>
-                </div>
-
                 <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Crafting the Invoice List with Inline Action Controls
+                  Crafting Visual Stories with Thoughtful and Impactful Design
                 </h3>
 
                 <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      From 4 Steps to 1
+                      Graphic Design
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      UX/UI Design
+                      Posters
                     </span>
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      Responsive Web
+                      Postcards
+                    </span>
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Brochure
                     </span>
                   </div>
                   <Link to="/invoice-list">

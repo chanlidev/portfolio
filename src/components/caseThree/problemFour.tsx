@@ -7,13 +7,47 @@ const ProblemFour = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12  -mt-px -mb-px">
       <div className="max-w-7xl mx-auto">
+        <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
+            Design Process
+          </h2>
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+        </div>
+        <div className="text-left mb-10 lg:mb-20">
+          <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-5xl mx-auto">
+            For the recurring payments project, I immersed myself in a design
+            process that required a holistic understanding of the existing payer
+            experience.
+            <br />
+            <br />
+            To seamlessly integrate the new “Add Payment Method” flow, I
+            conducted comprehensive research, mapping the original five-step
+            process and identifying pain points. Beyond the screens, I explored
+            the operational dynamics of merchant payment habits, late-payment
+            patterns, and business priorities around cash flow.
+            <br />
+            <br />
+            This research informed key design decisions, ensuring the new
+            two-step flow aligned with merchant needs and reduced friction in
+            setup. By running an iterative design process, I was able to
+            continuously test, refine, and deliver while staying focused on our
+            original goals and insights uncovered throughout the journey.
+          </p>
+          <img
+            src="/images/first 1.png"
+            alt="Process overview"
+            className="mt-10 mb-32 lg:mb-60 w-full max-w-2xl mx-auto rounded-lg"
+            loading="lazy"
+          />
+        </div>
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF31AC] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
-            Problem
+            Problem One
           </h2>
-          <div className="flex-1 h-px bg-[#FF31AC] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}
@@ -122,7 +156,7 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10 lg:mb-20">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
           <p>
             Original Workflow (4 steps)
             <br />

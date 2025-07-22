@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const ProblemThree = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
+    <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
       <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
-            Problem
+            Problem Two
           </h2>
           <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
         </div>
@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center">
           <p>
             Original Workflow (5 steps)
             <br />

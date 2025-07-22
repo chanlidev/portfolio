@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 
 const SolutionFour = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF31AC] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Solution
           </h2>
-          <div className="flex-1 h-px bg-[#FF31AC] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}
@@ -28,9 +28,8 @@ const SolutionFour = () => {
             Instead of rebuilding the table, I added an expandable panel to each
             row and updated the action menu to show only the options that match
             the invoice status. Users can still open a pop-up for a full
-            PDF-style view. This change cuts the workflow{" "}
-            <span className="text-[#FF31AC]">from 4 steps to 1</span>, allowing
-            users to preview and act on an invoice in a single click.
+            PDF-style view. This change cuts the workflow from 4 steps to 1,
+            allowing users to preview and act on an invoice in a single click.
           </p>
         </div>
 
@@ -79,7 +78,7 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -100,6 +99,7 @@ const SolutionFour = () => {
           </div>
         </div>
 
+        {/*
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
@@ -168,7 +168,7 @@ const SolutionFour = () => {
               Next &gt;
             </Button>
           </Link>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

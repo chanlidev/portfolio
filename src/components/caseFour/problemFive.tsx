@@ -7,6 +7,44 @@ const ProblemFive = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
       <div className="max-w-7xl mx-auto">
+        <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+          <div className="flex-1 h-px bg-[#149EDD] max-w-sm"></div>
+          <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
+            Design Process
+          </h2>
+          <div className="flex-1 h-px bg-[#149EDD] max-w-sm"></div>
+        </div>
+        <div className="text-left mb-10 lg:mb-20">
+          <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-6xl mx-auto">
+            The design process for TradeTrack began with stakeholder interviews
+            to uncover the daily challenges tradespeople face managing inventory
+            on job sites and in shops. I complemented these insights with
+            research into typical workflows, stock management practices, and
+            pain points with existing tools like spreadsheets.
+            <br />
+            <br />
+            A benchmark analysis of competing inventory solutions helped
+            identify gaps and opportunities to differentiate TradeTrack with
+            real-time tracking and a streamlined interface. Moving to the UI
+            design and prototyping phase, I focused on creating an intuitive
+            experience that minimized data entry and maximized visibility of
+            stock levels and material locations.
+            <br />
+            <br />
+            The design was validated with stakeholders through iterative reviews
+            and usability feedback sessions before being handed off to
+            development. Through this collaborative process, I delivered an
+            efficient tool that replaced manual spreadsheets with real-time
+            inventory management tailored to the needs of tradespeople.
+          </p>
+          <img
+            src="/images/second.png"
+            alt="Process overview"
+            className="mt-10 mb-32 lg:mb-60 w-full max-w-4xl mx-auto rounded-lg"
+            loading="lazy"
+          />
+        </div>
+
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#149EDD] max-w-sm"></div>
@@ -154,7 +192,7 @@ const ProblemFive = () => {
           </div>
         </div>
 
-        <div className="mb-12">
+        <div className="mb-10">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#149EDD] mx-auto mb-4" />
 

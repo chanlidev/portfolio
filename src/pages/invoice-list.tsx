@@ -39,11 +39,18 @@ const InvoiceList: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <img
-              src="/images/invoice.gif"
-              alt="Mobile app screenshot"
-              className="w-full h-auto  object-cover rounded"
-            />
+            <div className="grid grid-cols-2 gap-4 md:gap-16">
+              <img
+                src="/images/image 8.png"
+                alt="Screenshot 8"
+                className="w-full h-auto object-contain rounded"
+              />
+              <img
+                src="/images/image 9.png"
+                alt="Screenshot 9"
+                className="w-full h-auto object-contain rounded"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
@@ -61,98 +68,17 @@ const InvoiceList: React.FC = () => {
         {/* Content container */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
-            {/* Details Card (transparent) */}
-            <div className="rounded-lg md:w-1/2">
-              {/* Logo placeholder */}
-              <div className="mb-8">
-                <img
-                  src="/images/PekoPay 1.svg"
-                  alt="Logo"
-                  className="w-[120px] h-auto object-cover rounded"
-                />
-              </div>
-
-              {/* Title */}
-              <h1 className="text-white text-2xl lg:text-3xl mb-12 leading-normal">
-                Smarter Invoicing with Inline Actions & Quick Previews
-              </h1>
-
-              {/* At-A-Glance */}
-              <h2 className="text-white text-sm sm:text-base lg:text-lg mb-6">
-                At-A-Glance
-              </h2>
-
-              {/* Description */}
-              <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
-                I redesigned the invoice list page to support a smoother payment
-                workflow. Based on the status of each invoice, users can take
-                relevant actions such as editing, finalizing, sending, deleting,
-                or marking invoices as paid, refunded, or uncollectable. A
-                collapsible preview allows users to scan key details without
-                leaving the page, making invoice management faster and more
-                efficient.
-              </p>
-            </div>
-
-            {/* Image Card */}
-            <div className="bg-gray-300 rounded-lg p-4 md:w-1/2  flex items-center justify-center overflow-hidden">
+            <div className="grid grid-cols-2 gap-4 md:gap-16">
               <img
-                src="/images/Group 99.gif"
-                alt="PekoPay application screenshots"
-                className="h-full max-w-full object-contain"
+                src="/images/image 8.png"
+                alt="Screenshot 8"
+                className="w-full h-auto object-contain rounded"
               />
-            </div>
-          </div>
-
-          {/* Full-width Info Grid (centered, with vertical bars) */}
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-            {/* My Role */}
-            <div className="flex items-start space-x-4">
-              <Briefcase className="w-6 h-6 text-white/60 flex-shrink-0" />
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg text-white/60 mb-2">
-                  My Role
-                </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer
-                </p>
-              </div>
-            </div>
-            {/* Team */}
-            <div className="flex items-start space-x-4">
-              <Users className="w-6 h-6 text-white/60 flex-shrink-0" />
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg text-white/60 mb-2">
-                  Team
-                </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  1 CTO{`\n`}1 Designer{`\n`}1 Developer
-                </p>
-              </div>
-            </div>
-            {/* Timeline */}
-            <div className="flex items-start space-x-4">
-              <Clock className="w-6 h-6 text-white/60 flex-shrink-0" />
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg text-white/60 mb-2">
-                  Timeline
-                </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-white/60 whitespace-pre-line">
-                  January 2025{`\n`}Calgary, AB
-                </p>
-              </div>
-            </div>
-            {/* Impact */}
-            <div className="flex items-start space-x-4">
-              <Target className="w-6 h-6 text-white/60 flex-shrink-0" />
-              <div>
-                <h3 className="text-sm sm:text-base lg:text-lg text-white/60 mb-2">
-                  Impact
-                </h3>
-                <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  Invoice management workflow reduced from 4 steps to 1
-                </p>
-              </div>
+              <img
+                src="/images/image 9.png"
+                alt="Screenshot 9"
+                className="w-full h-auto object-contain rounded"
+              />
             </div>
           </div>
         </div>

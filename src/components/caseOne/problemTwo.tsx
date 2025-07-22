@@ -102,7 +102,7 @@ const ProblemTwo = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
+        <div className="mb-32 lg:mb-60 mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
             <div className="md:col-span-1">
@@ -150,7 +150,7 @@ const ProblemTwo = () => {
               </h3>
               <h3 className="text-sm md:text-base font-normal">
                 <a
-                  href="https://pekopay.com/dashboard"
+                  href="https://pekopay.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

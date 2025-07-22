@@ -7,6 +7,50 @@ const ProblemOne = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20  -mt-px -mb-px ">
       <div className="max-w-[1450px] mx-auto">
+        <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
+          <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
+            Design Process
+          </h2>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
+        </div>
+        <div className="text-left mb-10 lg:mb-20">
+          <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-6xl mx-auto">
+            This project highlighted my skills in digital product design and UX
+            research. I partnered closely with the founding team, immersing
+            myself in the world of small business finance to understand the
+            unique motivations and challenges of our users.
+            <br />
+            <br />
+            My approach incorporated research methodologies, including
+            competitor analysis, stakeholder workshops, and usability testing
+            with business owners. By uncovering pain points in existing payment
+            solutions, I designed a user-centric experience that emphasized
+            simplicity, transparency, and the key differentiator — unlimited
+            cashback.
+            <br />
+            <br />
+            Building on these insights, I developed a cohesive visual language
+            and design system to ensure consistency across the landing page and
+            dashboard. The result was an intuitive, modern interface that not
+            only conveyed PekoPay’s value proposition clearly but also made it
+            effortless for businesses to track transactions and rewards.
+            <br />
+            <br />
+            The design process was a collaborative and iterative journey,
+            balancing creative storytelling with the functional demands of
+            financial tools, and it reflected my commitment to creating a
+            product experience that exceeded user expectations while supporting
+            PekoPay’s business goals.
+          </p>
+          <img
+            src="/images/Group 122.png"
+            alt="Process overview"
+            className="mt-10 mb-32 lg:mb-60 w-full max-w-4xl mx-auto rounded-lg"
+            loading="lazy"
+          />
+        </div>
+
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -97,7 +141,7 @@ const ProblemOne = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className="aspect-[16/11] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
                   <img
                     src={src}
                     alt={label}
@@ -149,7 +193,7 @@ const ProblemOne = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className="aspect-[16/10] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className=" rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
                   <img
                     src={src}
                     alt={label}
@@ -163,20 +207,10 @@ const ProblemOne = () => {
 
         {/* Final Results Section */}
         <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
-          {/* Left side: Final Version */}
           <div>
-            <div className="flex justify-between mb-4">
+            <div className="flex justify-between mb-6">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#08BCA1]">Final Version</span>
-              </h3>
-              <h3 className="text-sm md:text-base font-normal">
-                <a
-                  href="https://pekopay.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-[#08BCA1]">View Live Website</span>
-                </a>
+                Final Landing Page Design
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
@@ -188,16 +222,15 @@ const ProblemOne = () => {
             </div>
           </div>
 
-          {/* Right side: Smaller phone image */}
           <div className="flex flex-col justify-center h-full items-center md:items-center">
             <div
-              className="bg-[#121E2A] p-3 aspect-[6.5/13.5] rounded-lg overflow-hidden flex items-center justify-center 
+              className="bg-[#121E2A] p-2.5 mt-2 aspect-[6.5/13.5] rounded-3xl overflow-hidden flex items-center justify-center 
              w-[200px]  lg:w-[256px]"
             >
               <img
                 src="/images/phone.gif"
                 alt="After: cashback calculator"
-                className="w-full h-auto object-contain rounded-lg"
+                className="w-full h-auto object-contain rounded-2xl"
               />
             </div>
           </div>

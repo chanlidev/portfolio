@@ -79,7 +79,7 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-32 lg:mb-60">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
@@ -106,6 +106,15 @@ const Solution = () => {
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
                 <span className="text-[#FF715C]">Final Version</span>
+              </h3>
+              <h3 className="text-sm md:text-base font-normal">
+                <a
+                  href="https://pekopay.com/dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="text-[#FF715C]">View Live Website</span>
+                </a>
               </h3>
             </div>
             <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
