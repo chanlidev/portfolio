@@ -4,7 +4,10 @@ import React from "react";
 import Header from "@/components/Header";
 import ContactSection from "@/components/ContactSection";
 import AutoCarousel from "@/components/caseThree/auto";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -19,7 +22,7 @@ const InvoiceList: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #07033B 0%, #4A044C 100%)",
+            background: "linear-gradient(180deg, #07033B 20%, #1C0C7A 100%)",
           }}
         />
         <div className="relative z-10">
@@ -35,7 +38,7 @@ const InvoiceList: React.FC = () => {
             className="w-full max-w-[1000px] mx-auto"
           >
             <div className="bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg overflow-hidden">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
                 <img
                   src="/images/image 8.png"
                   alt="Screenshot 8"
@@ -57,7 +60,7 @@ const InvoiceList: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #4A044C 0%, #666666 100%)",
+            background: "linear-gradient(180deg, #1C0C7A 0%, #666666 100%)",
           }}
         />
 
@@ -67,10 +70,10 @@ const InvoiceList: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="md:mb-10"
+            className="md:mb-20"
           >
             <div className="bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg overflow-hidden">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-16 items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 items-center">
                 <img
                   src="/images/image 10.png"
                   alt="Screenshot 10"
@@ -90,8 +93,8 @@ const InvoiceList: React.FC = () => {
             </div>
             {/* Description ABOVE gray box */}
             <p className="mt-6 text-left text-white text-sm md:text-base">
-              Hero visuals showcasing initial concepts and layout explorations
-              for the project.
+              Designed posters and postcards for Eastern Washington University’s
+              Student Gallery to promote exhibitions and events.
             </p>
           </motion.div>
         </div>
@@ -112,29 +115,32 @@ const InvoiceList: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="md:mb-10"
+            className="md:mb-20"
           >
             <div className="rounded-lg overflow-hidden">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-16">
-                <div className="sm:col-span-1">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
+                <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto md:max-w-none md:mx-0">
                   <img
                     src="/images/13.png"
                     alt="Screenshot 13"
-                    className="w-full h-auto object-contain rounded"
+                    className="w-full h-auto object-contain rounded-lg"
                   />
                 </div>
-                <div className="sm:col-span-2">
+
+                {/* Right (carousel) */}
+
+                <div className="rounded-lg overflow-hidden flex items-start justify-start">
                   <AutoCarousel
                     images={["/images/11.png", "/images/12.png"]}
                     interval={2500}
-                    className="w-full h-auto object-contain rounded"
+                    className="w-full h-auto object-contain rounded-lg"
                   />
                 </div>
               </div>
             </div>
+
             <p className="mt-6 text-left text-white text-sm md:text-base">
-              Hero visuals showcasing initial concepts and layout explorations
-              for the project.
+              Logo and poster design for Omnia Dental Clinic in Edmonton, AB.
             </p>
           </motion.div>
         </div>
@@ -155,9 +161,9 @@ const InvoiceList: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="md:mb-10"
+            className="md:mb-20"
           >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-16">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
               <div className="relative aspect-[3/4]">
                 <img
                   src="/images/14.png"
@@ -182,10 +188,41 @@ const InvoiceList: React.FC = () => {
               </div>
             </div>
             <p className="mt-6 text-left text-white text-sm md:text-base">
-              Hero visuals showcasing initial concepts and layout explorations
-              for the project.
+              New product catalog design for PT Langit Biru Parasut.
             </p>
           </motion.div>
+        </div>
+        <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-20">
+          <Link to="/inventory-system">
+            <Button
+              className={cn(
+                "h-9 w-32 flex items-center justify-center",
+                "border border-[#1B64FF] text-white text-sm font-normal",
+                "bg-[#1C0C7A]",
+                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+                "backdrop-blur-sm transition-all duration-200",
+                "hover:border-2 hover:border-[#1B64FF]",
+                "hover:bg-[#1C0C7A]",
+                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
+              )}
+            >
+              &lt; Previous
+            </Button>
+          </Link>
+
+          <Button
+            disabled
+            className={cn(
+              "h-9 w-32 flex items-center justify-center",
+              "border border-[#1B64FF] text-white text-sm font-normal",
+              "bg-[#1C0C7A]",
+              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
+              "backdrop-blur-sm transition-all duration-200",
+              "opacity-50 cursor-not-allowed",
+            )}
+          >
+            Next &gt;
+          </Button>
         </div>
       </div>
 

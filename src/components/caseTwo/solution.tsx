@@ -9,11 +9,11 @@ const Solution = () => {
       <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Solution
           </h2>
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}
@@ -30,7 +30,7 @@ const Solution = () => {
             straight to the new client’s details page and trigger a pop-up for
             adding a payment method immediately after creation. This refined
             workflow reduces the original process{" "}
-            <span className="text-[#FF715C]">from 5 steps to 2</span>,
+            <span className="text-[#08BCA1]">from 5 steps to 2</span>,
             streamlining and accelerating the entire setup process.
           </p>
         </div>
@@ -105,7 +105,7 @@ const Solution = () => {
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-sm md:text-base font-normal">
-                <span className="text-[#FF715C]">Final Version</span>
+                <span className="text-[#08BCA1]">Final Version</span>
               </h3>
               <h3 className="text-sm md:text-base font-normal">
                 <a
@@ -113,7 +113,7 @@ const Solution = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="text-[#FF715C]">View Live Website</span>
+                  <span className="text-[#08BCA1]">View Live Website</span>
                 </a>
               </h3>
             </div>
@@ -129,14 +129,14 @@ const Solution = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Feedback:</span>
+                <span className="text-[#08BCA1]">Feedback:</span>
                 <br /> Landing on the client details page with an immediate “Add
                 Payment Method” prompt and a Subscription section on the same
                 page cut setup to two steps and eliminated repetitive tasks.
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#FF715C]">Takeaway:</span>
+                <span className="text-[#08BCA1]">Takeaway:</span>
                 <br /> I learned that consolidating related actions into one
                 interface and reusing existing components can dramatically
                 streamline complex workflows and improve usability.
@@ -162,7 +162,7 @@ const Solution = () => {
             </Button>
           </Link>
 
-          <Link to="/invoice-list">
+          <Link to="/inventory-system">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",

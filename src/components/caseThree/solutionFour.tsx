@@ -9,11 +9,11 @@ const SolutionFour = () => {
       <div className="max-w-7xl mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Solution
           </h2>
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}

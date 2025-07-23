@@ -8,11 +8,11 @@ const ProblemFour = () => {
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12  -mt-px -mb-px">
       <div className="max-w-7xl mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Design Process
           </h2>
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
         </div>
         <div className="text-left mb-10 lg:mb-20">
           <p className="text-white/60 text-sm md:text-base lg:text-lg font-normal leading-relaxed max-w-5xl mx-auto">
@@ -43,11 +43,11 @@ const ProblemFour = () => {
         </div>
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
             Problem One
           </h2>
-          <div className="flex-1 h-px bg-[#FF715C] max-w-sm"></div>
+          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
         </div>
 
         {/* Main Headline */}

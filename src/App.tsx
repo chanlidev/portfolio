@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LandingPage from "./pages/landing-page";
 import AutoPayment from "./pages/automated-payment";
-import InvoiceList from "./pages/invoice-list";
+import GraphicDesign from "./pages/graphic-design";
 import InventorySystem from "./pages/inventory-system";
 import AboutMe from "./pages/about-me";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -26,7 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/landing-page" element={<LandingPage />} />
           <Route path="/automated-payment" element={<AutoPayment />} />
-          <Route path="/invoice-list" element={<InvoiceList />} />
+          <Route path="/graphic-design" element={<GraphicDesign />} />
           <Route path="/inventory-system" element={<InventorySystem />} />
           <Route path="/about-me" element={<AboutMe />} />
           <Route path="*" element={<NotFound />} />

@@ -21,7 +21,7 @@ const AutoPayment: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #07033B 0%, #64392F 100%)",
+            background: "linear-gradient(180deg, #07033B 20%, #1C0C7A 100%)",
           }}
         />
 
@@ -53,7 +53,7 @@ const AutoPayment: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #64392F 0%, #666666 100%)",
+            background: "linear-gradient(180deg, #1C0C7A 0%, #666666 100%)",
           }}
         />
 

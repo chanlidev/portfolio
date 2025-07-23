@@ -222,13 +222,13 @@ const FeaturedWork = () => {
 
           {/* Project 4 - Coming Soon */}
           <motion.div
-            className="group relative overflow-hidden border border-[#08BCA1] rounded-lg backdrop-blur-sm"
+            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
             variants={cardVariants}
           >
             <div
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, #004B78 0%, #020C38 100%)",
+                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -258,7 +258,7 @@ const FeaturedWork = () => {
                   Building an Inventory System for the Trades Industry
                 </h3>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-18">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       Inventory Management
@@ -273,10 +273,10 @@ const FeaturedWork = () => {
                   <Link to="/inventory-system">
                     <Button
                       className={cn(
-                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#004B78]",
-                        "hover:bg-[#004B78]",
-                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
+                        "bg-[#4A044C]",
+                        "hover:bg-[#4A044C]",
+                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
                         "hover:border-2",
                         "transition-all duration-200",
                         "backdrop-blur-sm",
@@ -291,13 +291,13 @@ const FeaturedWork = () => {
           </motion.div>
           {/* Project 3 - Coming Soon */}
           <motion.div
-            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
+            className="group relative overflow-hidden border border-[#08BCA1] rounded-lg backdrop-blur-sm"
             variants={cardVariants}
           >
             <div
               className="absolute inset-0"
               style={{
-                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
+                background: "linear-gradient(180deg, #004B78 0%, #020C38 100%)",
               }}
             />
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
@@ -316,7 +316,7 @@ const FeaturedWork = () => {
                   Crafting Visual Stories with Thoughtful and Impactful Design
                 </h3>
 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-2">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       Graphic Design
@@ -331,13 +331,13 @@ const FeaturedWork = () => {
                       Brochure
                     </span>
                   </div>
-                  <Link to="/invoice-list">
+                  <Link to="/graphic-design">
                     <Button
                       className={cn(
-                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#4A044C]",
-                        "hover:bg-[#4A044C]",
-                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
+                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
+                        "bg-[#004B78]",
+                        "hover:bg-[#004B78]",
+                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
                         "hover:border-2",
                         "transition-all duration-200",
                         "backdrop-blur-sm",
