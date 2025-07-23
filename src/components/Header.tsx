@@ -57,7 +57,7 @@ const Header: React.FC = () => {
               return (
                 <a
                   key={label}
-                  href="https://drive.google.com/file/d/1WyhSjlWMea_9jPaRGxaZO9TzkyEugIuT/view"
+                  href="https://drive.google.com/file/d/1v-_76XPlPFWBAMR6gi-u_RdBWZTWE2Yh/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -99,7 +99,7 @@ const Header: React.FC = () => {
               return (
                 <a
                   key={label}
-                  href="https://drive.google.com/file/d/1WyhSjlWMea_9jPaRGxaZO9TzkyEugIuT/view"
+                  href="https://drive.google.com/file/d/1v-_76XPlPFWBAMR6gi-u_RdBWZTWE2Yh/view"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

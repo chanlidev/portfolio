@@ -90,7 +90,7 @@ const ContactSection = () => {
           </motion.a>
 
           <motion.a
-            href="https://drive.google.com/file/d/1WyhSjlWMea_9jPaRGxaZO9TzkyEugIuT/view"
+            href="https://drive.google.com/file/d/1v-_76XPlPFWBAMR6gi-u_RdBWZTWE2Yh/view"
             target="_blank"
             rel="noopener noreferrer"
             className="group hover:scale-110 transition-transform duration-300"
