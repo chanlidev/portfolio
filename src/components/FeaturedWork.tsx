@@ -220,68 +220,6 @@ const FeaturedWork = () => {
             </div>
           </motion.div>
 
-          {/* Project 3 - Coming Soon */}
-          <motion.div
-            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
-            variants={cardVariants}
-          >
-            <div
-              className="absolute inset-0"
-              style={{
-                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
-              }}
-            />
-            <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              <div className="flex-1 mb-12 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
-                <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
-                  <img
-                    src="/images/image 8.png"
-                    alt="Payment"
-                    className="w-5/6 h-auto object-contain"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-4">
-                <h3 className="text-white text-2xl lg:text-3xl leading-tight">
-                  Crafting Visual Stories with Thoughtful and Impactful Design
-                </h3>
-
-                <div className="flex items-center justify-between">
-                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      Graphic Design
-                    </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      Posters
-                    </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      Postcards
-                    </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
-                      Brochure
-                    </span>
-                  </div>
-                  <Link to="/invoice-list">
-                    <Button
-                      className={cn(
-                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#4A044C]",
-                        "hover:bg-[#4A044C]",
-                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
-                        "hover:border-2",
-                        "transition-all duration-200",
-                        "backdrop-blur-sm",
-                      )}
-                    >
-                      View
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
           {/* Project 4 - Coming Soon */}
           <motion.div
             className="group relative overflow-hidden border border-[#08BCA1] rounded-lg backdrop-blur-sm"
@@ -339,6 +277,67 @@ const FeaturedWork = () => {
                         "bg-[#004B78]",
                         "hover:bg-[#004B78]",
                         "hover:shadow-lg hover:shadow-[#08BCA1]/20",
+                        "hover:border-2",
+                        "transition-all duration-200",
+                        "backdrop-blur-sm",
+                      )}
+                    >
+                      View
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+          {/* Project 3 - Coming Soon */}
+          <motion.div
+            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
+            variants={cardVariants}
+          >
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
+              }}
+            />
+            <div className="relative p-6 lg:p-8 h-full flex flex-col">
+              <div className="flex-1 mb-12 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
+                <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/images/image 8.png"
+                    alt="Payment"
+                    className="w-5/6 h-auto object-contain"
+                  />
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-white text-2xl lg:text-3xl leading-tight">
+                  Crafting Visual Stories with Thoughtful and Impactful Design
+                </h3>
+
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Graphic Design
+                    </span>
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Posters
+                    </span>
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Postcards
+                    </span>
+                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                      Brochure
+                    </span>
+                  </div>
+                  <Link to="/invoice-list">
+                    <Button
+                      className={cn(
+                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
+                        "bg-[#4A044C]",
+                        "hover:bg-[#4A044C]",
+                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
                         "hover:border-2",
                         "transition-all duration-200",
                         "backdrop-blur-sm",
