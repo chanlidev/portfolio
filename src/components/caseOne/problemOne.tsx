@@ -26,15 +26,16 @@ const ProblemOne = () => {
             competitor analysis, stakeholder workshops, and usability testing
             with business owners. By uncovering pain points in existing payment
             solutions, I designed a user-centric experience that emphasized
-            simplicity, transparency, and the key differentiator — unlimited
-            cashback.
+            simplicity, transparency, and the key differentiator —{" "}
+            <span className="text-[#08BCA1]">unlimited cashback</span>.
             <br />
             <br />
             Building on these insights, I developed a cohesive visual language
-            and design system to ensure consistency across the landing page and
-            dashboard. The result was an intuitive, modern interface that not
-            only conveyed PekoPay’s value proposition clearly but also made it
-            effortless for businesses to track transactions and rewards.
+            and <span className="text-[#08BCA1]">design system</span> to ensure
+            consistency across the landing page and dashboard. The result was an
+            intuitive, modern interface that not only conveyed PekoPay’s value
+            proposition clearly but also made it effortless for businesses to
+            track transactions and rewards.
             <br />
             <br />
             The design process was a collaborative and iterative journey,
