@@ -114,7 +114,7 @@ const GraphicDesign: React.FC = () => {
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="md:mb-20"
           >
             <div className="rounded-lg overflow-hidden">
@@ -160,7 +160,7 @@ const GraphicDesign: React.FC = () => {
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
+            viewport={{ once: true, amount: 0.5 }}
             className="md:mb-20"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
