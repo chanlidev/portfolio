@@ -93,7 +93,7 @@ const GraphicDesign: React.FC = () => {
             </div>
             {/* Description ABOVE gray box */}
             <p className="mt-6 text-left text-white text-sm md:text-base">
-              Designed posters and postcards for Eastern Washington University’s
+              Crafted posters and postcards for Eastern Washington University’s
               Student Gallery to promote exhibitions and events.
             </p>
           </motion.div>
@@ -133,7 +133,8 @@ const GraphicDesign: React.FC = () => {
           </div>
 
           <p className="mt-6 text-left text-white text-sm md:text-base">
-            Logo and poster design for Omnia Dental Clinic in Edmonton, AB.
+            Redesigned the logo and promotional poster for Omnia Dental Clinic
+            in Edmonton, AB.
           </p>
         </div>
       </div>
@@ -172,7 +173,8 @@ const GraphicDesign: React.FC = () => {
             </div>
           </div>
           <p className="mt-6 text-left text-white text-sm md:text-base">
-            New product catalog design for PT Langit Biru Parasut.
+            Created a new product catalog for PT Langit Biru showcasing
+            best-selling products.
           </p>
         </div>
         <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-20">
