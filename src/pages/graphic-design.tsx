@@ -14,7 +14,7 @@ const fadeUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
 };
 
-const InvoiceList: React.FC = () => {
+const GraphicDesign: React.FC = () => {
   return (
     <>
       {/* -------- SECTION 1 -------- */}
@@ -175,7 +175,6 @@ const InvoiceList: React.FC = () => {
               <div className="relative aspect-[3/4]">
                 <AutoCarousel
                   images={[
-                    "/images/1.png",
                     "/images/2.png",
                     "/images/3.png",
                     "/images/4.png",
@@ -234,4 +233,4 @@ const InvoiceList: React.FC = () => {
   );
 };
 
-export default InvoiceList;
+export default GraphicDesign;

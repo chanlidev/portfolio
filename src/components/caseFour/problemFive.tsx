@@ -38,7 +38,7 @@ const ProblemFive = () => {
             inventory management tailored to the needs of tradespeople.
           </p>
           <img
-            src="/images/second.png"
+            src="/images/timeline_white.png"
             alt="Process overview"
             className="mt-10 mb-32 lg:mb-60 w-full max-w-4xl mx-auto rounded-lg"
             loading="lazy"

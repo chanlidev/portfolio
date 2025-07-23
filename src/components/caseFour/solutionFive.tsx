@@ -201,7 +201,7 @@ const SolutionFive = () => {
             </Button>
           </Link>
 
-          <Link to="/inventory-system">
+          <Link to="/graphic-design">
             <Button
               className={cn(
                 "h-9 w-32 flex items-center justify-center",

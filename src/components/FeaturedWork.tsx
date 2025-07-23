@@ -258,7 +258,7 @@ const FeaturedWork = () => {
                   Building an Inventory System for the Trades Industry
                 </h3>
 
-                <div className="flex items-center justify-between gap-18">
+                <div className="flex items-center justify-between">
                   <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
                     <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
                       Inventory Management
