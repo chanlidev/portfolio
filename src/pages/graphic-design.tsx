@@ -110,39 +110,31 @@ const GraphicDesign: React.FC = () => {
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
-            className="md:mb-20"
-          >
-            <div className="rounded-lg overflow-hidden">
-              <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
-                <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto md:max-w-none md:mx-0">
-                  <img
-                    src="/images/13.png"
-                    alt="Screenshot 13"
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
-                </div>
+          <div className="rounded-lg overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
+              <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto md:max-w-none md:mx-0">
+                <img
+                  src="/images/13.png"
+                  alt="Screenshot 13"
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
 
-                {/* Right (carousel) */}
+              {/* Right (carousel) */}
 
-                <div className="rounded-lg overflow-hidden flex items-start justify-start">
-                  <AutoCarousel
-                    images={["/images/11.png", "/images/12.png"]}
-                    interval={2500}
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
-                </div>
+              <div className="rounded-lg overflow-hidden flex items-start justify-start">
+                <AutoCarousel
+                  images={["/images/11.png", "/images/12.png"]}
+                  interval={2500}
+                  className="w-full h-auto object-contain rounded-lg"
+                />
               </div>
             </div>
+          </div>
 
-            <p className="mt-6 text-left text-white text-sm md:text-base">
-              Logo and poster design for Omnia Dental Clinic in Edmonton, AB.
-            </p>
-          </motion.div>
+          <p className="mt-6 text-left text-white text-sm md:text-base">
+            Logo and poster design for Omnia Dental Clinic in Edmonton, AB.
+          </p>
         </div>
       </div>
 
@@ -156,40 +148,32 @@ const GraphicDesign: React.FC = () => {
         />
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.5 }}
-            className="md:mb-20"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
-              <div className="relative aspect-[3/4]">
-                <img
-                  src="/images/14.png"
-                  alt="Screenshot 14"
-                  className="absolute inset-0 w-full h-full object-contain"
-                />
-              </div>
-
-              <div className="relative aspect-[3/4]">
-                <AutoCarousel
-                  images={[
-                    "/images/2.png",
-                    "/images/3.png",
-                    "/images/4.png",
-                    "/images/5.png",
-                    "/images/6.png",
-                  ]}
-                  interval={2500}
-                  className="absolute inset-0 w-full h-full"
-                />
-              </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
+            <div className="relative aspect-[3/4]">
+              <img
+                src="/images/14.png"
+                alt="Screenshot 14"
+                className="absolute inset-0 w-full h-full object-contain"
+              />
             </div>
-            <p className="mt-6 text-left text-white text-sm md:text-base">
-              New product catalog design for PT Langit Biru Parasut.
-            </p>
-          </motion.div>
+
+            <div className="relative aspect-[3/4]">
+              <AutoCarousel
+                images={[
+                  "/images/2.png",
+                  "/images/3.png",
+                  "/images/4.png",
+                  "/images/5.png",
+                  "/images/6.png",
+                ]}
+                interval={2500}
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </div>
+          <p className="mt-6 text-left text-white text-sm md:text-base">
+            New product catalog design for PT Langit Biru Parasut.
+          </p>
         </div>
         <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-20">
           <Link to="/inventory-system">
