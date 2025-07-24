@@ -205,9 +205,9 @@ const Index = () => {
               </h1>
               {/* Description */}
               <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
-                Hey there! 👋 I design and develop user experiences in Calgary,
-                drawing on my data-analytics background. I crafted and coded
-                this portfolio myself—enjoy exploring my work!
+                Hey there! 👋 I design and develop product experiences in
+                Calgary, drawing on my data-analytics background. I crafted and
+                coded this portfolio myself—enjoy exploring my work!
               </p>
             </div>
           </main>
