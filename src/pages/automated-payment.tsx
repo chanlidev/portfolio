@@ -84,7 +84,7 @@ const AutoPayment: React.FC = () => {
               {/* Description */}
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
                 By adding a recurring payment feature, merchants can get paid
-                automatically and on time. As PekoPay’s sole UX/UI Designer, I
+                automatically and on time. As PekoPay’s sole Product Designer, I
                 redesigned the payer’s detail page to implement the “Add Payment
                 Method” flow, collapsing the original five-step process into
                 just two.
@@ -111,7 +111,7 @@ const AutoPayment: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer, <br />
+                  Product Designer, <br />
                   Frontend Developer
                 </p>
               </div>

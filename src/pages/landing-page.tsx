@@ -112,7 +112,7 @@ const LandingPage: React.FC = () => {
               {/* Description */}
               <p className="text-white text-sm sm:text-base lg:text-lg leading-normal mb-16">
                 PekoPay is a Vancouver-based fintech startup that recruited me
-                as their first and only UX/UI Designer. I led the creation of
+                as their first and only Product Designer. I led the creation of
                 their initial landing website to attract new customers, followed
                 by a user-focused dashboard. With PekoPay, businesses benefit
                 from seamless payment processing and earn cashback on every
@@ -140,7 +140,7 @@ const LandingPage: React.FC = () => {
                   My Role
                 </h3>
                 <p className="text-sm sm:text-base lg:text-lg text-white/60">
-                  UX/UI Designer, <br />
+                  Product Designer, <br />
                   Frontend Developer
                 </p>
               </div>
