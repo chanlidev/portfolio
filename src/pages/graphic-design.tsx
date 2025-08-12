@@ -9,6 +9,8 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" } },
@@ -16,15 +18,25 @@ const fadeUp = {
 
 const GraphicDesign: React.FC = () => {
   return (
-    <>
-      {/* -------- SECTION 1 -------- */}
-      <div className="w-full relative overflow-hidden -mb-px">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #07033B 20%, #1C0C7A 100%)",
-          }}
-        />
+    <div className="relative w-full overflow-hidden">
+      {/* Base background (same as Index) */}
+      <div
+        className="absolute inset-0 -z-30"
+        style={{ background: GRADIENT }}
+      />
+
+      {/* Radial vignette (same as Index) */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-20"
+        style={{
+          background:
+            "radial-gradient(60% 55% at 50% 20%, rgba(8,188,161,0.18) 0%, rgba(8,188,161,0.08) 40%, rgba(0,0,0,0) 70%)",
+        }}
+      />
+
+      {/* Top Section (sits on shared background) */}
+      <div className="w-full relative overflow-hidden pb-10 -mt-px -mb-px">
+        {/* Header */}
         <div className="relative z-10">
           <Header />
         </div>
@@ -56,14 +68,7 @@ const GraphicDesign: React.FC = () => {
       </div>
 
       {/* -------- SECTION 2 -------- */}
-      <div className="w-full relative overflow-hidden -mb-px">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #1C0C7A 0%, #666666 100%)",
-          }}
-        />
-
+      <div className="w-full relative overflow-hidden ">
         <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
           <motion.div
             variants={fadeUp}
@@ -101,14 +106,7 @@ const GraphicDesign: React.FC = () => {
       </div>
 
       {/* -------- SECTION 3 -------- */}
-      <div className="w-full relative overflow-hidden -mb-px">
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #666666 0%, #666666 100%)",
-          }}
-        />
-
+      <div className="w-full relative overflow-hidden">
         <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 md:mb-20">
           <div className="rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
@@ -144,7 +142,7 @@ const GraphicDesign: React.FC = () => {
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #666666 0%, #07033B 100%)",
+            background: "linear-gradient(180deg, #16074D 0%, #07033B 100%)",
           }}
         />
 
@@ -177,37 +175,19 @@ const GraphicDesign: React.FC = () => {
             best-selling products.
           </p>
         </div>
-        <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-20">
+        <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-6">
           <Link to="/inventory-system">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
+            <Button className="h-10 w-32 rounded-xl text-sm text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition">
               &lt; Previous
             </Button>
           </Link>
 
-          <Button
+          <button
             disabled
-            className={cn(
-              "h-9 w-32 flex items-center justify-center",
-              "border border-[#1B64FF] text-white text-sm font-normal",
-              "bg-[#1C0C7A]",
-              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-              "backdrop-blur-sm transition-all duration-200",
-              "opacity-50 cursor-not-allowed",
-            )}
+            className="h-10 px-5 w-32 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
           >
             Next &gt;
-          </Button>
+          </button>
         </div>
       </div>
 
@@ -215,7 +195,7 @@ const GraphicDesign: React.FC = () => {
       <div className="w-full">
         <ContactSection />
       </div>
-    </>
+    </div>
   );
 };
 

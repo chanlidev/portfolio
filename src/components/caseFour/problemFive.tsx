@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ProblemFive = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
+    <div className="w-full px-2 sm:px-4 lg:px-6 py-12 lg:py-20 ">
       <div className="max-w-[1450px] mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -70,7 +70,7 @@ const ProblemFive = () => {
           </p>
         </div>
 
-        <div className="mb-20 lg:mb-40">
+        <div className="mb-20 lg:mb-32">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#08BCA1] mx-auto mb-4" />
 
@@ -171,7 +171,7 @@ const ProblemFive = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40">
+        <div className="mb-20 lg:mb-32">
           {/* Section Header Line */}
           <div className="h-px w-20 bg-[#08BCA1] mx-auto mb-4" />
 

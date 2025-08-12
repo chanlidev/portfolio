@@ -204,14 +204,14 @@ const ProblemTwo = () => {
         <div className="mt-16 lg:mt-24 flex justify-center gap-6">
           <button
             disabled
-            className="h-10 px-5 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
+            className="h-10 px-5 w-32 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
           >
             &lt; Previous
           </button>
 
           <Link
             to="/automated-payment"
-            className="h-10 px-5 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
+            className="h-10 px-5 w-32 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
             style={{
               background: ACCENT,
               boxShadow: "0 8px 30px rgba(8,188,161,0.35)",

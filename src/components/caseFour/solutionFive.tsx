@@ -3,9 +3,19 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const ACCENT = "#08BCA1";
+
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const SolutionFive = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full bg-gradient-to-b from-[#0F1047] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -43,7 +53,7 @@ const SolutionFive = () => {
           Mobile App Design
         </p>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -66,7 +76,7 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -89,7 +99,7 @@ const SolutionFive = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
+        <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -112,7 +122,7 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="mb-32 lg:mb-60">
+        <div className="mb-20 lg:mb-32">
           <div className="h-px w-20 bg-[#08BCA1] mx-auto mb-4" />
 
           {/* Section Title */}
@@ -187,39 +197,23 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Link to="/automated-payment">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              &lt; Previous
-            </Button>
+        <div className="mt-16 lg:mt-24 flex justify-center gap-6">
+          <Link
+            to="/automated-payment"
+            className="h-10 px-5 w-32 rounded-xl text-sm grid place-items-center text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition"
+          >
+            &lt; Previous
           </Link>
 
-          <Link to="/graphic-design">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              Next &gt;
-            </Button>
+          <Link
+            to="/graphic-design"
+            className="h-10 px-5 w-32 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
+            style={{
+              background: ACCENT,
+              boxShadow: "0 8px 30px rgba(8,188,161,0.35)",
+            }}
+          >
+            Next &gt;
           </Link>
         </div>
       </div>
