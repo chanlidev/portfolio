@@ -200,14 +200,14 @@ const SolutionFive = () => {
         <div className="mt-16 lg:mt-24 flex justify-center gap-6">
           <Link
             to="/automated-payment"
-            className="h-10 px-5 w-32 rounded-xl text-sm grid place-items-center text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition"
+            className="h-10 px-5 w-28 rounded-xl text-sm grid place-items-center text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition"
           >
             &lt; Previous
           </Link>
 
           <Link
             to="/graphic-design"
-            className="h-10 px-5 w-32 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
+            className="h-10 px-5 w-28 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
             style={{
               background: ACCENT,
               boxShadow: "0 8px 30px rgba(8,188,161,0.35)",

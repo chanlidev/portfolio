@@ -5,11 +5,14 @@ import Header from "@/components/Header";
 import ContactSection from "@/components/ContactSection";
 import AutoCarousel from "@/components/caseThree/auto";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+const ACCENT = "#08BCA1";
+
+// one place to control section spacing
+const SECTION_Y = "py-16 lg:py-24";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -19,13 +22,13 @@ const fadeUp = {
 const GraphicDesign: React.FC = () => {
   return (
     <div className="relative w-full overflow-hidden">
-      {/* Base background (same as Index) */}
+      {/* Base background */}
       <div
         className="absolute inset-0 -z-30"
         style={{ background: GRADIENT }}
       />
 
-      {/* Radial vignette (same as Index) */}
+      {/* Radial vignette */}
       <div
         className="pointer-events-none absolute inset-0 -z-20"
         style={{
@@ -34,8 +37,10 @@ const GraphicDesign: React.FC = () => {
         }}
       />
 
-      {/* Top Section (sits on shared background) */}
-      <div className="w-full relative overflow-hidden pb-10 -mt-px -mb-px">
+      {/* -------- SECTION 1 (Hero block) -------- */}
+      <div
+        className={`w-full relative overflow-hidden -mt-px -mb-px pb-16 lg:pb-24`}
+      >
         {/* Header */}
         <div className="relative z-10">
           <Header />
@@ -68,14 +73,13 @@ const GraphicDesign: React.FC = () => {
       </div>
 
       {/* -------- SECTION 2 -------- */}
-      <div className="w-full relative overflow-hidden ">
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
+      <section className={`w-full relative overflow-hidden ${SECTION_Y}`}>
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16">
           <motion.div
             variants={fadeUp}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="md:mb-20"
           >
             <div className="bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg overflow-hidden">
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 items-center">
@@ -96,18 +100,18 @@ const GraphicDesign: React.FC = () => {
                 />
               </div>
             </div>
-            {/* Description ABOVE gray box */}
+
             <p className="mt-6 text-left text-white text-sm md:text-base">
               Crafted posters and postcards for Eastern Washington University’s
               Student Gallery to promote exhibitions and events.
             </p>
           </motion.div>
         </div>
-      </div>
+      </section>
 
       {/* -------- SECTION 3 -------- */}
-      <div className="w-full relative overflow-hidden">
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 md:mb-20">
+      <section className={`w-full relative overflow-hidden ${SECTION_Y}`}>
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16">
           <div className="rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
               <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto md:max-w-none md:mx-0">
@@ -117,8 +121,6 @@ const GraphicDesign: React.FC = () => {
                   className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
-
-              {/* Right (carousel) */}
 
               <div className="rounded-lg overflow-hidden flex items-start justify-start">
                 <AutoCarousel
@@ -135,10 +137,11 @@ const GraphicDesign: React.FC = () => {
             in Edmonton, AB.
           </p>
         </div>
-      </div>
+      </section>
 
       {/* -------- SECTION 4 -------- */}
-      <div className="w-full relative overflow-hidden -mb-px">
+      <section className={`w-full relative overflow-hidden -mb-px`}>
+        {/* distinct inner gradient for this block is fine */}
         <div
           className="absolute inset-0"
           style={{
@@ -146,7 +149,9 @@ const GraphicDesign: React.FC = () => {
           }}
         />
 
-        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
+        <div
+          className={`relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 ${SECTION_Y}`}
+        >
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             <div className="relative aspect-[3/4]">
               <img
@@ -170,26 +175,35 @@ const GraphicDesign: React.FC = () => {
               />
             </div>
           </div>
+
           <p className="mt-6 text-left text-white text-sm md:text-base">
             Created a new product catalog for PT Langit Biru showcasing
             best-selling products.
           </p>
-        </div>
-        <div className="mt-8 lg:mt-16 mb-10 lg:mb-20 flex justify-center gap-6">
-          <Link to="/inventory-system">
-            <Button className="h-10 w-32 rounded-xl text-sm text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition">
-              &lt; Previous
-            </Button>
-          </Link>
 
-          <button
-            disabled
-            className="h-10 px-5 w-32 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
-          >
-            Next &gt;
-          </button>
+          {/* nav inside the same vertical rhythm; small internal top gap is fine */}
+          <div className="mt-16 lg:mt-24 flex justify-center gap-6">
+            <Link to="/inventory-system">
+              <Button
+                className="h-10 w-28 rounded-xl text-sm font-medium text-[#061a14]"
+                style={{
+                  background: ACCENT,
+                  boxShadow: "0 8px 30px rgba(8,188,161,0.35)",
+                }}
+              >
+                &lt; Previous
+              </Button>
+            </Link>
+
+            <button
+              disabled
+              className="h-10 px-5 w-28 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
+            >
+              Next &gt;
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* -------- CONTACT -------- */}
       <div className="w-full">
