@@ -27,7 +27,7 @@ const FeaturedWork = () => {
   return (
     <motion.section
       id="work"
-      className="relative w-full px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20 pb-20 lg:pb-36"
+      className="relative w-full px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20 pb-20 lg:pb-36 -mt-px -mb-px"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
@@ -89,7 +89,7 @@ const FeaturedWork = () => {
             />
             <div className={overlayClass} />
 
-            <div className="relative p-6 lg:p-8 h-full flex flex-col">
+            <div className="relative p-4 lg:p-6 h-full flex flex-col">
               {/* Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
@@ -181,7 +181,7 @@ const FeaturedWork = () => {
             />
             <div className={overlayClass} />
 
-            <div className="relative p-6 lg:p-8 h-full flex flex-col">
+            <div className="relative p-4 lg:p-6 h-full flex flex-col">
               <div className="flex-1 mb-6 rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full rounded overflow-hidden flex items-center justify-center">
                   <img
@@ -265,7 +265,7 @@ const FeaturedWork = () => {
             />
             <div className={overlayClass} />
 
-            <div className="relative p-6 lg:p-8 h-full flex flex-col">
+            <div className="relative p-4 lg:p-6 h-full flex flex-col">
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
                   src="/images/Iphone 14.png"
@@ -331,7 +331,7 @@ const FeaturedWork = () => {
             />
             <div className={overlayClass} />
 
-            <div className="relative p-6 lg:p-8 h-full flex flex-col">
+            <div className="relative p-4 lg:p-6 h-full flex flex-col">
               <div className="flex-1 mb-12 rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
                 <div className="w-full h-full rounded overflow-hidden flex items-center justify-center">
                   <img
