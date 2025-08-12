@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #07033B 100%)";
 const ACCENT = "#08BCA1";
 
 // one place to control section spacing
@@ -141,14 +141,6 @@ const GraphicDesign: React.FC = () => {
 
       {/* -------- SECTION 4 -------- */}
       <section className={`w-full relative overflow-hidden -mb-px`}>
-        {/* distinct inner gradient for this block is fine */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #16074D 0%, #07033B 100%)",
-          }}
-        />
-
         <div
           className={`relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 ${SECTION_Y}`}
         >
