@@ -3,9 +3,19 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const ACCENT = "#08BCA1";
+
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const ProblemOne = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20  -mt-px -mb-px ">
+    <div className="w-full px-2 sm:px-4 lg:px-6 py-12 lg:py-20  -mt-px -mb-px ">
       <div className="max-w-[1450px] mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -62,7 +72,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             While the promise of{" "}
             <span className="text-[#08BCA1]">unlimited cashback</span> is
@@ -84,10 +94,10 @@ const ProblemOne = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl ">
+        <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Intro + Image */}
-            <div>
+            <Glass className="p-5">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center md:text-left ">
                 Initial draft of the waitlist and landing pages
               </h3>
@@ -98,10 +108,10 @@ const ProblemOne = () => {
                   className="w-[300px] md:w-[600px] object-contain rounded-lg"
                 />
               </div>
-            </div>
+            </Glass>
 
             {/* Right: Before / After Comparison */}
-            <div>
+            <Glass className="p-5">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
                 Moved the countdown timer to the top to increase engagement
               </h3>
@@ -124,93 +134,99 @@ const ProblemOne = () => {
                   </div>
                 ))}
               </div>
+            </Glass>
+          </div>
+        </div>
+
+        <div className="mb-10 lg:mb-20">
+          <Glass className="p-5">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Switched to light color scheme to convey transparency
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {[
+                ["Before", "/images/before.png"],
+
+                ["After", "/images/pekodesk.png"],
+              ].map(([label, src]) => (
+                <div key={label}>
+                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                    {label}
+                  </p>
+                  <div className="aspect-[16/11] rounded-lg overflow-hidden flex items-start justify-start ">
+                    <img
+                      src={src}
+                      alt={label}
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
-          </div>
+          </Glass>
         </div>
 
-        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Switched to light color scheme to convey transparency
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {[
-              ["Before", "/images/before.png"],
+        <div className="mb-10 lg:mb-20">
+          <Glass className="p-5">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Replaced lengthy text with pagination to improve clarity
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {[
+                ["Before", "/images/Group 104.svg"],
 
-              ["After", "/images/pekodesk.png"],
-            ].map(([label, src]) => (
-              <div key={label}>
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                  {label}
-                </p>
-                <div className="aspect-[16/11] rounded-lg overflow-hidden flex items-start justify-start ">
-                  <img
-                    src={src}
-                    alt={label}
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
+                ["After", "/images/after 2.gif"],
+              ].map(([label, src]) => (
+                <div key={label}>
+                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                    {label}
+                  </p>
+                  <div className="rounded-lg overflow-hidden flex items-start justify-start">
+                    <img
+                      src={src}
+                      alt={label}
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </Glass>
         </div>
+        <div className="mb-10 lg:mb-20">
+          <Glass className="p-5">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Simplified the cashback calculator to eliminate confusion between
+              monthly and annual rates
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+              {[
+                ["Before", "/images/before 3.gif"],
 
-        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Replaced lengthy text with pagination to improve clarity
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {[
-              ["Before", "/images/Group 104.svg"],
-
-              ["After", "/images/after 2.gif"],
-            ].map(([label, src]) => (
-              <div key={label}>
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                  {label}
-                </p>
-                <div className="rounded-lg overflow-hidden flex items-start justify-start">
-                  <img
-                    src={src}
-                    alt={label}
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
+                ["After", "/images/after 3.gif"],
+              ].map(([label, src]) => (
+                <div key={label}>
+                  <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                    {label}
+                  </p>
+                  <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+                    <img
+                      src={src}
+                      alt={label}
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Simplified the cashback calculator to eliminate confusion between
-            monthly and annual rates
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-            {[
-              ["Before", "/images/before 3.gif"],
-
-              ["After", "/images/after 3.gif"],
-            ].map(([label, src]) => (
-              <div key={label}>
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                  {label}
-                </p>
-                <div className=" rounded-lg overflow-hidden flex items-start justify-start">
-                  <img
-                    src={src}
-                    alt={label}
-                    className="w-full h-auto object-contain rounded-lg"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </Glass>
         </div>
 
         {/* Final Results Section */}
 
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12 mb-10">
           {/* Left Side: Image + Title */}
-          <div className="md:col-span-1">
+          <Glass className="p-5 md:col-span-1">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Final Landing Page Design
             </h3>
@@ -221,12 +237,12 @@ const ProblemOne = () => {
                 className="w-full h-auto object-contain rounded-lg"
               />
             </div>
-          </div>
+          </Glass>
 
           {/* Right Side: Image + Title */}
-          <div className="md:col-span-1 ">
+          <Glass className="p-5 md:col-span-1 ">
             <div
-              className="col-span-1 bg-[#121E2A] p-2.5 mt-12 aspect-[6.5/13.5] rounded-3xl overflow-hidden 
+              className="col-span-1 bg-[#121E2A] p-2.5 mt-12 aspect-[6.5/13.5] rounded-3xl overflow-hidden border border-white/10 bg-white/5
       flex items-center justify-center
       max-w-[200px] md:max-w-[200px] lg:max-w-[300px] mx-auto"
             >
@@ -236,7 +252,7 @@ const ProblemOne = () => {
                 className="w-full h-auto object-contain rounded-2xl"
               />
             </div>
-          </div>
+          </Glass>
         </div>
       </div>
     </div>

@@ -3,9 +3,19 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const ACCENT = "#08BCA1";
+
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const ProblemTwo = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full bg-gradient-to-b from-[#1C0555] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -17,7 +27,7 @@ const ProblemTwo = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center  mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Users lack a simple way to track earned cashback or monitor
             transactions and payouts
@@ -35,77 +45,82 @@ const ProblemTwo = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 md:mb-32 lg:mb-48">
+        <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
-            <div className="space-y-6">
-              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
-                Low Fidelity
-              </p>
-              <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
-                <img
-                  src="/images/low3.svg"
-                  alt="Logo"
-                  className="h-full max-w-full object-contain "
-                />
-              </div>
-            </div>
-
-            {/* Column 2 */}
-            <div className="space-y-6">
-              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
-                High Fidelity
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/images/Group 115.png"
-                      alt="Logo"
-                      className="h-auto w-auto object-contain "
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mb-20 md:mb-32 lg:mb-48">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Redesigned the timeframe selector to improve usability
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
-            {[
-              ["Before", "/images/Group 117.png"],
-              ["After", "/images/after5.gif"],
-            ].map(([label, src], index) => (
-              <div key={label} className="md:col-span-1">
-                <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-left">
-                  {label}
+            <Glass className="p-5">
+              <div className="space-y-6">
+                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                  Low Fidelity
                 </p>
-                <div
-                  className={`rounded-lg overflow-hidden flex items-start justify-start ${
-                    index === 0
-                      ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
-                      : ""
-                  }`}
-                >
+                <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
                   <img
-                    src={src}
-                    alt={label}
-                    className="w-full h-auto object-contain rounded-lg"
+                    src="/images/low3.svg"
+                    alt="Logo"
+                    className="h-full max-w-full object-contain "
                   />
                 </div>
               </div>
-            ))}
+            </Glass>
+            {/* Column 2 */}
+            <Glass className="p-5">
+              <div className="space-y-6">
+                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                  High Fidelity
+                </p>
+                <div className="space-y-4">
+                  <div>
+                    <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/images/Group 115.png"
+                        alt="Logo"
+                        className="h-auto w-auto object-contain "
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Glass>
           </div>
         </div>
 
-        <div className="mb-32 lg:mb-60">
+        <div className="mb-10 lg:mb-20">
+          <Glass className="p-5">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Redesigned the timeframe selector to improve usability
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
+              {[
+                ["Before", "/images/Group 117.png"],
+                ["After", "/images/after5.gif"],
+              ].map(([label, src], index) => (
+                <div key={label} className="md:col-span-1">
+                  <p className="text-white/60 text-sm md:text-base font-normal mb-2 text-left">
+                    {label}
+                  </p>
+                  <div
+                    className={`rounded-lg overflow-hidden flex items-start justify-start ${
+                      index === 0
+                        ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
+                        : ""
+                    }`}
+                  >
+                    <img
+                      src={src}
+                      alt={label}
+                      className="w-full h-auto object-contain rounded-lg"
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Glass>
+        </div>
+
+        <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
-            <div className="md:col-span-1">
+            <Glass className="p-5 md:col-span-1">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
                 Integrated the transaction list to share the same timeframe
                 selector for consistent use
@@ -117,10 +132,10 @@ const ProblemTwo = () => {
                   className="w-full h-auto object-contain rounded-lg"
                 />
               </div>
-            </div>
+            </Glass>
 
             {/* Right Side: Image + Title */}
-            <div className="md:col-span-1">
+            <Glass className="p-5 md:col-span-1">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
                 Enhanced the responsive layout for mobile
               </h3>
@@ -135,98 +150,74 @@ const ProblemTwo = () => {
                   className="w-full h-full object-contain rounded-lg"
                 />
               </div>
-            </div>
+            </Glass>
           </div>
         </div>
 
-        {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
-          {/* Left */}
-          <div className="md:col-span-1">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-base lg:text-lg font-normal">
-                <span className="text-[#08BCA1]">Final Version</span>
+        {/* Final + notes */}
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 lg:gap-10">
+          <Glass className="p-5 md:col-span-1">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-white">
+                <span style={{ color: ACCENT }}>Final Version</span>
               </h3>
-              <h3 className="text-base lg:text-lg font-normal">
-                <a
-                  href="https://pekopay.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#08BCA1]"
-                >
-                  View Live Website
-                </a>
-              </h3>
+              <a
+                href="https://pekopay.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/90 hover:text-white underline underline-offset-4"
+                style={{ textDecorationColor: ACCENT }}
+              >
+                View Live Website
+              </a>
             </div>
-
-            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mx-auto">
+            <div className="rounded-xl overflow-hidden">
               <img
                 src="/images/Group 43.gif"
-                alt="After: cashback calculator"
-                className="w-full h-auto object-contain rounded-lg"
+                alt="Final screens"
+                className="w-full object-contain"
               />
             </div>
-          </div>
+          </Glass>
 
-          {/* Right */}
-          <div className="md:col-span-1">
-            <div className="flex flex-col justify-center h-full max-w-prose mx-auto">
-              <div className="space-y-10">
-                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                  <span className="text-[#08BCA1] text-base lg:text-lg">
-                    Feedback:
-                  </span>
-                  <br />
-                  The light background and strong visual hierarchy made the
-                  interface feel more trustworthy and professional, helping
-                  users navigate their data with confidence.
-                </p>
-
-                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                  <span className="text-[#08BCA1] text-base lg:text-lg">
-                    Takeaway:
-                  </span>
-                  <br />
-                  By focusing on simplicity and aligning the layout with real
-                  user needs, I improved clarity, reduced friction, and created
-                  a more intuitive experience for viewing financial data.
-                </p>
-              </div>
+          <Glass className="p-6 md:col-span-1">
+            <div className="space-y-8 max-w-prose">
+              <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                <span className="text-white" style={{ color: ACCENT }}>
+                  Feedback:
+                </span>{" "}
+                The light background and strong hierarchy improved trust and
+                scanability, helping users navigate data with confidence.
+              </p>
+              <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                <span className="text-white" style={{ color: ACCENT }}>
+                  Takeaway:
+                </span>{" "}
+                Focusing on simplicity and aligning layout to real user needs
+                improved clarity, reduced friction, and made insights feel
+                immediate.
+              </p>
             </div>
-          </div>
+          </Glass>
         </div>
-
-        {/* Navigation Buttons */}
-        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Button
+        {/* Nav buttons */}
+        <div className="mt-16 lg:mt-24 flex justify-center gap-6">
+          <button
             disabled
-            className={cn(
-              "h-9 w-32 flex items-center justify-center",
-              "border border-[#1B64FF] text-white text-sm font-normal",
-              "bg-[#1C0C7A]",
-              "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-              "backdrop-blur-sm transition-all duration-200",
-              "opacity-50 cursor-not-allowed",
-            )}
+            className="h-10 px-5 rounded-xl text-sm text-white/60 border border-white/10 bg-white/5 backdrop-blur-lg cursor-not-allowed"
           >
             &lt; Previous
-          </Button>
+          </button>
 
-          <Link to="/automated-payment">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              Next &gt;
-            </Button>
+          <Link
+            to="/automated-payment"
+            className="h-10 px-5 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
+            style={{
+              background: ACCENT,
+              boxShadow: "0 8px 30px rgba(8,188,161,0.35)",
+            }}
+          >
+            Next &gt;
           </Link>
         </div>
       </div>
