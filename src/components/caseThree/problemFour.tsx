@@ -83,7 +83,7 @@ const ProblemFour = () => {
             {/* Column 1: */}
             <Glass className="p-2 md:p-4">
               <div className="space-y-6">
-                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                <p className="text-white text-sm md:text-base lg:text-lg font-normal leading-relaxed">
                   Original Design
                 </p>
                 <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden">
@@ -99,7 +99,7 @@ const ProblemFour = () => {
             {/* Column 2 */}
             <Glass className="p-2 md:p-4">
               <div className="space-y-6">
-                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                <p className="text-white text-sm md:text-base lg:text-lg font-normal leading-relaxed">
                   Condensed action buttons into a menu to accommodate more
                   options
                 </p>
@@ -121,7 +121,7 @@ const ProblemFour = () => {
 
         <div className="mb-20 lg:mb-32">
           <Glass className="p-2 md:p-4">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Added filters and tax rates
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
@@ -152,7 +152,7 @@ const ProblemFour = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {/* Left Side: Text only, vertically centered and left-aligned */}
             <div className="flex items-center">
-              <h3 className="text-white text-base lg:text-lg font-normal text-left">
+              <h3 className="text-white text-sm md:text-base lg:text-lg font-normal text-left">
                 Users needed to open the more options menu and select “View
                 Invoice” to access details, which then appeared in a pop-up.
                 <br />
@@ -173,7 +173,7 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="text-white text-base lg:text-lg text-center mb-10">
+        <div className="text-white text-sm md:text-base lg:text-lg text-center mb-10">
           <p>
             Original Workflow (4 steps)
             <br />

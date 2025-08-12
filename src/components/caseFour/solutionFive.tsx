@@ -56,7 +56,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Check Out Material
               <br />
               Select material to check out &gt; Choose check out quantity &
@@ -79,7 +79,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Return Material
               <br />
               Go to profile &gt; Choose material to check in &gt; Confirm
@@ -102,7 +102,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Order Material
               <br />
               Select material to order &gt; Choose order quantity &gt; Send
@@ -159,7 +159,7 @@ const SolutionFive = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-base lg:text-lg font-normal">
+              <h3 className="text-white text-sm md:text-base lg:text-lg font-normal">
                 <span className="text-[#08BCA1]">Final Version</span>
               </h3>
             </div>
@@ -175,7 +175,7 @@ const SolutionFive = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1] text-base lg:text-lg">
+                <span className="text-[#08BCA1] text-sm md:text-base lg:text-lg">
                   Feedback:
                 </span>
                 <br /> Staff found it helpful to check tool and material
@@ -185,7 +185,7 @@ const SolutionFive = () => {
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1] text-base lg:text-lg">
+                <span className="text-[#08BCA1] text-sm md:text-base lg:text-lg">
                   Takeaway:
                 </span>
                 <br /> Designing TradeTrack taught me the value of an all-in-one

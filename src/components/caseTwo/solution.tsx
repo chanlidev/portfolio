@@ -48,7 +48,7 @@ const Solution = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Refined 2-step Workflow: <br />
               Create Client &gt; Add Payment Method
             </h3>
@@ -69,7 +69,7 @@ const Solution = () => {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Once a new payment method is added, it appears in the Payment
               Methods section on the client details page, where users can choose
               a default credit card.
@@ -92,7 +92,7 @@ const Solution = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               To complete the experience, I’ve included a Subscription section
               on the same page so users can set up recurring payments for that
               client without leaving the view.
@@ -115,14 +115,14 @@ const Solution = () => {
           {/* Left (glass card with image) */}
           <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-white">
+              <h3 className="text-white text-sm md:text-base lg:text-lg">
                 <span style={{ color: ACCENT }}>Final Version</span>
               </h3>
               <a
                 href="https://pekopay.com/dashboard"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 hover:text-white underline underline-offset-4"
+                className="text-white/90 text-sm md:text-base lg:text-lg hover:text-white underline underline-offset-4"
                 style={{ textDecorationColor: ACCENT }}
               >
                 View Live Website
@@ -142,21 +142,27 @@ const Solution = () => {
           <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="space-y-8 max-w-prose">
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                <span className="text-white" style={{ color: ACCENT }}>
+                <span
+                  className="text-white text-sm md:text-base lg:text-lg"
+                  style={{ color: ACCENT }}
+                >
                   Feedback:
                 </span>{" "}
-                Landing on the client details page with an immediate “Add
+                <br /> Landing on the client details page with an immediate “Add
                 Payment Method” prompt and a Subscription section on the same
                 page cut setup to two steps and eliminated repetitive tasks.
               </p>
 
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                <span className="text-white" style={{ color: ACCENT }}>
+                <span
+                  className="text-white text-sm md:text-base lg:text-lg"
+                  style={{ color: ACCENT }}
+                >
                   Takeaway:
                 </span>{" "}
-                Consolidating related actions into one interface and reusing
-                existing components dramatically streamlines complex workflows
-                and improves usability.
+                <br /> Consolidating related actions into one interface and
+                reusing existing components dramatically streamlines complex
+                workflows and improves usability.
               </p>
             </div>
           </Glass>

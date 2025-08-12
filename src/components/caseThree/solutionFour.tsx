@@ -37,7 +37,7 @@ const SolutionFour = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-center">
               Quick Invoice Preview
             </h3>
           </div>
@@ -58,7 +58,7 @@ const SolutionFour = () => {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Moved “View Invoice” out of the menu and added all actions inside
               the invoice pop-up, so users can complete tasks without closing
               it.
@@ -81,7 +81,7 @@ const SolutionFour = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Updated the action menu to change based on the invoice status,
               letting users mark invoices as paid, refunded, or uncollectable.
             </h3>

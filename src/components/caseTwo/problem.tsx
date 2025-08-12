@@ -44,7 +44,7 @@ const ProblemThree = () => {
         </div>
 
         <Glass className="p-2 md:p-4 mb-10 lg:mb-20">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+          <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -79,7 +79,7 @@ const ProblemThree = () => {
 
         <div className="mb-20 lg:mb-32">
           <Glass className="p-2 md:p-4">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Users now have the options to enter credit card details directly
               or send a link to request payment info
             </h3>
@@ -114,7 +114,7 @@ const ProblemThree = () => {
           </Glass>
         </div>
 
-        <div className=" text-white text-base lg:text-lg text-center">
+        <div className=" text-white text-sm md:text-base lg:text-lg text-center">
           <p>
             Original Workflow (5 steps)
             <br />

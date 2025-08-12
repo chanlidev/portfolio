@@ -50,7 +50,7 @@ const ProblemTwo = () => {
             {/* Column 1: */}
             <Glass className="p-2 md:p-4">
               <div className="space-y-6">
-                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                <p className="text-white text-sm md:text-base lg:text-lg font-normal leading-relaxed">
                   Low Fidelity
                 </p>
                 <div className="bg-white aspect-[16/9.5] rounded-lg flex items-center justify-center overflow-hidden">
@@ -65,7 +65,7 @@ const ProblemTwo = () => {
             {/* Column 2 */}
             <Glass className="p-2 md:p-4">
               <div className="space-y-6">
-                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                <p className="text-white text-sm md:text-base lg:text-lg font-normal leading-relaxed">
                   High Fidelity
                 </p>
                 <div className="space-y-4">
@@ -86,7 +86,7 @@ const ProblemTwo = () => {
 
         <div className="mb-10 lg:mb-20">
           <Glass className="p-2 md:p-4">
-            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+            <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Redesigned the timeframe selector to improve usability
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
@@ -121,7 +121,7 @@ const ProblemTwo = () => {
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
             <Glass className="p-2 md:p-4 md:col-span-1">
-              <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
                 Integrated the transaction list to share the same timeframe
                 selector for consistent use
               </h3>
@@ -136,7 +136,7 @@ const ProblemTwo = () => {
 
             {/* Right Side: Image + Title */}
             <Glass className="p-2 md:p-4 md:col-span-1">
-              <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
+              <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-center">
                 Enhanced the responsive layout for mobile
               </h3>
               <div
@@ -158,14 +158,14 @@ const ProblemTwo = () => {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 lg:gap-10">
           <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-white">
+              <h3 className="text-white text-sm md:text-base lg:text-lg">
                 <span style={{ color: ACCENT }}>Final Version</span>
               </h3>
               <a
                 href="https://pekopay.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 hover:text-white underline underline-offset-4"
+                className="text-white/90 text-sm md:text-base lg:text-lg hover:text-white underline underline-offset-4"
                 style={{ textDecorationColor: ACCENT }}
               >
                 View Live Website
@@ -183,18 +183,25 @@ const ProblemTwo = () => {
           <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="space-y-8 max-w-prose">
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                <span className="text-white" style={{ color: ACCENT }}>
+                <span
+                  className="text-white text-sm md:text-base lg:text-lg"
+                  style={{ color: ACCENT }}
+                >
                   Feedback:
                 </span>{" "}
+                <br />
                 The light background and strong hierarchy improved trust and
                 scanability, helping users navigate data with confidence.
               </p>
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
-                <span className="text-white" style={{ color: ACCENT }}>
+                <span
+                  className="text-white text-sm md:text-base lg:text-lg"
+                  style={{ color: ACCENT }}
+                >
                   Takeaway:
                 </span>{" "}
-                Focusing on simplicity and aligning layout to real user needs
-                improved clarity, reduced friction, and made insights feel
+                <br /> Focusing on simplicity and aligning layout to real user
+                needs improved clarity, reduced friction, and made insights feel
                 immediate.
               </p>
             </div>
