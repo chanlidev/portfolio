@@ -35,7 +35,7 @@ const GraphicDesign: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="w-full max-w-[1200px] mx-auto"
+            className="w-full max-w-[1100px] mx-auto"
           >
             <div className="bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg overflow-hidden">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">

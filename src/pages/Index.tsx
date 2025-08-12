@@ -1,9 +1,8 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import Header from "@/components/Header";
 import FeaturedWork from "@/components/FeaturedWork";
 import ContactSection from "@/components/ContactSection";
-import Header from "@/components/Header";
 
 interface Star {
   id: number;
@@ -21,22 +20,21 @@ const StarField = () => {
   const [stars, setStars] = useState<Star[]>([]);
 
   useEffect(() => {
-    // Generate random stars
     const generateStars = () => {
       const newStars: Star[] = [];
-      const starCount = window.innerWidth < 640 ? 100 : 200; // Number of stars
+      const starCount = window.innerWidth < 640 ? 70 : 140; // slightly reduced for subtlety
 
       for (let i = 0; i < starCount; i++) {
         newStars.push({
           id: i,
-          x: Math.random() * 100, // Position as percentage
+          x: Math.random() * 100,
           y: Math.random() * 100,
-          size: Math.random() * 3 + 1, // Size between 1-4px
-          opacity: Math.random() * 0.8 + 0.2, // Opacity between 0.2-1
-          animationDelay: Math.random() * 3, // Animation delay up to 3s
-          twinkleSpeed: Math.random() * 2 + 2, // Animation duration between 2-4s
-          driftDirection: Math.random() * 360, // Random direction in degrees
-          driftSpeed: Math.random() * 15 + 15, // Drift duration between 15-30s
+          size: Math.random() * 2.2 + 0.8, // smaller avg size
+          opacity: Math.random() * 0.6 + 0.2,
+          animationDelay: Math.random() * 3,
+          twinkleSpeed: Math.random() * 2 + 2,
+          driftDirection: Math.random() * 360,
+          driftSpeed: Math.random() * 15 + 20,
         });
       }
       setStars(newStars);
@@ -57,31 +55,28 @@ const StarField = () => {
             opacity: 1;
           }
         }
-
         @keyframes drift {
           0% {
             transform: translate(0, 0);
           }
           100% {
-            transform: translate(50px, 30px);
+            transform: translate(36px, 22px);
           }
         }
-
         @keyframes driftAlt {
           0% {
             transform: translate(0, 0);
           }
           100% {
-            transform: translate(-40px, 50px);
+            transform: translate(-28px, 38px);
           }
         }
-
         @keyframes driftSlow {
           0% {
             transform: translate(0, 0);
           }
           100% {
-            transform: translate(30px, -40px);
+            transform: translate(22px, -30px);
           }
         }
       `}</style>
@@ -107,8 +102,8 @@ const StarField = () => {
               animationDelay: `${star.animationDelay}s`,
               animationDuration: `${star.twinkleSpeed}s`,
               boxShadow:
-                star.size > 2.5
-                  ? `0 0 ${star.size * 2}px rgba(255,255,255,0.5)`
+                star.size > 2
+                  ? `0 0 ${star.size * 2}px rgba(255,255,255,0.45)`
                   : "none",
               animation:
                 `pulse ${star.twinkleSpeed}s infinite ${star.animationDelay}s, ` +
@@ -118,105 +113,175 @@ const StarField = () => {
         );
       })}
 
-      {/* Add some larger glowing stars */}
+      {/* A few larger soft glows for depth */}
       <div
-        className="absolute rounded-full bg-white"
+        className="absolute rounded-full"
         style={{
-          top: "20%",
-          left: "15%",
-          width: "8px",
-          height: "8px",
-          opacity: 0.8,
+          top: "18%",
+          left: "12%",
+          width: "10px",
+          height: "10px",
+          background: "rgba(255,255,255,0.9)",
           boxShadow:
-            "0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(173,216,230,0.4)",
+            "0 0 10px rgba(255,255,255,0.8), 0 0 28px rgba(8,188,161,0.35)",
           animation: "pulse 3s infinite, drift 20s infinite linear",
         }}
       />
       <div
-        className="absolute rounded-full bg-white"
+        className="absolute rounded-full"
         style={{
-          top: "65%",
-          left: "85%",
-          width: "8px",
-          height: "8px",
-          opacity: 0.6,
+          top: "62%",
+          left: "84%",
+          width: "10px",
+          height: "10px",
+          background: "rgba(255,255,255,0.75)",
           boxShadow:
-            "0 0 12px rgba(255,255,255,0.6), 0 0 24px rgba(147,112,219,0.3)",
-          animation: "pulse 4s infinite, driftAlt 25s infinite linear",
-        }}
-      />
-      <div
-        className="absolute rounded-full bg-white"
-        style={{
-          top: "35%",
-          left: "75%",
-          width: "8px",
-          height: "8px",
-          opacity: 0.7,
-          boxShadow:
-            "0 0 8px rgba(255,255,255,0.7), 0 0 16px rgba(100,149,237,0.4)",
-          animation: "pulse 2.5s infinite, driftSlow 22s infinite linear",
+            "0 0 12px rgba(255,255,255,0.6), 0 0 26px rgba(67,9,133,0.35)",
+          animation: "pulse 4s infinite, driftAlt 24s infinite linear",
         }}
       />
     </div>
   );
 };
 
+const fadeInUp = {
+  hidden: { opacity: 0, y: 16 },
+  visible: (i = 0) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.7, delay: 0.12 * i, ease: [0.22, 1, 0.36, 1] },
+  }),
+};
+
 const Index = () => {
   return (
     <>
       <div className="min-h-screen w-full relative overflow-hidden">
-        {/* Main gradient background */}
+        {/* Base background */}
         <div
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0"
           style={{
-            background: "linear-gradient(180deg, #07033B 41.95%, #430985 100%)",
+            background: "linear-gradient(180deg, #07033B 40%, #430985 100%)",
           }}
         />
 
-        {/* Galaxy starfield effect */}
+        {/* Radial vignette to focus hero */}
+        <div
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(60% 55% at 50% 20%, rgba(8,188,161,0.18) 0%, rgba(8,188,161,0.08) 40%, rgba(0,0,0,0) 70%)",
+          }}
+        />
+
+        {/* Subtle stars */}
         <StarField />
 
-        {/* Content container */}
+        {/* Content */}
         <div className="relative z-10 min-h-screen flex flex-col">
-          {/* Header Navigation */}
           <Header />
 
-          {/* Main Content */}
-          <main className="flex-1 flex flex-col items-center justify-center px-4 sm:px-8 lg:px-12 pt-0 lg:pt-20 pb-16 lg:pb-32">
-            <div className="text-center max-w-4xl mx-auto">
-              {/* Main Heading */}
-              <h1 className="mb-8 lg:mb-12 opacity-0 animate-fadeInScale">
-                <span
-                  className="block text-6xl sm:text-8xl lg:text-[120px] xl:text-[140px] 2xl:text-[160px] leading-tight italic"
-                  style={{
-                    fontFamily: "'Dancing Script', 'Brush Script MT', cursive",
-                    fontWeight: "700",
-                    color: "#FFFFFF",
-                    textShadow:
-                      "0 0 2px rgba(255,105,180,0.8), 0 0 2px rgba(255,105,180,0.6), " +
-                      "0 0 2px rgba(255,105,180,0.4), 1px 1px 3px rgba(0,0,0,0.8), 2px 2px 6px rgba(0,0,0,0.6)",
-                    filter:
-                      "drop-shadow(0 0 15px rgba(255,105,180,0.6)) drop-shadow(0 0 25px rgba(255,20,147,0.4))",
-                  }}
-                >
-                  CHAN LI
+          {/* Hero */}
+          <main className="flex-1 flex flex-col items-center justify-center px-6 sm:px-10 lg:px-16 pt-6 lg:pt-14 pb-16 lg:pb-28">
+            <div className="max-w-5xl w-full text-center">
+              <motion.p
+                custom={0}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.6 }}
+                variants={fadeInUp}
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 text-slate-200 text-xs sm:text-sm"
+              >
+                <span className="inline-block h-2 w-2 rounded-full bg-[#08BCA1]" />
+                Product Designer · Frontend Developer · Calgary, AB
+              </motion.p>
+
+              <motion.h1
+                custom={1}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.6 }}
+                variants={fadeInUp}
+                className="mt-6 sm:mt-7 text-4xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[1.05] tracking-tight"
+              >
+                <span className="bg-clip-text text-transparent bg-gradient-to-b from-white to-white/80">
+                  Hi, I’m Chan Li.
+                </span>{" "}
+                <span className="block text-white/90">
+                  I design & build thoughtful product experiences.
                 </span>
-              </h1>
-              {/* Description */}
-              <p className="text-white text-base lg:text-lg max-w-2xl mx-auto leading-relaxed drop-shadow-lg opacity-0 animate-fadeInUp animate-delay-300">
-                Hey there! 👋 I design and develop product experiences in
-                Calgary, drawing on my data-analytics background. I crafted and
-                coded this portfolio myself—enjoy exploring my work!
-              </p>
+              </motion.h1>
+
+              <motion.p
+                custom={2}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.6 }}
+                variants={fadeInUp}
+                className="mt-5 sm:mt-6 mx-auto max-w-2xl text-slate-200/90 text-base sm:text-lg leading-relaxed"
+              >
+                Blending UX strategy with hands-on engineering, I turn complex
+                workflows into clear, fast interfaces. Explore some recent work,
+                or get in touch to collaborate.
+              </motion.p>
+
+              <motion.div
+                custom={3}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.6 }}
+                variants={fadeInUp}
+                className="mt-8 sm:mt-10 flex items-center justify-center gap-3 sm:gap-4"
+              >
+                <a
+                  href="#work"
+                  className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm sm:text-base font-medium text-[#061a14] bg-[#08BCA1] hover:brightness-110 active:brightness-95 transition shadow-[0_8px_30px_rgba(8,188,161,0.35)]"
+                  aria-label="Skip to work section"
+                >
+                  View my work
+                </a>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-xl px-5 py-3 text-sm sm:text-base font-medium text-white/90 border border-white/20 bg-white/5 hover:bg-white/10 transition"
+                  aria-label="Jump to contact section"
+                >
+                  Contact me
+                </a>
+              </motion.div>
+
+              {/* Scroll cue */}
+              <motion.div
+                custom={4}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.7 }}
+                variants={fadeInUp}
+                className="mt-12 sm:mt-16 flex items-center justify-center"
+              >
+                <a
+                  href="#work"
+                  className="group inline-flex flex-col items-center text-white/60 hover:text-white/90 transition"
+                  aria-label="Scroll to featured work"
+                >
+                  <span className="text-xs tracking-wide uppercase">
+                    Scroll
+                  </span>
+                  <span className="mt-2 h-7 w-px bg-gradient-to-b from-white/60 to-transparent group-hover:from-white/90" />
+                </a>
+              </motion.div>
             </div>
           </main>
         </div>
       </div>
-      <div className="w-full">
+
+      {/* Sections */}
+      <section id="work" className="w-full">
         <FeaturedWork />
+      </section>
+
+      <section id="contact" className="w-full">
         <ContactSection />
-      </div>
+      </section>
     </>
   );
 };

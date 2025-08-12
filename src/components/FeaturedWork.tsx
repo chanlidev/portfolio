@@ -1,16 +1,15 @@
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+const ACCENT = "#08BCA1";
 
 const FeaturedWork = () => {
+  const navigate = useNavigate();
+
+  // Animation
   const containerVariants = {
     hidden: {},
-    visible: {
-      transition: {
-        staggerChildren: 0.6,
-      },
-    },
+    visible: { transition: { staggerChildren: 0.6 } },
   };
 
   const cardVariants = {
@@ -18,22 +17,47 @@ const FeaturedWork = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 1 } },
   };
 
+  // Unified card look (match Contact)
+  const cardClass =
+    "group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg cursor-pointer will-change-transform transition-all duration-300 hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_10px_40px_rgba(8,188,161,0.25)]";
+
+  const overlayClass =
+    "absolute inset-0 pointer-events-none bg-gradient-to-b from-white/10 via-white/[0.04] to-transparent";
+
   return (
     <motion.section
-      className="w-full bg-gradient-to-b from-[#430985] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px"
+      id="work"
+      className="relative w-full px-4 sm:px-8 lg:px-12 pt-16 lg:pt-20 pb-20 lg:pb-36"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
       variants={containerVariants}
+      style={{
+        background: "linear-gradient(180deg, #430985 0%, #07033B 100%)",
+      }}
+      aria-labelledby="work-heading"
     >
-      <div className="max-w-[1450px] mx-auto px-2 sm:px-4 md:px-12">
-        {/* Section Header */}
-        <div className=" mt-0 flex items-center justify-center mb-16 lg:mb-24">
-          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
-          <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
+      <div className="relative z-10 max-w-[1450px] mx-auto">
+        {/* Section header chip + title */}
+        <div className="text-center mb-10 lg:mb-14">
+          <motion.p
+            variants={cardVariants}
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/15 bg-white/5 text-slate-200 text-xs sm:text-sm"
+          >
+            <span
+              className="inline-block h-2 w-2 rounded-full"
+              style={{ background: ACCENT }}
+            />
+            Selected projects
+          </motion.p>
+
+          <motion.h2
+            id="work-heading"
+            variants={cardVariants}
+            className="mt-4 text-white text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight"
+          >
             Featured Work
-          </h2>
-          <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
+          </motion.h2>
         </div>
 
         {/* Projects Grid */}
@@ -41,34 +65,46 @@ const FeaturedWork = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
           variants={containerVariants}
         >
-          {/* Project 1 - PekoPay Landing */}
+          {/* Card 1 */}
           <motion.div
-            className="group relative overflow-hidden border border-[#1B64FF] rounded-lg backdrop-blur-sm"
+            role="button"
+            tabIndex={0}
+            aria-label="Open PekoPay Landing case study"
+            onClick={() => navigate("/landing-page")}
+            onKeyDown={(e) =>
+              (e.key === "Enter" || e.key === " ") && navigate("/landing-page")
+            }
+            className={cardClass}
             variants={cardVariants}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.995 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
+            {/* Top accent line */}
             <div
-              className="absolute inset-0"
+              className="h-1 w-full"
               style={{
-                background:
-                  "linear-gradient(180deg, #1C0C7A 40%,  #07033B 120%)",
+                background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(8,188,161,0.15) 60%, transparent 100%)`,
               }}
             />
+            <div className={overlayClass} />
+
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              {/* Project Image/Preview */}
+              {/* Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex items-center justify-between">
                 <img
                   src="/images/Group 62.png"
-                  alt="Landing Preview"
-                  className="w-4/5 h-auto object-contain rounded "
+                  alt="PekoPay landing preview"
+                  className="w-4/5 h-auto object-contain rounded transition-transform duration-300 group-hover:scale-105"
                 />
                 <img
                   src="/images/Iphone 16.png"
-                  alt="Login Preview"
-                  className="w-1/5 h-auto object-contain rounded "
+                  alt="PekoPay mobile preview"
+                  className="w-1/5 h-auto object-contain rounded transition-transform duration-300 group-hover:scale-110"
                 />
               </div>
 
-              {/* Project Info */}
+              {/* Info */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <a
@@ -76,6 +112,7 @@ const FeaturedWork = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <span className="text-[#08BCA1] text-sm lg:text-base">
                       PekoPay
@@ -101,58 +138,56 @@ const FeaturedWork = () => {
                 </h3>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                  <div className="flex flex-wrap gap-2 text-slate-300 text-sm">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       From 0 to 1
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Fintech
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Payment
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Responsive Web
                     </span>
                   </div>
-                  <Link to="/landing-page">
-                    <Button
-                      className={cn(
-                        "w-24 h-10 border border-[#1B64FF] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#1C0C7A]",
-                        "hover:bg-[#1C0C7A]",
-                        "hover:shadow-lg hover:shadow-[#1B64FF]/20",
-                        "hover:border-2",
-                        "transition-all duration-200",
-                        "backdrop-blur-sm",
-                      )}
-                    >
-                      View
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Project 2 - PekoPay Dashboard */}
+          {/* Card 2 */}
           <motion.div
-            className="group relative overflow-hidden border border-[#FF715C] rounded-lg backdrop-blur-sm"
+            role="button"
+            tabIndex={0}
+            aria-label="Open Automated Payment case study"
+            onClick={() => navigate("/automated-payment")}
+            onKeyDown={(e) =>
+              (e.key === "Enter" || e.key === " ") &&
+              navigate("/automated-payment")
+            }
+            className={cardClass}
             variants={cardVariants}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.995 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <div
-              className="absolute inset-0"
+              className="h-1 w-full"
               style={{
-                background: "linear-gradient(180deg, #64392F 0%, #3E1C31 100%)",
+                background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(8,188,161,0.15) 60%, transparent 100%)`,
               }}
             />
+            <div className={overlayClass} />
+
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              <div className="flex-1 mb-6 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
-                <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
+              <div className="flex-1 mb-6 rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
+                <div className="w-full h-full rounded overflow-hidden flex items-center justify-center">
                   <img
                     src="/images/payment.gif"
-                    alt="Payment"
-                    className="w-full h-full object-overflow"
+                    alt="Automated payment flow"
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -164,6 +199,7 @@ const FeaturedWork = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <span className="text-[#08BCA1] text-sm lg:text-base">
                       PekoPay
@@ -189,64 +225,60 @@ const FeaturedWork = () => {
                 </h3>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                  <div className="flex flex-wrap gap-2 text-slate-300 text-sm">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       From 5 Steps to 2
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       UX/UI Design
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Responsive Web
                     </span>
                   </div>
-                  <Link to="/automated-payment">
-                    <Button
-                      className={cn(
-                        "w-24 h-10 border border-[#FF715C] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#64392F]",
-                        "hover:bg-[#64392F]",
-                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                        "hover:border-2",
-                        "transition-all duration-200",
-                        "backdrop-blur-sm",
-                      )}
-                    >
-                      View
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Project 4 - Coming Soon */}
+          {/* Card 3 */}
           <motion.div
-            className="group relative overflow-hidden border border-[#FF31AC] rounded-lg backdrop-blur-sm"
+            role="button"
+            tabIndex={0}
+            aria-label="Open TradeTrack case study"
+            onClick={() => navigate("/inventory-system")}
+            onKeyDown={(e) =>
+              (e.key === "Enter" || e.key === " ") &&
+              navigate("/inventory-system")
+            }
+            className={cardClass}
             variants={cardVariants}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.995 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <div
-              className="absolute inset-0"
+              className="h-1 w-full"
               style={{
-                background: "linear-gradient(180deg, #4A044C 0%, #20083A 100%)",
+                background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(8,188,161,0.15) 60%, transparent 100%)`,
               }}
             />
+            <div className={overlayClass} />
+
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              {/* Project Image/Preview */}
               <div className="flex-1 mb-6 rounded-lg py-4 px-0 min-h-[200px] lg:min-h-[280px] flex justify-center items-center space-x-2">
                 <img
                   src="/images/Iphone 14.png"
-                  alt="Login Preview"
-                  className="w-1/5 h-auto object-contain rounded -rotate-12"
+                  alt="TradeTrack mobile"
+                  className="w-1/5 h-auto object-contain rounded -rotate-12 transition-transform duration-300 group-hover:scale-110"
                 />
                 <img
                   src="/images/TTdesk.svg"
-                  alt="Landing Preview"
-                  className="w-4/5 h-auto object-contain rounded rotate-12"
+                  alt="TradeTrack desktop"
+                  className="w-4/5 h-auto object-contain rounded rotate-12 transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
 
-              {/* Project Info */}
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
                   <span className="text-[#08BCA1] text-sm lg:text-base">
@@ -259,54 +291,53 @@ const FeaturedWork = () => {
                 </h3>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                  <div className="flex flex-wrap gap-2 text-slate-300 text-sm">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Inventory Management
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Mobile App
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Web App
                     </span>
                   </div>
-                  <Link to="/inventory-system">
-                    <Button
-                      className={cn(
-                        "w-24 h-10 border border-[#FF31AC] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#4A044C]",
-                        "hover:bg-[#4A044C]",
-                        "hover:shadow-lg hover:shadow-[#FF31AC]/20",
-                        "hover:border-2",
-                        "transition-all duration-200",
-                        "backdrop-blur-sm",
-                      )}
-                    >
-                      View
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>
           </motion.div>
-          {/* Project 3 - Coming Soon */}
+
+          {/* Card 4 */}
           <motion.div
-            className="group relative overflow-hidden border border-[#08BCA1] rounded-lg backdrop-blur-sm"
+            role="button"
+            tabIndex={0}
+            aria-label="Open Graphic Design portfolio"
+            onClick={() => navigate("/graphic-design")}
+            onKeyDown={(e) =>
+              (e.key === "Enter" || e.key === " ") &&
+              navigate("/graphic-design")
+            }
+            className={cardClass}
             variants={cardVariants}
+            whileHover={{ scale: 1.08 }}
+            whileTap={{ scale: 0.995 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
           >
             <div
-              className="absolute inset-0"
+              className="h-1 w-full"
               style={{
-                background: "linear-gradient(180deg, #004B78 0%, #020C38 100%)",
+                background: `linear-gradient(90deg, ${ACCENT} 0%, rgba(8,188,161,0.15) 60%, transparent 100%)`,
               }}
             />
+            <div className={overlayClass} />
+
             <div className="relative p-6 lg:p-8 h-full flex flex-col">
-              <div className="flex-1 mb-12 bg-[#CAD4DB] rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
-                <div className="w-full h-full bg-white rounded overflow-hidden flex items-center justify-center">
+              <div className="flex-1 mb-12 rounded-lg p-1 min-h-[200px] lg:min-h-[280px] flex items-center justify-center">
+                <div className="w-full h-full rounded overflow-hidden flex items-center justify-center">
                   <img
                     src="/images/image 8.png"
-                    alt="Payment"
-                    className="w-5/6 h-auto object-contain"
+                    alt="Graphic design montage"
+                    className="w-5/6 h-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
@@ -317,35 +348,20 @@ const FeaturedWork = () => {
                 </h3>
 
                 <div className="flex items-center justify-between gap-2">
-                  <div className="flex flex-wrap gap-2 text-[#A3ACB1] text-sm">
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                  <div className="flex flex-wrap gap-2 text-slate-300 text-sm">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Graphic Design
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Posters
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Postcards
                     </span>
-                    <span className="px-3 py-1 border border-[#A3ACB1]/30 rounded-md bg-[#A3ACB1]/10">
+                    <span className="px-3 py-1 border border-white/15 rounded-md bg-white/5">
                       Brochure
                     </span>
                   </div>
-                  <Link to="/graphic-design">
-                    <Button
-                      className={cn(
-                        "w-24 h-10 border border-[#08BCA1] text-white text-sm font-normal flex-shrink-0",
-                        "bg-[#004B78]",
-                        "hover:bg-[#004B78]",
-                        "hover:shadow-lg hover:shadow-[#08BCA1]/20",
-                        "hover:border-2",
-                        "transition-all duration-200",
-                        "backdrop-blur-sm",
-                      )}
-                    >
-                      View
-                    </Button>
-                  </Link>
                 </div>
               </div>
             </div>
