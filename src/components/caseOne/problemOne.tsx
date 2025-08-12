@@ -62,7 +62,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-10 md:mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             While the promise of{" "}
             <span className="text-[#08BCA1]">unlimited cashback</span> is
@@ -84,25 +84,25 @@ const ProblemOne = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 lg:mb-40">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Intro + Image */}
             <div>
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center ml-0 md:-ml-20">
+              <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center md:text-left ">
                 Initial draft of the waitlist and landing pages
               </h3>
-              <div className="flex flex-col items-center justify-center rounded-lg overflow-hidden">
+              <div className="flex flex-col items-center justify-center md:items-start rounded-lg overflow-hidden">
                 <img
                   src="/images/landing1.svg"
                   alt="Initial draft"
-                  className="w-[300px] md:w-[400px] object-contain rounded-lg"
+                  className="w-[300px] md:w-[600px] object-contain rounded-lg"
                 />
               </div>
             </div>
 
             {/* Right: Before / After Comparison */}
             <div>
-              <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+              <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
                 Moved the countdown timer to the top to increase engagement
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-2 gap-6">
@@ -118,7 +118,7 @@ const ProblemOne = () => {
                       <img
                         src={src}
                         alt={label}
-                        className="w-[214px] object-contain rounded-lg"
+                        className="w-[214px] md:w-[328px] object-contain rounded-lg"
                       />
                     </div>
                   </div>
@@ -128,8 +128,8 @@ const ProblemOne = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Switched to light color scheme to convey transparency
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -142,7 +142,7 @@ const ProblemOne = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className="aspect-[16/11] rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className="aspect-[16/11] rounded-lg overflow-hidden flex items-start justify-start ">
                   <img
                     src={src}
                     alt={label}
@@ -154,8 +154,8 @@ const ProblemOne = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Replaced lengthy text with pagination to improve clarity
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
@@ -168,7 +168,7 @@ const ProblemOne = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className="rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src={src}
                     alt={label}
@@ -179,8 +179,8 @@ const ProblemOne = () => {
             ))}
           </div>
         </div>
-        <div className="mb-20 md:mb-40 lg:mb-40 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48 mx-auto max-w-8xl">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Simplified the cashback calculator to eliminate confusion between
             monthly and annual rates
           </h3>
@@ -194,7 +194,7 @@ const ProblemOne = () => {
                 <p className="text-white/60 text-sm md:text-base font-normal mb-2">
                   {label}
                 </p>
-                <div className=" rounded-lg overflow-hidden flex items-start justify-start max-w-[700px] mx-auto">
+                <div className=" rounded-lg overflow-hidden flex items-start justify-start">
                   <img
                     src={src}
                     alt={label}
@@ -207,26 +207,28 @@ const ProblemOne = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12 mb-10">
-          <div>
-            <div className="flex justify-between mb-6">
-              <h3 className="text-white text-sm md:text-base font-normal">
-                Final Landing Page Design
-              </h3>
-            </div>
-            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-start justify-start">
+
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12 mb-10">
+          {/* Left Side: Image + Title */}
+          <div className="md:col-span-1">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Final Landing Page Design
+            </h3>
+            <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[900px]">
               <img
                 src="/images/Group 59.gif"
                 alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                className="w-full h-auto object-contain rounded-lg"
               />
             </div>
           </div>
 
-          <div className="flex flex-col justify-center h-full items-center md:items-center">
+          {/* Right Side: Image + Title */}
+          <div className="md:col-span-1 ">
             <div
-              className="bg-[#121E2A] p-2.5 mt-2 aspect-[6.5/13.5] rounded-3xl overflow-hidden flex items-center justify-center 
-             w-[200px]  lg:w-[256px]"
+              className="col-span-1 bg-[#121E2A] p-2.5 mt-12 aspect-[6.5/13.5] rounded-3xl overflow-hidden 
+      flex items-center justify-center
+      max-w-[200px] md:max-w-[200px] lg:max-w-[300px] mx-auto"
             >
               <img
                 src="/images/phone.gif"
