@@ -59,12 +59,12 @@ const FeaturedWork = () => {
                 <img
                   src="/images/Group 62.png"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-contain rounded hover:rotate-12"
+                  className="w-4/5 h-auto object-contain rounded "
                 />
                 <img
                   src="/images/Iphone 16.png"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-contain rounded hover:-rotate-12"
+                  className="w-1/5 h-auto object-contain rounded "
                 />
               </div>
 
@@ -237,12 +237,12 @@ const FeaturedWork = () => {
                 <img
                   src="/images/Iphone 14.png"
                   alt="Login Preview"
-                  className="w-1/5 h-auto object-contain rounded -rotate-12 hover:rotate-12"
+                  className="w-1/5 h-auto object-contain rounded -rotate-12"
                 />
                 <img
                   src="/images/TTdesk.svg"
                   alt="Landing Preview"
-                  className="w-4/5 h-auto object-contain rounded rotate-12 hover:-rotate-12"
+                  className="w-4/5 h-auto object-contain rounded rotate-12"
                 />
               </div>
 
