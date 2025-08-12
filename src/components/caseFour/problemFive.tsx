@@ -55,7 +55,7 @@ const ProblemFive = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Tradespeople often lose track of tools and materials on job sites
           </h1>

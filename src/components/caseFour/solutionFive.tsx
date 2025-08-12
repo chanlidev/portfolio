@@ -27,7 +27,7 @@ const SolutionFive = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Ultimate trade material manager: a real-time app for tracking and
             managing tools and materials
@@ -156,7 +156,7 @@ const SolutionFive = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
               <h3 className="text-white text-base lg:text-lg font-normal">

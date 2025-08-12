@@ -32,7 +32,7 @@ const InventorySystem: React.FC = () => {
       />
 
       {/* Top Section (sits on shared background) */}
-      <div className="w-full relative overflow-hidden pb-16 lg:pb-32 -mt-px -mb-px">
+      <div className="w-full relative overflow-hidden pb-14 lg:pb-28  -mt-px -mb-px">
         {/* Header */}
         <div className="relative z-10">
           <Header />
