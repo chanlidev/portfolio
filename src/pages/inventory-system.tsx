@@ -11,7 +11,7 @@ import ProblemFive from "@/components/caseFour/problemFive";
 import ContactSection from "@/components/ContactSection";
 import SolutionFive from "@/components/caseFour/solutionFive";
 
-const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #07033B 100%)";
 
 const InventorySystem: React.FC = () => {
   return (
