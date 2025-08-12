@@ -97,7 +97,7 @@ const ProblemOne = () => {
         <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Intro + Image */}
-            <Glass className="p-5">
+            <Glass className="p-2 md:p-4">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center md:text-left ">
                 Initial draft of the waitlist and landing pages
               </h3>
@@ -111,7 +111,7 @@ const ProblemOne = () => {
             </Glass>
 
             {/* Right: Before / After Comparison */}
-            <Glass className="p-5">
+            <Glass className="p-2 md:p-4">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
                 Moved the countdown timer to the top to increase engagement
               </h3>
@@ -139,7 +139,7 @@ const ProblemOne = () => {
         </div>
 
         <div className="mb-10 lg:mb-20">
-          <Glass className="p-5">
+          <Glass className="p-2 md:p-4">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Switched to light color scheme to convey transparency
             </h3>
@@ -167,7 +167,7 @@ const ProblemOne = () => {
         </div>
 
         <div className="mb-10 lg:mb-20">
-          <Glass className="p-5">
+          <Glass className="p-2 md:p-4">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Replaced lengthy text with pagination to improve clarity
             </h3>
@@ -194,7 +194,7 @@ const ProblemOne = () => {
           </Glass>
         </div>
         <div className="mb-10 lg:mb-20">
-          <Glass className="p-5">
+          <Glass className="p-2 md:p-4">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Simplified the cashback calculator to eliminate confusion between
               monthly and annual rates
@@ -226,7 +226,7 @@ const ProblemOne = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12 mb-10">
           {/* Left Side: Image + Title */}
-          <Glass className="p-5 md:col-span-1">
+          <Glass className="p-2 md:p-4 md:col-span-1">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Final Landing Page Design
             </h3>
@@ -240,9 +240,9 @@ const ProblemOne = () => {
           </Glass>
 
           {/* Right Side: Image + Title */}
-          <Glass className="p-5 md:col-span-1 ">
+          <Glass className="p-2 md:p-4 md:col-span-1 ">
             <div
-              className="col-span-1 bg-[#121E2A] p-2.5 mt-12 aspect-[6.5/13.5] rounded-3xl overflow-hidden border border-white/10 bg-white/5
+              className="col-span-1 bg-[#121E2A] p-2.5 mt-0 md:mt-10 aspect-[6.5/13.5] rounded-3xl overflow-hidden border border-white/10 bg-white/5
       flex items-center justify-center
       max-w-[200px] md:max-w-[200px] lg:max-w-[300px] mx-auto"
             >

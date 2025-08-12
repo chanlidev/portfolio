@@ -48,7 +48,7 @@ const ProblemTwo = () => {
         <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
-            <Glass className="p-5">
+            <Glass className="p-2 md:p-4">
               <div className="space-y-6">
                 <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
                   Low Fidelity
@@ -63,7 +63,7 @@ const ProblemTwo = () => {
               </div>
             </Glass>
             {/* Column 2 */}
-            <Glass className="p-5">
+            <Glass className="p-2 md:p-4">
               <div className="space-y-6">
                 <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
                   High Fidelity
@@ -85,7 +85,7 @@ const ProblemTwo = () => {
         </div>
 
         <div className="mb-10 lg:mb-20">
-          <Glass className="p-5">
+          <Glass className="p-2 md:p-4">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Redesigned the timeframe selector to improve usability
             </h3>
@@ -120,7 +120,7 @@ const ProblemTwo = () => {
         <div className="mb-10 lg:mb-20">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
-            <Glass className="p-5 md:col-span-1">
+            <Glass className="p-2 md:p-4 md:col-span-1">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
                 Integrated the transaction list to share the same timeframe
                 selector for consistent use
@@ -135,7 +135,7 @@ const ProblemTwo = () => {
             </Glass>
 
             {/* Right Side: Image + Title */}
-            <Glass className="p-5 md:col-span-1">
+            <Glass className="p-2 md:p-4 md:col-span-1">
               <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
                 Enhanced the responsive layout for mobile
               </h3>
@@ -156,7 +156,7 @@ const ProblemTwo = () => {
 
         {/* Final + notes */}
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 lg:gap-10">
-          <Glass className="p-5 md:col-span-1">
+          <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-white">
                 <span style={{ color: ACCENT }}>Final Version</span>
@@ -180,7 +180,7 @@ const ProblemTwo = () => {
             </div>
           </Glass>
 
-          <Glass className="p-6 md:col-span-1">
+          <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="space-y-8 max-w-prose">
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
                 <span className="text-white" style={{ color: ACCENT }}>

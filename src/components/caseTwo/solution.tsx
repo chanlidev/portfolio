@@ -3,9 +3,19 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const ACCENT = "#08BCA1";
+
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const Solution = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full bg-gradient-to-b from-[#23065E] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -17,7 +27,7 @@ const Solution = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Immediately after creating a client, land directly on their details
             page and display a pop-up to add payment method
@@ -35,7 +45,7 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -56,7 +66,7 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -79,7 +89,7 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-32 lg:mb-60">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
@@ -101,89 +111,75 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
-          {/* Left */}
-          <div className="md:col-span-1">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-white text-base lg:text-lg font-normal">
-                <span className="text-[#08BCA1]">Final Version</span>
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 lg:gap-10">
+          {/* Left (glass card with image) */}
+          <Glass className="p-2 md:p-4 md:col-span-1">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-white">
+                <span style={{ color: ACCENT }}>Final Version</span>
               </h3>
-              <h3 className="text-base lg:text-lg font-normal">
-                <a
-                  href="https://pekopay.com/dashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="text-[#08BCA1]">View Live Website</span>
-                </a>
-              </h3>
+              <a
+                href="https://pekopay.com/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/90 hover:text-white underline underline-offset-4"
+                style={{ textDecorationColor: ACCENT }}
+              >
+                View Live Website
+              </a>
             </div>
-            <div className="aspect-[15.5/12.5] rounded-lg overflow-hidden flex items-center justify-center mb-4">
+
+            <div className="rounded-xl overflow-hidden">
               <img
                 src="/images/Group 80.gif"
-                alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
+                alt="Final screens"
+                className="w-full object-contain"
               />
             </div>
-          </div>
-          <div className="md:col-span-1">
-            <div className="flex flex-col justify-center h-full max-w-prose mx-auto">
-              <div className="space-y-10">
-                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                  <span className="text-[#08BCA1] text-base lg:text-lg">
-                    Feedback:
-                  </span>
-                  <br /> Landing on the client details page with an immediate
-                  “Add Payment Method” prompt and a Subscription section on the
-                  same page cut setup to two steps and eliminated repetitive
-                  tasks.
-                </p>
+          </Glass>
 
-                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                  <span className="text-[#08BCA1] text-base lg:text-lg">
-                    Takeaway:
-                  </span>
-                  <br /> I learned that consolidating related actions into one
-                  interface and reusing existing components can dramatically
-                  streamline complex workflows and improve usability.
-                </p>
-              </div>
+          {/* Right (glass card with feedback/takeaway) */}
+          <Glass className="p-2 md:p-4 md:col-span-1">
+            <div className="space-y-8 max-w-prose">
+              <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                <span className="text-white" style={{ color: ACCENT }}>
+                  Feedback:
+                </span>{" "}
+                Landing on the client details page with an immediate “Add
+                Payment Method” prompt and a Subscription section on the same
+                page cut setup to two steps and eliminated repetitive tasks.
+              </p>
+
+              <p className="text-white/80 text-sm md:text-base leading-relaxed">
+                <span className="text-white" style={{ color: ACCENT }}>
+                  Takeaway:
+                </span>{" "}
+                Consolidating related actions into one interface and reusing
+                existing components dramatically streamlines complex workflows
+                and improves usability.
+              </p>
             </div>
-          </div>
+          </Glass>
         </div>
-        <div className="mt-24 lg:mt-40 flex justify-center gap-20">
-          <Link to="/landing-page">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              &lt; Previous
-            </Button>
+
+        {/* Nav buttons (match style) */}
+        <div className="mt-16 lg:mt-24 flex justify-center gap-6">
+          <Link
+            to="/landing-page"
+            className="h-10 px-5 rounded-xl text-sm grid place-items-center text-white/90 border border-white/10 bg-white/5 backdrop-blur-lg hover:bg-white/10 transition"
+          >
+            &lt; Previous
           </Link>
 
-          <Link to="/inventory-system">
-            <Button
-              className={cn(
-                "h-9 w-32 flex items-center justify-center",
-                "border border-[#1B64FF] text-white text-sm font-normal",
-                "bg-[#1C0C7A]",
-                "shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]",
-                "backdrop-blur-sm transition-all duration-200",
-                "hover:border-2 hover:border-[#1B64FF]",
-                "hover:bg-[#1C0C7A]",
-                "hover:text-white hover:shadow-lg hover:shadow-[#08BCA1]/20",
-              )}
-            >
-              Next &gt;
-            </Button>
+          <Link
+            to="/inventory-system"
+            className="h-10 px-5 rounded-xl text-sm font-medium text-[#061a14] grid place-items-center"
+            style={{
+              background: ACCENT,
+              boxShadow: "0 8px 30px rgba(8,188,161,0.35)",
+            }}
+          >
+            Next &gt;
           </Link>
         </div>
       </div>

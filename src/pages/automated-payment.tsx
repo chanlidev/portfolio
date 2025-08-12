@@ -12,20 +12,29 @@ import Solution from "@/components/caseTwo/solution";
 import ProblemFour from "@/components/caseThree/problemFour";
 import SolutionFour from "@/components/caseThree/solutionFour";
 
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+
 const AutoPayment: React.FC = () => {
   return (
-    <>
-      {/* Top Section: matches Index layout exactly */}
-      <div className="w-full relative overflow-hidden pb-16 lg:pb-32 -mb-px">
-        {/* Purple→Blue background */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #07033B 20%, #1C0C7A 100%)",
-          }}
-        />
+    <div className="relative w-full overflow-hidden">
+      {/* Base background (same as Index) */}
+      <div
+        className="absolute inset-0 -z-30"
+        style={{ background: GRADIENT }}
+      />
 
-        {/* Header remains unchanged */}
+      {/* Radial vignette (same as Index) */}
+      <div
+        className="pointer-events-none absolute inset-0 -z-20"
+        style={{
+          background:
+            "radial-gradient(60% 55% at 50% 20%, rgba(8,188,161,0.18) 0%, rgba(8,188,161,0.08) 40%, rgba(0,0,0,0) 70%)",
+        }}
+      />
+
+      {/* Top Section (sits on shared background) */}
+      <div className="w-full relative overflow-hidden pb-16 lg:pb-32 -mt-px -mb-px">
+        {/* Header */}
         <div className="relative z-10">
           <Header />
         </div>
@@ -47,17 +56,7 @@ const AutoPayment: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Section: gradient from #090F78 to #666666 */}
       <div className="w-full relative overflow-hidden ">
-        {/* Gradient background */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(180deg, #1C0C7A 0%, #666666 100%)",
-          }}
-        />
-
-        {/* Content container */}
         <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 ">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details Card (transparent) */}
@@ -155,7 +154,7 @@ const AutoPayment: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full relative z-10">
         <ProblemFour />
         <SolutionFour />
         <ProblemThree />
@@ -163,7 +162,7 @@ const AutoPayment: React.FC = () => {
 
         <ContactSection />
       </div>
-    </>
+    </div>
   );
 };
 

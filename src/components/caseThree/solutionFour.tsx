@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const SolutionFour = () => {
   return (
-    <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -17,7 +17,7 @@ const SolutionFour = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             A collapsible preview shows key invoice details in the list, with a
             pop-up option for full PDF-style viewing
@@ -34,7 +34,7 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
@@ -55,7 +55,7 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">

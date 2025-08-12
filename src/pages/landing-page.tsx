@@ -83,7 +83,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Bottom Section (transparent; shares the same background) */}
-      <div className="w-full relative overflow-hidden -mb-px">
+      <div className="w-full relative overflow-hidden">
         <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details */}

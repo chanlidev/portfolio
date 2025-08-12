@@ -190,15 +190,6 @@ const ContactSection = () => {
             </motion.div>
           </div>
         </motion.div>
-
-        {/* Subtle bottom note */}
-        <motion.p
-          variants={item}
-          className="mt-6 text-center text-white/50 text-sm"
-        >
-          Available for full-time roles in Calgary · Open to select freelance
-          work
-        </motion.p>
       </div>
     </motion.section>
   );

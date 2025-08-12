@@ -3,9 +3,19 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const ACCENT = "#08BCA1";
+
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const ProblemFour = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12  -mt-px -mb-px">
+    <div className="w-full px-2 sm:px-4 lg:px-6 py-12">
       <div className="max-w-[1450px] mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -51,7 +61,7 @@ const ProblemFour = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Lack of instant invoice previews requires users to open a pop-up for
             every detail, doubling clicks and interrupting their workflow
@@ -68,70 +78,77 @@ const ProblemFour = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-20 md:mb-32 lg:mb-48 ">
+        <div className="mb-10 lg:mb-20 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
-            <div className="space-y-6">
-              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
-                Original Design
-              </p>
-              <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden">
-                <img
-                  src="/images/Group 84.svg"
-                  alt="Logo"
-                  className="h-full max-w-full object-contain "
-                />
+            <Glass className="p-2 md:p-4">
+              <div className="space-y-6">
+                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                  Original Design
+                </p>
+                <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/images/Group 84.svg"
+                    alt="Logo"
+                    className="h-full max-w-full object-contain "
+                  />
+                </div>
               </div>
-            </div>
+            </Glass>
 
             {/* Column 2 */}
-            <div className="space-y-6">
-              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
-                Condensed action buttons into a menu to accommodate more options
-              </p>
-              <div className="space-y-4">
-                <div>
-                  <div className="bg-white  rounded-lg flex items-center justify-center overflow-hidden">
-                    <img
-                      src="/images/Group 85.svg"
-                      alt="Logo"
-                      className="h-auto w-auto object-contain "
-                    />
+            <Glass className="p-2 md:p-4">
+              <div className="space-y-6">
+                <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
+                  Condensed action buttons into a menu to accommodate more
+                  options
+                </p>
+                <div className="space-y-4">
+                  <div>
+                    <div className="bg-white  rounded-lg flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/images/Group 85.svg"
+                        alt="Logo"
+                        className="h-auto w-auto object-contain "
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Glass>
           </div>
         </div>
 
-        <div className="mb-20 md:mb-32 lg:mb-48">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Added filters and tax rates
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
-            {["/images/Group 86.svg", "/images/Group 90.svg"].map(
-              (src, index) => (
-                <div key={src} className="md:col-span-1">
-                  <div
-                    className={`rounded-lg overflow-hidden flex items-start justify-start ${
-                      index === 1
-                        ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
-                        : ""
-                    }`}
-                  >
-                    <img
-                      src={src}
-                      alt=""
-                      className="w-full h-auto object-contain rounded-lg"
-                    />
+        <div className="mb-20 lg:mb-32">
+          <Glass className="p-2 md:p-4">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Added filters and tax rates
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
+              {["/images/Group 86.svg", "/images/Group 90.svg"].map(
+                (src, index) => (
+                  <div key={src} className="md:col-span-1">
+                    <div
+                      className={`rounded-lg overflow-hidden flex items-start justify-start ${
+                        index === 1
+                          ? "max-w-[300px] mx-auto md:max-w-none md:mx-0"
+                          : ""
+                      }`}
+                    >
+                      <img
+                        src={src}
+                        alt=""
+                        className="w-full h-auto object-contain rounded-lg"
+                      />
+                    </div>
                   </div>
-                </div>
-              ),
-            )}
-          </div>
+                ),
+              )}
+            </div>
+          </Glass>
         </div>
 
-        <div className="mb-20 md:mb-32 lg:mb-48">
+        <div className="mb-20 lg:mb-32">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {/* Left Side: Text only, vertically centered and left-aligned */}
             <div className="flex items-center">

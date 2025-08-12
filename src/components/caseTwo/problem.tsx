@@ -3,9 +3,17 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const Glass = ({ children, className = "" }: any) => (
+  <div
+    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  >
+    {children}
+  </div>
+);
+
 const ProblemThree = () => {
   return (
-    <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
+    <div className="w-full  px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
@@ -17,7 +25,7 @@ const ProblemThree = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 md:mb-20 lg:mb-32">
+        <div className="text-center mb-10 md:mb-20">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Users can't add a credit card to enable automatic payments, forcing
             them into manual invoicing and follow-ups
@@ -35,7 +43,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-20 md:mb-32 lg:mb-48">
+        <Glass className="p-2 md:p-4 mb-10 lg:mb-20">
           <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -67,41 +75,43 @@ const ProblemThree = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Glass>
 
-        <div className="mb-20 md:mb-32 lg:mb-48">
-          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
-            Users now have the options to enter credit card details directly or
-            send a link to request payment info
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-            {/* Before Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Add Payment Method
-              </p>
-              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/images/Group 119.gif"
-                  alt="Before: cashback calculator"
-                  className="w-full h-full object-contain rounded-lg"
-                />
+        <div className="mb-20 lg:mb-32">
+          <Glass className="p-2 md:p-4">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
+              Users now have the options to enter credit card details directly
+              or send a link to request payment info
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+              {/* Before Column */}
+              <div>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  Add Payment Method
+                </p>
+                <div className=" rounded-lg overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/images/Group 119.gif"
+                    alt="Before: cashback calculator"
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
+              </div>
+              {/* After Column */}
+              <div>
+                <p className="text-white/60 text-sm md:text-base font-normal mb-2">
+                  Send Add Payment Method Link
+                </p>
+                <div className=" rounded-lg overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/images/Group 118.gif"
+                    alt="After: cashback calculator"
+                    className="w-full h-full object-contain rounded-lg"
+                  />
+                </div>
               </div>
             </div>
-            {/* After Column */}
-            <div>
-              <p className="text-white/60 text-sm md:text-base font-normal mb-2">
-                Send Add Payment Method Link
-              </p>
-              <div className=" rounded-lg overflow-hidden flex items-center justify-center">
-                <img
-                  src="/images/Group 118.gif"
-                  alt="After: cashback calculator"
-                  className="w-full h-full object-contain rounded-lg"
-                />
-              </div>
-            </div>
-          </div>
+          </Glass>
         </div>
 
         <div className=" text-white text-base lg:text-lg text-center">
