@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ProblemFive = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
@@ -40,7 +40,7 @@ const ProblemFive = () => {
           <img
             src="/images/timeline_white.png"
             alt="Process overview"
-            className="mt-10 mb-32 lg:mb-60 w-full max-w-4xl mx-auto rounded-lg"
+            className="mt-10 mb-32 lg:mb-60 w-full max-w-5xl mx-auto rounded-lg"
             loading="lazy"
           />
         </div>
@@ -183,7 +183,7 @@ const ProblemFive = () => {
             Uncovering what users need and where they struggle
           </p>
 
-          <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden max-w-xl mx-auto">
+          <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden max-w-2xl mx-auto">
             <img
               src="/images/user.svg"
               alt="Logo"

@@ -35,7 +35,7 @@ const GraphicDesign: React.FC = () => {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
-            className="w-full max-w-[1000px] mx-auto"
+            className="w-full max-w-[1200px] mx-auto"
           >
             <div className="bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg overflow-hidden">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
@@ -64,7 +64,7 @@ const GraphicDesign: React.FC = () => {
           }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
           <motion.div
             variants={fadeUp}
             initial="hidden"
@@ -109,7 +109,7 @@ const GraphicDesign: React.FC = () => {
           }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 md:mb-20">
           <div className="rounded-lg overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
               <div className="rounded-lg overflow-hidden flex items-start justify-start max-w-[300px] mx-auto md:max-w-none md:mx-0">
@@ -148,7 +148,7 @@ const GraphicDesign: React.FC = () => {
           }}
         />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16">
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12">
             <div className="relative aspect-[3/4]">
               <img

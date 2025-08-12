@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SolutionFive = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -46,7 +46,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Check Out Material
               <br />
               Select material to check out &gt; Choose check out quantity &
@@ -60,7 +60,7 @@ const SolutionFive = () => {
               <img
                 src="/images/1st.gif"
                 alt="After: cashback calculator"
-                className="w-[200px] md:w-[250px] lg:w-[300px] h-auto object-contain rounded-lg"
+                className="w-[250px] md:w-[300px] lg:w-[350px] h-auto object-contain rounded-lg"
               />
             </div>
           </div>
@@ -69,7 +69,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Return Material
               <br />
               Go to profile &gt; Choose material to check in &gt; Confirm
@@ -82,7 +82,7 @@ const SolutionFive = () => {
               <img
                 src="/images/2nd.gif"
                 alt="After: cashback calculator"
-                className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
+                className="w-[250px]  md:w-[300px] lg:w-[350px] h-auto  object-contain rounded-lg"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ const SolutionFive = () => {
         <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40 ">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Order Material
               <br />
               Select material to order &gt; Choose order quantity &gt; Send
@@ -106,13 +106,13 @@ const SolutionFive = () => {
               <img
                 src="/images/3rd new.gif"
                 alt="After: cashback calculator"
-                className="w-[200px]  md:w-[250px] lg:w-[300px] h-auto  object-contain rounded-lg"
+                className="w-[250px]  md:w-[300px] lg:w-[350px] h-auto  object-contain rounded-lg"
               />
             </div>
           </div>
         </div>
 
-        <div className="mb-32 lg:mb-60 mx-auto max-w-7xl">
+        <div className="mb-32 lg:mb-60">
           <div className="h-px w-20 bg-[#08BCA1] mx-auto mb-4" />
 
           {/* Section Title */}
@@ -149,7 +149,7 @@ const SolutionFive = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal">
+              <h3 className="text-white text-base lg:text-lg font-normal">
                 <span className="text-[#08BCA1]">Final Version</span>
               </h3>
             </div>
@@ -165,7 +165,9 @@ const SolutionFive = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Feedback:</span>
+                <span className="text-[#08BCA1] text-base lg:text-lg">
+                  Feedback:
+                </span>
                 <br /> Staff found it helpful to check tool and material
                 availability without going to the warehouse. It also reduced
                 confusion and made it easier to track what was used and
@@ -173,7 +175,9 @@ const SolutionFive = () => {
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Takeaway:</span>
+                <span className="text-[#08BCA1] text-base lg:text-lg">
+                  Takeaway:
+                </span>
                 <br /> Designing TradeTrack taught me the value of an all-in-one
                 solution. By combining inventory checking, updating, and
                 tracking into one app, I helped users stay focused on their work
