@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ProblemFour = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#666666] to-[#343871] px-2 sm:px-4 lg:px-6 py-12  -mt-px -mb-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
           <h2 className="mx-8 text-white text-base lg:text-lg font-normal">
@@ -51,7 +51,7 @@ const ProblemFour = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-10 md:mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Lack of instant invoice previews requires users to open a pop-up for
             every detail, doubling clicks and interrupting their workflow
@@ -68,11 +68,11 @@ const ProblemFour = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20 ">
+        <div className="mb-20 md:mb-32 lg:mb-48 ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
                 Original Design
               </p>
               <div className="bg-white rounded-lg flex items-center justify-center overflow-hidden">
@@ -86,7 +86,7 @@ const ProblemFour = () => {
 
             {/* Column 2 */}
             <div className="space-y-6">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+              <p className="text-white text-base lg:text-lg font-normal leading-relaxed">
                 Condensed action buttons into a menu to accommodate more options
               </p>
               <div className="space-y-4">
@@ -104,8 +104,8 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Added filters and tax rates
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
@@ -131,11 +131,11 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40 mx-auto max-w-7xl">
+        <div className="mb-20 md:mb-32 lg:mb-48">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-8 lg:gap-12">
             {/* Left Side: Text only, vertically centered and left-aligned */}
             <div className="flex items-center">
-              <h3 className="text-white text-sm md:text-base font-normal text-left">
+              <h3 className="text-white text-base lg:text-lg font-normal text-left">
                 Users needed to open the more options menu and select “View
                 Invoice” to access details, which then appeared in a pop-up.
                 <br />
@@ -156,7 +156,7 @@ const ProblemFour = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center mb-10">
+        <div className="text-white text-base lg:text-lg text-center mb-10">
           <p>
             Original Workflow (4 steps)
             <br />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SolutionFour = () => {
   return (
     <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -17,7 +17,7 @@ const SolutionFour = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-10 md:mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             A collapsible preview shows key invoice details in the list, with a
             pop-up option for full PDF-style viewing
@@ -34,10 +34,10 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-center">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-center">
               Quick Invoice Preview
             </h3>
           </div>
@@ -55,10 +55,10 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Moved “View Invoice” out of the menu and added all actions inside
               the invoice pop-up, so users can complete tasks without closing
               it.
@@ -78,10 +78,10 @@ const SolutionFour = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-10">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Updated the action menu to change based on the invoice status,
               letting users mark invoices as paid, refunded, or uncollectable.
             </h3>

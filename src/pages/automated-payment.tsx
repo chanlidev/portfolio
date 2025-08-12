@@ -33,7 +33,7 @@ const AutoPayment: React.FC = () => {
         {/* Top images container: relative on small, absolute on large */}
         <div className="relative mt-24 px-4 lg:px-8 z-10 flex justify-center">
           <motion.div
-            className=" w-full max-w-[1000px] mx-auto bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
+            className=" w-full max-w-[1200px] mx-auto bg-gray-300 p-2 md:p-4 lg:p-4 rounded-lg flex items-center justify-center overflow-hidden"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -58,7 +58,7 @@ const AutoPayment: React.FC = () => {
         />
 
         {/* Content container */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-16 py-16 ">
+        <div className="relative z-10 max-w-[1450px] mx-auto px-4 lg:px-16 py-16 ">
           <div className="flex flex-col md:flex-row items-center gap-y-0 md:gap-y-0 md:gap-x-16">
             {/* Details Card (transparent) */}
             <div className="rounded-lg md:w-1/2">

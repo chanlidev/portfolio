@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ProblemThree = () => {
   return (
     <div className="w-full bg-[#343871] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -17,7 +17,7 @@ const ProblemThree = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-10 md:mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Users can't add a credit card to enable automatic payments, forcing
             them into manual invoicing and follow-ups
@@ -35,8 +35,8 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <div className="mb-20 lg:mb-40">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -69,8 +69,8 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="mb-20 lg:mb-40">
-          <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+        <div className="mb-20 md:mb-32 lg:mb-48">
+          <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
             Users now have the options to enter credit card details directly or
             send a link to request payment info
           </h3>
@@ -104,7 +104,7 @@ const ProblemThree = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto text-white text-sm md:text-base text-center">
+        <div className=" text-white text-base lg:text-lg text-center">
           <p>
             Original Workflow (5 steps)
             <br />

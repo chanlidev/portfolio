@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Solution = () => {
   return (
     <div className="w-full bg-gradient-to-b from-[#343871] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">
           <div className="flex-1 h-px bg-[#08BCA1] max-w-sm"></div>
@@ -17,7 +17,7 @@ const Solution = () => {
         </div>
 
         {/* Main Headline */}
-        <div className="text-center mb-10 lg:mb-20">
+        <div className="text-center mb-10 md:mb-20 lg:mb-32">
           <h1 className="text-white text-2xl lg:text-3xl font-normal leading-tight max-w-6xl mx-auto mb-10 lg:mb-12">
             Immediately after creating a client, land directly on their details
             page and display a pop-up to add payment method
@@ -35,10 +35,10 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Refined 2-step Workflow: <br />
               Create Client &gt; Add Payment Method
             </h3>
@@ -56,10 +56,10 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 md:mb-32 lg:mb-48">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               Once a new payment method is added, it appears in the Payment
               Methods section on the client details page, where users can choose
               a default credit card.
@@ -79,10 +79,10 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-32 lg:mb-60">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-32 lg:mb-60">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
-            <h3 className="text-white text-sm md:text-base font-normal mb-6 text-left">
+            <h3 className="text-white text-base lg:text-lg font-normal mb-6 text-left">
               To complete the experience, I’ve included a Subscription section
               on the same page so users can set up recurring payments for that
               client without leaving the view.
@@ -101,13 +101,14 @@ const Solution = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-          <div>
-            <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base font-normal">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
+          {/* Left */}
+          <div className="md:col-span-1">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-white text-base lg:text-lg font-normal">
                 <span className="text-[#08BCA1]">Final Version</span>
               </h3>
-              <h3 className="text-sm md:text-base font-normal">
+              <h3 className="text-base lg:text-lg font-normal">
                 <a
                   href="https://pekopay.com/dashboard"
                   target="_blank"
@@ -125,22 +126,28 @@ const Solution = () => {
               />
             </div>
           </div>
+          <div className="md:col-span-1">
+            <div className="flex flex-col justify-center h-full max-w-prose mx-auto">
+              <div className="space-y-10">
+                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                  <span className="text-[#08BCA1] text-base lg:text-lg">
+                    Feedback:
+                  </span>
+                  <br /> Landing on the client details page with an immediate
+                  “Add Payment Method” prompt and a Subscription section on the
+                  same page cut setup to two steps and eliminated repetitive
+                  tasks.
+                </p>
 
-          <div className="flex flex-col justify-center h-full">
-            <div className="space-y-10">
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Feedback:</span>
-                <br /> Landing on the client details page with an immediate “Add
-                Payment Method” prompt and a Subscription section on the same
-                page cut setup to two steps and eliminated repetitive tasks.
-              </p>
-
-              <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1]">Takeaway:</span>
-                <br /> I learned that consolidating related actions into one
-                interface and reusing existing components can dramatically
-                streamline complex workflows and improve usability.
-              </p>
+                <p className="text-white text-sm md:text-base font-normal leading-relaxed">
+                  <span className="text-[#08BCA1] text-base lg:text-lg">
+                    Takeaway:
+                  </span>
+                  <br /> I learned that consolidating related actions into one
+                  interface and reusing existing components can dramatically
+                  streamline complex workflows and improve usability.
+                </p>
+              </div>
             </div>
           </div>
         </div>
