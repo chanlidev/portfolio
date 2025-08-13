@@ -7,7 +7,7 @@ const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ scale: 1.08, y: -6 }}
+    whileHover={{ scale: 1.12, y: -6 }}
     whileTap={{ scale: 0.995 }}
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
