@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
-  <div
-    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  <motion.div
+    whileHover={{ scale: 1.08, y: -6 }}
+    whileTap={{ scale: 0.995 }}
+    transition={{ type: "spring", stiffness: 260, damping: 20 }}
+    className={[
+      "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
+      "transform-gpu will-change-transform",
+      "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
+      "hover:z-10", // rises above neighbors when scaled
+      className,
+    ].join(" ")}
   >
     {children}
-  </div>
+  </motion.div>
 );
 
 const SolutionFive = () => {
@@ -159,7 +168,7 @@ const SolutionFive = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-12">
           <div>
             <div className="flex justify-between mb-4">
-              <h3 className="text-white text-sm md:text-base lg:text-lg font-normal">
+              <h3 className="text-white text-sm md:text-base  font-normal">
                 <span className="text-[#08BCA1]">Final Version</span>
               </h3>
             </div>
@@ -175,7 +184,7 @@ const SolutionFive = () => {
           <div className="flex flex-col justify-center h-full">
             <div className="space-y-10">
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1] text-sm md:text-base lg:text-lg">
+                <span className="text-[#08BCA1] text-sm md:text-base ">
                   Feedback:
                 </span>
                 <br /> Staff found it helpful to check tool and material
@@ -185,7 +194,7 @@ const SolutionFive = () => {
               </p>
 
               <p className="text-white text-sm md:text-base font-normal leading-relaxed">
-                <span className="text-[#08BCA1] text-sm md:text-base lg:text-lg">
+                <span className="text-[#08BCA1] text-sm md:text-base ">
                   Takeaway:
                 </span>
                 <br /> Designing TradeTrack taught me the value of an all-in-one

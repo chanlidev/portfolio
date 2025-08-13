@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
-  <div
-    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  <motion.div
+    whileHover={{ scale: 1.08, y: -6 }}
+    whileTap={{ scale: 0.995 }}
+    transition={{ type: "spring", stiffness: 260, damping: 20 }}
+    className={[
+      "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
+      "transform-gpu will-change-transform",
+      "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
+      "hover:z-10", // rises above neighbors when scaled
+      className,
+    ].join(" ")}
   >
     {children}
-  </div>
+  </motion.div>
 );
 
 const ProblemFour = () => {
@@ -163,13 +172,15 @@ const ProblemFour = () => {
             </div>
 
             {/* Right Side: Single image */}
-            <div className="rounded-lg overflow-hidden flex items-start justify-start">
-              <img
-                src="/images/Group 92.svg"
-                alt="Updated invoice interaction"
-                className="w-full h-auto object-contain rounded-lg"
-              />
-            </div>
+            <Glass className="p-2 md:p-4">
+              <div className="rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/images/Group 92.svg"
+                  alt="Updated invoice interaction"
+                  className="w-full h-auto object-contain rounded-lg"
+                />
+              </div>
+            </Glass>
           </div>
         </div>
 

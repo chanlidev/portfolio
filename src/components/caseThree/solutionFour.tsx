@@ -3,6 +3,23 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
+const Glass = ({ children, className = "" }: any) => (
+  <motion.div
+    whileHover={{ scale: 1.08, y: -6 }}
+    whileTap={{ scale: 0.995 }}
+    transition={{ type: "spring", stiffness: 260, damping: 20 }}
+    className={[
+      "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
+      "transform-gpu will-change-transform",
+      "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
+      "hover:z-10", // rises above neighbors when scaled
+      className,
+    ].join(" ")}
+  >
+    {children}
+  </motion.div>
+);
+
 const SolutionFour = () => {
   return (
     <div className="w-full px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
@@ -44,13 +61,15 @@ const SolutionFour = () => {
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
-              <img
-                src="/images/invoiceview.gif"
-                alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-            </div>
+            <Glass className="p-2 md:p-4">
+              <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/images/invoiceview.gif"
+                  alt="After: cashback calculator"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            </Glass>
           </div>
         </div>
 
@@ -67,13 +86,15 @@ const SolutionFour = () => {
 
           {/* Mobile: image second (order-2), Desktop: image first (order-1) */}
           <div className="order-2 md:order-1">
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
-              <img
-                src="/images/invoicepdf.gif"
-                alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-            </div>
+            <Glass className="p-2 md:p-4">
+              <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/images/invoicepdf.gif"
+                  alt="After: cashback calculator"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            </Glass>
           </div>
         </div>
 
@@ -89,13 +110,15 @@ const SolutionFour = () => {
 
           {/* Right: Final Version screenshot */}
           <div>
-            <div className=" rounded-lg overflow-hidden flex items-start justify-start">
-              <img
-                src="/images/final.gif"
-                alt="After: cashback calculator"
-                className="max-w-full max-h-full object-contain rounded-lg"
-              />
-            </div>
+            <Glass className="p-2 md:p-4">
+              <div className=" rounded-lg overflow-hidden flex items-start justify-start">
+                <img
+                  src="/images/final.gif"
+                  alt="After: cashback calculator"
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                />
+              </div>
+            </Glass>
           </div>
         </div>
 

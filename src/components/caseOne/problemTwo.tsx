@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
-  <div
-    className={`rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg ${className}`}
+  <motion.div
+    whileHover={{ scale: 1.08, y: -6 }}
+    whileTap={{ scale: 0.995 }}
+    transition={{ type: "spring", stiffness: 260, damping: 20 }}
+    className={[
+      "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
+      "transform-gpu will-change-transform",
+      "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
+      "hover:z-10", // rises above neighbors when scaled
+      className,
+    ].join(" ")}
   >
     {children}
-  </div>
+  </motion.div>
 );
 
 const ProblemTwo = () => {
@@ -158,14 +167,14 @@ const ProblemTwo = () => {
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-6 lg:gap-10">
           <Glass className="p-2 md:p-4 md:col-span-1">
             <div className="flex items-center justify-between mb-6">
-              <h3 className="text-white text-sm md:text-base lg:text-lg">
+              <h3 className="text-white text-sm md:text-base">
                 <span style={{ color: ACCENT }}>Final Version</span>
               </h3>
               <a
                 href="https://pekopay.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/90 text-sm md:text-base lg:text-lg hover:text-white underline underline-offset-4"
+                className="text-white/90 text-sm md:text-base hover:text-white underline underline-offset-4"
                 style={{ textDecorationColor: ACCENT }}
               >
                 View Live Website
@@ -184,7 +193,7 @@ const ProblemTwo = () => {
             <div className="space-y-8 max-w-prose">
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
                 <span
-                  className="text-white text-sm md:text-base lg:text-lg"
+                  className="text-white text-sm md:text-base"
                   style={{ color: ACCENT }}
                 >
                   Feedback:
@@ -195,7 +204,7 @@ const ProblemTwo = () => {
               </p>
               <p className="text-white/80 text-sm md:text-base leading-relaxed">
                 <span
-                  className="text-white text-sm md:text-base lg:text-lg"
+                  className="text-white text-sm md:text-base"
                   style={{ color: ACCENT }}
                 >
                   Takeaway:
