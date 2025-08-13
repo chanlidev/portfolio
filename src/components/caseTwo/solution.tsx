@@ -15,7 +15,7 @@ const Glass = ({ children, className = "" }: any) => (
 
 const Solution = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-[#23065E] to-[#07033B] px-2 sm:px-4 lg:px-6 py-12 lg:py-20 -mt-px -mb-px">
+    <div className="w-full px-2 sm:px-4 lg:px-6 py-12 lg:py-20">
       <div className="max-w-[1450px] mx-auto">
         {/* Problem One Header */}
         <div className=" lg:mt-16 flex items-center justify-center mb-12 lg:mb-16">

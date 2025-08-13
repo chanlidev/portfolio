@@ -12,7 +12,7 @@ import Solution from "@/components/caseTwo/solution";
 import ProblemFour from "@/components/caseThree/problemFour";
 import SolutionFour from "@/components/caseThree/solutionFour";
 
-const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #07033B 100%)";
 
 const AutoPayment: React.FC = () => {
   return (

@@ -6,7 +6,7 @@ import ProblemONe from "@/components/caseOne/problemOne";
 import ProblemTwo from "@/components/caseOne/problemTwo";
 import ContactSection from "@/components/ContactSection";
 
-const GRADIENT = "linear-gradient(180deg, #07033B 40%, #430985 100%)";
+const GRADIENT = "linear-gradient(180deg, #07033B 40%, #07033B 100%)";
 
 const LandingPage: React.FC = () => {
   return (
