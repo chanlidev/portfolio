@@ -7,14 +7,14 @@ const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ scale: 1.12, y: -6 }}
-    whileTap={{ scale: 0.995 }}
+    whileHover={{ y: -6 }} // removed scale
+    whileTap={{}} // no scaling on tap
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
       "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
       "transform-gpu will-change-transform",
       "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
-      "hover:z-10", // rises above neighbors when scaled
+      "hover:z-10",
       className,
     ].join(" ")}
   >
@@ -54,7 +54,7 @@ const ProblemTwo = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Column 1: */}
             <Glass className="p-2 md:p-4">
@@ -93,7 +93,7 @@ const ProblemTwo = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <Glass className="p-2 md:p-4">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Redesigned the timeframe selector to improve usability
@@ -126,7 +126,7 @@ const ProblemTwo = () => {
           </Glass>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-8 lg:gap-12">
             {/* Left Side: Image + Title */}
             <Glass className="p-2 md:p-4 md:col-span-1">

@@ -7,14 +7,14 @@ const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ scale: 1.12, y: -6 }}
-    whileTap={{ scale: 0.995 }}
+    whileHover={{ y: -6 }} // removed scale
+    whileTap={{}} // no scaling on tap
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
       "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
       "transform-gpu will-change-transform",
       "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
-      "hover:z-10", // rises above neighbors when scaled
+      "hover:z-10",
       className,
     ].join(" ")}
   >
@@ -54,7 +54,7 @@ const Solution = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
@@ -75,7 +75,7 @@ const Solution = () => {
           </Glass>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-[3fr_1fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Mobile: text first (order-1), Desktop: text second (order-2) */}
           <div className="order-1 md:order-2 flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
@@ -100,7 +100,7 @@ const Solution = () => {
         </div>
 
         {/* Final Results Section */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-32">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-0 md:gap-8 lg:gap-24 mb-20 lg:mb-40">
           {/* Left: only the summary text */}
           <div className="flex flex-col justify-center h-full">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">

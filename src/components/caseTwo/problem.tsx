@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ scale: 1.12, y: -6 }}
-    whileTap={{ scale: 0.995 }}
+    whileHover={{ y: -6 }} // removed scale
+    whileTap={{}} // no scaling on tap
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
       "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
       "transform-gpu will-change-transform",
       "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
-      "hover:z-10", // rises above neighbors when scaled
+      "hover:z-10",
       className,
     ].join(" ")}
   >
@@ -52,7 +52,7 @@ const ProblemThree = () => {
           </p>
         </div>
 
-        <Glass className="p-2 md:p-4 mb-10 lg:mb-20">
+        <Glass className="p-2 md:p-4 mb-20 lg:mb-40">
           <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
             Added an “Add Payment Method” feature on the payer’s detail page
           </h3>
@@ -86,7 +86,7 @@ const ProblemThree = () => {
           </div>
         </Glass>
 
-        <div className="mb-20 lg:mb-32">
+        <div className="mb-20 lg:mb-40">
           <Glass className="p-2 md:p-4">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Users now have the options to enter credit card details directly

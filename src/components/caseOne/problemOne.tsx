@@ -7,14 +7,14 @@ const ACCENT = "#08BCA1";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ scale: 1.12, y: -6 }}
-    whileTap={{ scale: 0.995 }}
+    whileHover={{ y: -6 }} // removed scale
+    whileTap={{}} // no scaling on tap
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
       "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
       "transform-gpu will-change-transform",
       "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
-      "hover:z-10", // rises above neighbors when scaled
+      "hover:z-10",
       className,
     ].join(" ")}
   >
@@ -103,7 +103,7 @@ const ProblemOne = () => {
         </div>
 
         {/* Design Evolution Process */}
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Left: Intro + Image */}
             <Glass className="p-2 md:p-4">
@@ -147,7 +147,7 @@ const ProblemOne = () => {
           </div>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <Glass className="p-2 md:p-4">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Switched to light color scheme to convey transparency
@@ -175,7 +175,7 @@ const ProblemOne = () => {
           </Glass>
         </div>
 
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <Glass className="p-2 md:p-4">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Replaced lengthy text with pagination to improve clarity
@@ -202,7 +202,7 @@ const ProblemOne = () => {
             </div>
           </Glass>
         </div>
-        <div className="mb-10 lg:mb-20">
+        <div className="mb-20 lg:mb-40">
           <Glass className="p-2 md:p-4">
             <h3 className="text-white text-sm md:text-base lg:text-lg font-normal mb-6 text-left">
               Simplified the cashback calculator to eliminate confusion between
