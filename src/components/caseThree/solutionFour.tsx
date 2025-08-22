@@ -5,14 +5,10 @@ import { Link } from "react-router-dom";
 
 const Glass = ({ children, className = "" }: any) => (
   <motion.div
-    whileHover={{ y: -6 }} // removed scale
-    whileTap={{}} // no scaling on tap
     transition={{ type: "spring", stiffness: 260, damping: 20 }}
     className={[
       "relative rounded-2xl border border-white/10 bg-white/5 backdrop-blur-lg",
       "transform-gpu will-change-transform",
-      "hover:border-[rgba(8,188,161,0.6)] hover:shadow-[0_22px_70px_rgba(8,188,161,0.35)]",
-      "hover:z-10",
       className,
     ].join(" ")}
   >
